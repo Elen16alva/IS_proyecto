@@ -24,12 +24,11 @@
 
 
 ## *REQUISITOS FUNCIONALES*
-
-* El software debe mostrar datos varios relativos al paciente, tales como nombre completo, teléfono, dirección postal, tratamiento y motivo de la consulta.
-* Se debe mostrar toda la información pertinente relativa a los tratamientos llevados a cabo por el paciente.
-* El software muestra las citas disponibles y las citas reservadas. Estas últimas se mostrarán conforme a la fecha seleccionada y a quién pertenecen.
-* El software tiene la capacidad para mostrar el completo historial médico de los pacientes el cual incluirá una descripción de los tratamientos, dolencias sufridas, y todas las pruebas realizadas. 
-* El software puede realizar ciertas operaciones de inserción, modificación o borrado de los pacientes y sus múltiples datos y documentos anteriormente expuestos.
+* Mostrar datos del paciente.
+* Mostrar tratamientos del paciente.
+* Elsoftware permitirá consultar el historial médico.
+* Se podrán eliminar, modificar y borrar datos y pacientes.
+* Mostrará las citas disponibles.
 * El software permite reservar citas y eliminar las que ya estén reservadas.
 
 
