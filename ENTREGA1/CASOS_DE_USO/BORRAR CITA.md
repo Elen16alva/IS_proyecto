@@ -1,4 +1,4 @@
-###**BORRAR CITA**
+### **BORRAR CITA**
 *ID:* C06	Descripción: El secretario borrará una cita reservada para un paciente.
 
 *Actores principales:* Secretario
