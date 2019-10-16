@@ -1,5 +1,7 @@
 ### **AÑADIR CITA** 
-*ID:* C05	*Descripción:* El secretario reservará una cita para un paciente.
+*ID:* C05	
+
+*Descripción:* El secretario reservará una cita para un paciente.
 
 *Actores principales:* Secretario       *Actores secundarios:* Paciente
 
@@ -20,4 +22,5 @@ El paciente debe estar registrado en la base de datos y la cita debe estar dispo
 La cita ya no estará disponible.
 
 *Flujos alternativos:*
+
 5.a. No se pondrá el año ya que el software solo acepta y supondrá el año en curso.
