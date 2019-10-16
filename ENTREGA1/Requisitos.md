@@ -7,23 +7,23 @@
 * Dirección postal.
 * Compañía.
 
-###*TRATAMIENTO*
+### *TRATAMIENTO*
 * Medicamento.
 * Duración del tratamiento.
 * Dosis diaria.
 
 
-###*HISTORIAL MÉDICO*
+### *HISTORIAL MÉDICO*
 * Dolencias.
 * Pruebas realizadas al paciente.
 * Tratamiento que se le impuso al paciente y en qué fecha se produjo este hecho.
 
-###*CITAS*
+### *CITAS*
 * Nombre y apellidos de la persona que ha reservado la cita.
 * Fecha y hora de la cita.
 
 
-##*REQUISITOS FUNCIONALES*
+## *REQUISITOS FUNCIONALES*
 
 * El software debe mostrar datos varios relativos al paciente, tales como nombre completo, teléfono, dirección postal, tratamiento y motivo de la consulta.
 * Se debe mostrar toda la información pertinente relativa a los tratamientos llevados a cabo por el paciente.
