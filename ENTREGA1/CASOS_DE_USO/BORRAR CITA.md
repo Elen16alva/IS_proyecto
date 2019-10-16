@@ -1,5 +1,7 @@
 ### **BORRAR CITA**
-*ID:* C06	Descripción: El secretario borrará una cita reservada para un paciente.
+*ID:* C06	
+
+*Descripción:* El secretario borrará una cita reservada para un paciente.
 
 *Actores principales:* Secretario
 
@@ -19,5 +21,7 @@ La cita debe estar ya reservada.
 La cita pasará a estar disponible de nuevo.
 
 *Flujos alternativos:*
+
 4.a. No se pondrá el año ya que el software solo acepta y supondrá el año en curso.
+
 7.a. El sistema confirmará el dueño de esa cita. De ser correcto, continuará.
