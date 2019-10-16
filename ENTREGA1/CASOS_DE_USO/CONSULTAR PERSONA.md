@@ -1,4 +1,4 @@
-###**CONSULTAR DATOS PERSONA**
+### **CONSULTAR DATOS PERSONA**
 *ID:* C03	Descripción: El secretario verá en el monitor la información de un paciente.
 
 *Actores principales:* Secretario       *Actores secundarios:* Paciente
