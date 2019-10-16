@@ -1,22 +1,22 @@
-#**EXTRACCIÓN DE REQUISITOS**
-##**DATOS QUE ENCONTRAREMOS EN LA APLICACIÓN**
-###*DATOS DEL PACIENTE*
+# **EXTRACCIÃ“N DE REQUISITOS**
+## **DATOS QUE ENCONTRAREMOS EN LA APLICACIÃ“N**
+### *DATOS DEL PACIENTE*
 * Nombre y apellidos.
 * Fecha de nacimiento.
-* Teléfono.
-* Dirección postal.
-* Compañía.
+* TelÃ©fono.
+* DirecciÃ³n postal.
+* CompaÃ±Ã­a.
 
 ###*TRATAMIENTO*
 * Medicamento.
-* Duración del tratamiento.
+* DuraciÃ³n del tratamiento.
 * Dosis diaria.
 
 
-###*HISTORIAL MÉDICO*
+###*HISTORIAL MÃ‰DICO*
 * Dolencias.
 * Pruebas realizadas al paciente.
-* Tratamiento que se le impuso al paciente y en qué fecha se produjo este hecho.
+* Tratamiento que se le impuso al paciente y en quÃ© fecha se produjo este hecho.
 
 ###*CITAS*
 * Nombre y apellidos de la persona que ha reservado la cita.
@@ -25,16 +25,16 @@
 
 ##*REQUISITOS FUNCIONALES*
 
-* El software debe mostrar datos varios relativos al paciente, tales como nombre completo, teléfono, dirección postal, tratamiento y motivo de la consulta.
-* Se debe mostrar toda la información pertinente relativa a los tratamientos llevados a cabo por el paciente.
-* El software muestra las citas disponibles y las citas reservadas. Estas últimas se mostrarán conforme a la fecha seleccionada y a quién pertenecen.
-* El software tiene la capacidad para mostrar el completo historial médico de los pacientes el cual incluirá una descripción de los tratamientos, dolencias sufridas, y todas las pruebas realizadas. 
-* El software puede realizar ciertas operaciones de inserción, modificación o borrado de los pacientes y sus múltiples datos y documentos anteriormente expuestos.
-* El software permite reservar citas y eliminar las que ya estén reservadas.
+* El software debe mostrar datos varios relativos al paciente, tales como nombre completo, telÃ©fono, direcciÃ³n postal, tratamiento y motivo de la consulta.
+* Se debe mostrar toda la informaciÃ³n pertinente relativa a los tratamientos llevados a cabo por el paciente.
+* El software muestra las citas disponibles y las citas reservadas. Estas Ãºltimas se mostrarÃ¡n conforme a la fecha seleccionada y a quiÃ©n pertenecen.
+* El software tiene la capacidad para mostrar el completo historial mÃ©dico de los pacientes el cual incluirÃ¡ una descripciÃ³n de los tratamientos, dolencias sufridas, y todas las pruebas realizadas. 
+* El software puede realizar ciertas operaciones de inserciÃ³n, modificaciÃ³n o borrado de los pacientes y sus mÃºltiples datos y documentos anteriormente expuestos.
+* El software permite reservar citas y eliminar las que ya estÃ©n reservadas.
 
 
-##**REQUISITOS NO FUNCIONALES** 
+## **REQUISITOS NO FUNCIONALES** 
 * Eficiente a la hora de cumplir lo que se ha pedido. 
-* Tiempo adecuado de ejecución.
+* Tiempo adecuado de ejecuciÃ³n.
 * Facilidad de uso.
 * Privacidad y seguridad.
