@@ -1,4 +1,4 @@
-###**CONSULTAR CITA**
+### **CONSULTAR CITA**
 *ID:* C04        
 *Descripción:* El secretario verá una distinción entre las citas reservadas (y quien tiene dicha cita) y las disponibles para poder ser reservadas.
 
