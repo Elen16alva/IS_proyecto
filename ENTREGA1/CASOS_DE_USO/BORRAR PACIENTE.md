@@ -1,5 +1,7 @@
 ### **BORRAR PACIENTE**
-*ID:* C02        *Descripción:* El secretario borrará un paciente y todo lo referente a el de la base de datos.
+*ID:* C02       
+
+*Descripción:* El secretario borrará un paciente y todo lo referente a el de la base de datos.
 
 *Actores principales:* Secretario
 
@@ -17,4 +19,5 @@ El paciente debe estar ya registrado.
 El cliente dejará de existir en la base de datos.
 
 *Flujos alternativos:*
+
 5.a. Se preguntará si está seguro de borrar ese paciente.
