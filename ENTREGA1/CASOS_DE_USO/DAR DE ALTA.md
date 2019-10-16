@@ -1,4 +1,4 @@
-###**DAR DE ALTA**
+### **DAR DE ALTA**
 *ID:* C01	*Descripción:* El secretario añadirá a la base de datos un nuevo paciente.
 
 *Actores principales:* Secretario	*Actores secundarios:* Paciente
