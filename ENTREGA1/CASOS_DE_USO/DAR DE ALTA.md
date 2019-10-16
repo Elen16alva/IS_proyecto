@@ -1,7 +1,11 @@
 ### **DAR DE ALTA**
-*ID:* C01	*Descripción:* El secretario añadirá a la base de datos un nuevo paciente.
+*ID:* C01	
 
-*Actores principales:* Secretario	*Actores secundarios:* Paciente
+*Descripción:* El secretario añadirá a la base de datos un nuevo paciente.
+
+*Actores principales:* Secretario	
+
+*Actores secundarios:* Paciente
 
 *Precondiciones:*
 El paciente no puede estar ya registrado.
@@ -11,6 +15,7 @@ El paciente no puede estar ya registrado.
 2. El secretario selecciona el menú de pacientes.
 3. El secretario selecciona la opción de añadir un paciente.
 4. El secretario rellenará los campos con la información que se le pide sobre el cliente.
+
 *Postcondiciones:*
 El cliente quedará guardado en la base de datos.
 
