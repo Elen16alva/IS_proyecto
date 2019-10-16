@@ -19,4 +19,5 @@ La información se añadirá y esta no podrá ser modificada posteriormente.
 *Flujos alternativos:*
 
 5.a Se confirmará con un mensaje si el paciente es el correcto.
+
 6.a Se preguntara si está seguro de guardar esa información.
