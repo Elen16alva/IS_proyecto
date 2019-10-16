@@ -1,5 +1,7 @@
 ### **ACTUALIZAR HISTORIAL**
-*ID:* C07	Descripción: El secretario añadirá nueva información al historial de un paciente.
+*ID:* C07	
+
+Descripción: El secretario añadirá nueva información al historial de un paciente.
 
 *Actores principales:* Secretario
 
