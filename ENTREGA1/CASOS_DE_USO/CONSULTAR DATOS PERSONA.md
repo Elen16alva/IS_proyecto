@@ -1,4 +1,4 @@
-### **CONSULTAR DATOS PERSONA**
+### **CONSULTAR DATOS PERSONALES**
 *ID:* C03	
 
 *Descripción:* El secretario verá en el monitor la información de un paciente.
