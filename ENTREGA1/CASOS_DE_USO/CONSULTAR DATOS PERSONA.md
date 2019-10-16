@@ -17,5 +17,5 @@ El paciente debe estar ya registrado en la base de datos.
 5. El sistema mostrará una lista con todos los pacientes existentes.
 6. El secretario buscará y seleccionará el paciente del que desea obtener información.
 7. El sistema preguntará qué es lo que quiere consultar.
-8. El secretario seleccionará la opcion de datos personales
+8. El secretario seleccionará la opción de datos personales
 9. El sistema mostrará por pantalla la información seleccionada.
