@@ -1,4 +1,4 @@
-### **AÑADIR CITA**
+### **AÑADIR CITA** 
 *ID:* C05	*Descripción:* El secretario reservará una cita para un paciente.
 
 *Actores principales:* Secretario       *Actores secundarios:* Paciente
