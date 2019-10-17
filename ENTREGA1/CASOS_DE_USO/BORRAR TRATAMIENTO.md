@@ -1,4 +1,4 @@
-### *BORRAR TRATAMIENTO**
+### **BORRAR TRATAMIENTO**
 *ID:* C11	
 
 *Descripción:* El secretario borrará el tratamiento a un paciente.
