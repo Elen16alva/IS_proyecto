@@ -19,3 +19,6 @@ El paciente debe estar ya registrado en la base de datos.
 6. El secretario elegirá la opción de añadir.
 7. El secretario escribirá la información nueva al tratamiento.
 
+*Flujos alternativos*
+
+7.a. El sistema mostrara un mensaje de confirmación.
