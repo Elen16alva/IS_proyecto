@@ -20,4 +20,4 @@ El cliente dejará de existir en la base de datos.
 
 *Flujos alternativos:*
 
-5.a. Se preguntará si está seguro de borrar ese paciente.
+5.a. El sistema mostrara un mensaje de confirmación.
