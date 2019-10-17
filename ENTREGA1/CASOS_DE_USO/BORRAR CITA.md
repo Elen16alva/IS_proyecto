@@ -24,4 +24,4 @@ La cita pasará a estar disponible de nuevo.
 
 4.a. No se pondrá el año ya que el software solo acepta y supondrá el año en curso.
 
-7.a. El sistema confirmará el dueño de esa cita. De ser correcto, continuará.
+7.a. El sistema mostrara un mensaje de confirmación.
