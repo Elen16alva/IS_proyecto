@@ -24,4 +24,10 @@
 10. El sistema mostrara las citas disponibles ese día.
 11. El secretario elegirá la nueva cita para el paciente.
 
+*Flujos alternativos:*
 
+3.a El sistema mostrara un mensaje de confirmación.
+
+7.a El sistema mostrara un mensaje de confirmación.
+
+11.a El sistema mostrara un mensaje de confirmación.
