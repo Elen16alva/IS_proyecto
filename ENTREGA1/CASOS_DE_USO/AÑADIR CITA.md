@@ -23,8 +23,6 @@ La cita ya no estará disponible.
 
 *Flujos alternativos:*
 
-5.a. No se pondrá el año ya que el software solo acepta y supondrá el año en curso.
+5.a. No se pondrá el año ya que el softwarare supondra el año en curso y en caso de que la fecha ya haya pasado supondrá el año siguiente
 
-7.a El sistema mostrara un mensaje de confirmación.
 
-8.a El sistema mostrara un mensaje de confirmación.
