@@ -20,10 +20,3 @@
 6. El sistema preguntara que campo quiere modificar.
 7. El secretario introducirá la nueva información.
 
-*Flujos alternativos:*
-
-3.a El sistema mostrara un mensaje de confirmación.
-
-5.a El sistema mostrara un mensaje de confirmación.
-
-7.a El sistema mostrara un mensaje de confirmación.
