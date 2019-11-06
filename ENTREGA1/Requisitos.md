@@ -32,7 +32,7 @@
 * Modificar tratamientos del paciente.
 * Añadir nuevos pacientes
 * Añadir nuevos tratamientos.
-* Añadir nuevas al historial médico nuevas consultas.
+* Añadir al historial médico nuevas consultas.
 * Consultar disponibilidad de citas en un dia seleccionado.
 * Permitir reservar citas cuando esten disponibles.
 * Permitir modificar citas reservadas.
