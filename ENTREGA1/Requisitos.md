@@ -33,9 +33,8 @@
 
 
 ## *REQUISITOS NO FUNCIONALES*
-* El sistema operativo utilizado será Linux.
+* La apliación utilizará el sistema operativo Linux.
 * Lenguaje utilizado: C++.
 * Evitar que se solapen las citas.
 * Evitar que el historial médico sea borrado.
-* Mostrar mensaje de confirmación al añadir, eliminar y modificar los datos de algún paciente,  alguna cita y/o tratamiento. 
-* Mostrar mensaje de confirmación al añadir información al historial médico.
+* Mostrar mensaje de confirmación al eliminar cualquier dato de algún paciente.
