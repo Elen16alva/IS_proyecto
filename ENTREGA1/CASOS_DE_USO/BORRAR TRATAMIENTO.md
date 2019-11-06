@@ -19,6 +19,3 @@
 5. El secretario buscará y seleccionará el paciente del que desea borrar el tratamiento.
 6. El secretario elegirá la opción de borrar.
 
-*Flujos alternativos:*
-
-6.a El sistema mostrara un mensaje de confirmación.
