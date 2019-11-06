@@ -33,9 +33,9 @@
 
 
 ## **REQUISITOS NO FUNCIONALES** 
-* Eficiente a la hora de cumplir lo que se ha pedido. 
-* Tiempo adecuado de ejecución.
-* Facilidad de uso.
-* Privacidad y seguridad.
-* Mensaje de confirmación al eliminar, añadir y modificar algún paciente. 
-* No se podrá escoger cualquier cita ya reservada mas de una vez.
+* El sistema operativo utilizado será Linux.
+* Lenguaje utilizado: C++.
+* Evitar que se solapen las citas.
+* Evitar que el historial médico sea borrado.
+* Mostrar mensaje de confirmación al añadir, eliminar y modificar los datos de algún paciente,  alguna cita y/o tratamiento. 
+* Mostrar mensaje de confirmación al añadir información al historial médico.
