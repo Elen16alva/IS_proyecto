@@ -16,8 +16,3 @@ Descripción: El secretario añadirá nueva información al historial de un paci
 *Postcondiciones:*
 La información se añadirá y esta no podrá ser modificada posteriormente.
 
-*Flujos alternativos:*
-
-5.a El sistema mostrara un mensaje de confirmación.
-
-6.a El sistema mostrara un mensaje de confirmación.
