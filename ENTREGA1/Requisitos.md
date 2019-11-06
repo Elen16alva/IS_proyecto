@@ -26,10 +26,17 @@
 ## *REQUISITOS FUNCIONALES*
 * Mostrar datos del paciente.
 * Mostrar tratamientos del paciente.
-* Elsoftware permitirá consultar el historial médico.
-* Se podrán eliminar, modificar y borrar datos y pacientes.
-* Mostrará las citas disponibles.
-* El software permite reservar citas y eliminar las que ya estén reservadas.
+* Mostrar historial médico del paciente.
+* Mostrar citas reservadas.
+* Modificar datos del paciente.
+* Modificar tratamientos del paciente.
+* Añadir nuevos pacientes
+* Añadir nuevos tratamientos.
+* Añadir nuevas al historial médico nuevas consultas.
+* Consultar disponibilidad de citas en un dia seleccionado.
+* Permitir reservar citas cuando esten disponibles.
+* Permitir modificar citas reservadas.
+* Permitir eliminar citas reservadas.
 
 
 ## *REQUISITOS NO FUNCIONALES*
