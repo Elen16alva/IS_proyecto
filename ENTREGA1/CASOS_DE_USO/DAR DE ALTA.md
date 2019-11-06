@@ -23,4 +23,3 @@ El cliente quedará guardado en la base de datos.
 
 4.a Si no se ha rellenado algún campo obligatorio, no se guardará el paciente.
 
-4.b El sistema mostrara un mensaje de confirmación.
