@@ -8,7 +8,7 @@ Esta clase contiene todas las operaciones posibles que se podrán hacer sobre el
 
 * **Métodos:**
 
-Añadir_paciente
+*Añadir_paciente*
 
 *Borrar_paciente*
 
