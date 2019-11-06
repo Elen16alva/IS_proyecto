@@ -32,7 +32,7 @@
 * El software permite reservar citas y eliminar las que ya estén reservadas.
 
 
-## **REQUISITOS NO FUNCIONALES** 
+## *REQUISITOS NO FUNCIONALES*
 * El sistema operativo utilizado será Linux.
 * Lenguaje utilizado: C++.
 * Evitar que se solapen las citas.
