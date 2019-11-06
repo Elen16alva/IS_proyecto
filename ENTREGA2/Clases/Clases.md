@@ -1,6 +1,6 @@
-##**CLASES DE LA CLINICA**
+## **CLASES DE LA CLINICA**
 
-###* **Clase:** *Paciente*
+### **Clase:** *Paciente*
 Esta clase contiene todas las operaciones posibles que se podrán hacer sobre el paciente.
 
 * **Datos:**
@@ -10,30 +10,30 @@ Esta clase contiene todas las operaciones posibles que se podrán hacer sobre el
 
 Añadir_paciente
 
-Borrar_paciente
+*Borrar_paciente*
 
-Consultar_datos_paciente
+*Consultar_datos_paciente*
 
-Consultar_historial
+*Consultar_historial*
 
-Añadir_historial
+*Añadir_historial*
 
-Consultar_tratamiento
+*Consultar_tratamiento*
 
-Añadir_tratamiento
+*Añadir_tratamiento*
 
-Borrar_tratamiento
+*Borrar_tratamiento*
 
-Borrar_cita
+*Borrar_cita*
 
-Reservar_cita
+*Reservar_cita*
 
-Modificar_cita
+*Modificar_cita*
 
-Modificar_datos_paciente
+*Modificar_datos_paciente*
 
 
-###* **Clase:** *Cita*
+### **Clase:** *Cita*
 
 Esta clase contiene el metodo para consultar las citas que hay disponibles el día que se desee.
 
