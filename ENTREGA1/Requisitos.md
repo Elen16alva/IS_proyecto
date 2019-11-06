@@ -37,3 +37,5 @@
 * Tiempo adecuado de ejecución.
 * Facilidad de uso.
 * Privacidad y seguridad.
+* Mensaje de confirmación al eliminar, añadir y modificar algún paciente. 
+* No se podrá escoger cualquier cita ya reservada mas de una vez.
