@@ -96,12 +96,14 @@ Esta clase contiene el metodo para consultar las citas que hay disponibles el d�
 
 
 * **Datos:**
-*Lista_dia*
+
+*-Lista_dia*
 
 La variable contiene la lista de todas las citas (reservadas o no) del día que se desee consultar.
 
 
 * **Métodos:**
-*Consulta_dia*
+
+*+Consulta_dia*
 
 Este metodo mostrará por pantalla un listado de las citas que hay disponbles a un lado y al otro un listado de las citas ya reservadas.
