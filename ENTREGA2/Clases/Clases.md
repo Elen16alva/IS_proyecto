@@ -1,11 +1,30 @@
-+ publico - privado
-
 ## **CLASES DE LA CLINICA**
 
 ### **Clase:** *Paciente*
 Esta clase contiene todas las operaciones posibles que se podrán hacer sobre el paciente.
 
 * **Datos:**
+
+*-Lista_pacientes*
+
+Esta variable contiene todos los pacientes registrados en la base de datos.
+
+*-Lista_citas_paciente*
+
+Esta variable contiene todas las citas que tiene reservadas el paciente al que pertenece la lista.
+
+*-Datos_paciente*
+
+Esta variable contendrá los datos personales del paciente al que pertenece.
+
+*-Historial_paciente*
+
+Esta variable contendá el historial del paciente al que pertenece.
+
+*-Tratamiento_paciente*
+
+Esta variable contendrá todos una lista con todos los tratamientos del paciente, siendo el ultim el actual.
+
 
 
 * **Métodos:**
