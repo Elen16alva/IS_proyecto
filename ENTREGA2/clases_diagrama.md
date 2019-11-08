@@ -1,5 +1,5 @@
 ![Añadir cita](https://github.com/Elen16alva/IS_proyecto/blob/master/ENTREGA2/Diagramas%20Secuencia/Añadir_Citas.png)
-![Actualizar historial](https://github.com/Elen16alva/IS_proyecto/blob/master/ENTREGA2/Diagramas%20Secuencia/Añadir_Cita.png)
+![Actualizar historial](https://github.com/Elen16alva/IS_proyecto/blob/master/ENTREGA2/Diagramas%20Secuencia/Actualizar_Historial.png)
 ![Añadir tratamiento](https://github.com/Elen16alva/IS_proyecto/blob/master/ENTREGA2/Diagramas%20Secuencia/Añadir_Tratamiento.png)
 ![Borrar cita](https://github.com/Elen16alva/IS_proyecto/blob/master/ENTREGA2/Diagramas%20Secuencia/Borrar_Cita.png)
 ![Borrar paciente](https://github.com/Elen16alva/IS_proyecto/blob/master/ENTREGA2/Diagramas%20Secuencia/Borrar_Paciente.png)
