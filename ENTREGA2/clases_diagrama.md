@@ -1,7 +1,7 @@
 ![Añadir cita]()
 ![Actualizar Historial]()
 ![Añadir tratamiento]()
-![Borrar cita]()
+![Borrar cita](https://github.com/Elen16alva/IS_proyecto/blob/master/ENTREGA2/Diagramas%20Secuencia/Borrar_Cita.png)
 ![Borrar paciente]()
 ![Borrar tratamiento]()
 ![Consultar cita]()
