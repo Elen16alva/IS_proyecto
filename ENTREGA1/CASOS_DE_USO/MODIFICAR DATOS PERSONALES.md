@@ -9,7 +9,6 @@
 
 *Precondiciones:*
 1. El paciente debe estar ya registrado en la base de datos.
-2. Los datos que se modificaran solo serán los habilitados para su modificación.
 
 *Flujo principal:*
 1. El secretario desea modificar los datos de un paciente.
