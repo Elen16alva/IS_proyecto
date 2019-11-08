@@ -7,7 +7,7 @@
 ![Consultar cita]()
 ![Consultar_datos_paciente]()
 ![Consultar_Historial_medico](https://github.com/Elen16alva/IS_proyecto/blob/master/ENTREGA2/Diagramas%20Secuencia/consultar_historial.jpg)
-![Consultar_tratamiento]()
+![Consultar_tratamiento](https://github.com/Elen16alva/IS_proyecto/blob/master/ENTREGA2/Diagramas%20Secuencia/consultar_tratamiento.jpg)
 ![Dar_de alta]()
 ![Menu_principal]()
 ![Modificar_cita]()
