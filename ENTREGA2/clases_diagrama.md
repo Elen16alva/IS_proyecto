@@ -1,4 +1,3 @@
-![Diagrama de clases](https://github.com/Elen16alva/IS_proyecto/blob/master/ENTREGA2/Clases/Clases.md)
 ![Añadir cita]()
 ![Actualizar Historial]()
 ![Añadir tratamiento]()
@@ -7,7 +6,7 @@
 ![Borrar tratamiento]()
 ![Consultar cita]()
 ![Consultar_datos_paciente]()
-![Consultar_Historial_medico]()
+![Consultar_Historial_medico](https://github.com/Elen16alva/IS_proyecto/blob/master/ENTREGA2/Diagramas%20Secuencia/consultar_historial.jpg)
 ![Consultar_tratamiento]()
 ![Dar_de alta]()
 ![Menu_principal]()
