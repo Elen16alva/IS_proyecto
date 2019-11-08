@@ -1,4 +1,4 @@
-//![Diagrama de clases](https://github.com/Elen16alva/IS_proyecto/blob/master/ENTREGA2/Clases/Clases.md)
+![Diagrama de clases](https://github.com/Elen16alva/IS_proyecto/blob/master/ENTREGA2/Clases/Clases.md)
 ![Añadir cita]()
 ![Actualizar Historial]()
 ![Añadir tratamiento]()
