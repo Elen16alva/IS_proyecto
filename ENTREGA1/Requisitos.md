@@ -37,6 +37,8 @@
 * Permitir reservar citas cuando esten disponibles.
 * Permitir modificar citas reservadas.
 * Permitir eliminar citas reservadas.
+* Permitir eliminar paciente
+* Permitir eliminar tratamientos
 * Mostrar menu al abrir aplicación junto a citas reservadas
 
 
