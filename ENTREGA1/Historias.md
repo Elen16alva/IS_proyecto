@@ -20,12 +20,12 @@
 
 
 *ID*: H03       
-*Nombre*: **CONSULTAR PERSONAS**
+*Nombre*: **CONSULTAR DATOS PERSONAS**
 
-*Descripción*: Como administrador quiero poder encontrar a cualquier paciente para poder consultar sus datos e información.
+*Descripción*: Como administrador quiero poder encontrar a cualquier paciente para poder consultar sus datos personales.
 ## *Validación*:
 * Se puede buscar a cualquier paciente.
-* Se puede consultar tanto los datos, las citas, los tratamientos y el historial médico.
+* Se puede consultar los datos personales del paciente.
 
 
 *ID*: H04       
