@@ -9,6 +9,8 @@ Esta clase contiene los metódos de los tratamientos de los pacientes.
 
 *-Tratamiento_paciente*
 
+Tipo: Vectot string
+
 Esta variable contendrá todos una lista con todos los tratamientos del paciente, siendo el ultim el actual.
 
 
@@ -38,6 +40,8 @@ Esta clase contiene los métodos del historial de los pacientes.
 
 *-Historial_paciente*
 
+Tipo: Vector string
+
 Esta variable contendá el historial del paciente al que pertenece.
 
 
@@ -61,9 +65,13 @@ Esta clase contiene todas las operaciones posibles que se podrán hacer sobre el
 
 *-Lista_pacientes*
 
+Tipo: Vector string
+
 Esta variable contiene todos los pacientes registrados en la base de datos.
 
 *-Datos_paciente*
+
+Tipo: Struct 
 
 Esta variable contendrá los datos personales del paciente al que pertenece.
 
@@ -101,9 +109,13 @@ Esta clase contiene el metodo para consultar las citas que hay disponibles el d�
 * **Datos:**
 *-Lista_citas*
 
+Tipo: Vector string
+
 La variable contiene la lista de todas las citas (reservadas o no) del día que se desee consultar.
 
 *-Lista_citas_paciente*
+
+Tipo: Vector string
 
 Esta variable contiene todas las citas que tiene reservadas el paciente al que pertenece la lista.
 
@@ -140,6 +152,8 @@ Esta clase contiene el método de mostrar las citas diárias.
 * **Datos:**
 
 *-Lista_citas_diaria*
+
+Tipo: Vector string
 
 Esta variable contendá todas las citas reservadas del día en curso.
 
