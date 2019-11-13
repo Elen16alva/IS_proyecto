@@ -37,6 +37,7 @@
 * Permitir reservar citas cuando esten disponibles.
 * Permitir modificar citas reservadas.
 * Permitir eliminar citas reservadas.
+* Mostrar menu al abrir aplicación junto a citas reservadas
 
 
 ## *REQUISITOS NO FUNCIONALES*
