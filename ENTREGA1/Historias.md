@@ -2,6 +2,7 @@
 
 *ID*: H01       
 *Nombre*: **DAR DE ALTA**
+
 *Descripción*: Como administrador quiero poder registrar un nuevo paciente, junto con sus datos personales y médicos.
 ## *Validación*:
 * Se debe poder introducir cualquier nombre con sus correspondientes apellidos.
@@ -11,6 +12,7 @@
 
 *ID*: H02       
 *Nombre*: **BORRAR PACIENTE**
+
 *Descripción*: Como administrador quiero borrar a cualquier paciente para que este no aparezca en la base de datos.
 ## *Validación*:
 * Se puede borrar a cualquier paciente.
@@ -19,6 +21,7 @@
 
 *ID*: H03       
 *Nombre*: **CONSULTAR PERSONAS**
+
 *Descripción*: Como administrador quiero poder encontrar a cualquier paciente para poder consultar sus datos e información.
 ## *Validación*:
 * Se puede buscar a cualquier paciente.
@@ -26,12 +29,14 @@
 
 
 *ID*: H04       *Nombre*: **CONSULTAR CITA**
+
 *Descripción*: Como administrador quiero poder consultar la cita de un paciente para poder saber a qué hora hay que atenderle.
 ## *Validación*:
 * Se puede ver las citas que hay disponibles para el dia deseado.
  
 
 *ID*: H05       *Nombre*: **AÑADIR CITA**
+
 *Descripción*: Como administrador quiero que cualquier paciente pueda escoger cita para que pueda ser atendido por el médico.
 ## *Validación*:
 * Se mostrarán solo las citas que están disponibles.
@@ -40,6 +45,7 @@
 
  
 *ID*: H06       *Nombre*: **BORRAR CITA**
+
 *Descripción*: Como administrador quiero que cualquier paciente pueda borrar su cita para que ésta vuelva a estar disponible para otro paciente.
 ## *Validación*:
 * Cualquier paciente podrá borrar su cita. 
