@@ -28,14 +28,16 @@
 * Se puede consultar tanto los datos, las citas, los tratamientos y el historial médico.
 
 
-*ID*: H04       *Nombre*: **CONSULTAR CITA**
+*ID*: H04       
+*Nombre*: **CONSULTAR CITA**
 
 *Descripción*: Como administrador quiero poder consultar la cita de un paciente para poder saber a qué hora hay que atenderle.
 ## *Validación*:
 * Se puede ver las citas que hay disponibles para el dia deseado.
  
 
-*ID*: H05       *Nombre*: **AÑADIR CITA**
+*ID*: H05       
+*Nombre*: **AÑADIR CITA**
 
 *Descripción*: Como administrador quiero que cualquier paciente pueda escoger cita para que pueda ser atendido por el médico.
 ## *Validación*:
@@ -44,7 +46,8 @@
 * Para que el paciente puede reservar cita deberá introducir su nombre completo.
 
  
-*ID*: H06       *Nombre*: **BORRAR CITA**
+*ID*: H06       
+*Nombre*: **BORRAR CITA**
 
 *Descripción*: Como administrador quiero que cualquier paciente pueda borrar su cita para que ésta vuelva a estar disponible para otro paciente.
 ## *Validación*:
