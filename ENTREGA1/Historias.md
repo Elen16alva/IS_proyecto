@@ -52,6 +52,30 @@
 *Descripción*: Como administrador quiero que cualquier paciente pueda borrar su cita para que ésta vuelva a estar disponible para otro paciente.
 ## *Validación*:
 * Cualquier paciente podrá borrar su cita. 
-* No aparece en su historial como que nunca tuvo ninguna cita ese día borrado
-* La cita para que sea borrada debe haber sido reservada con antelación.
-* En cuanto la cita sea borrada, esta inmediatamente será habilitada de nuevo.
+* La cita para que sea borrada debe haber sido reservada previamente.
+* En cuanto la cita sea borrada, ésta, inmediatamente, será habilitada de nuevo.
+
+
+*ID*: H07
+*Nombre*: **AÑADIR TRATAMIENTO**
+
+*Descripción*: Como administrador quiero añadir cualquier tratamiento a cualquier paciente. 
+## *Validación*:
+* Se introducirá el nombre completo del paciente al quiere añadir el tratamiento.
+
+
+*ID*: H08
+*Nombre*: **BORRAR TRATAMIENTO**
+
+*Descripción*: Como administrador quiero borrar el tratamiento actual del paciente.
+## *Validación*:
+* Para que el tratamiento sea borrado debe encontrarse en curso.
+* Una vez terminado el tratameinto este no podrá ser borrado.
+
+
+*ID*: h09
+*Nombre*: **CONSULTAR HISTORIAL MÉDICO**
+
+*Descripción*: Como administrador quiero consultar el historial médico del paciente.
+## *Validación*: 
+* Se introducirá el nombre completo del paciente para consultar su historial.
