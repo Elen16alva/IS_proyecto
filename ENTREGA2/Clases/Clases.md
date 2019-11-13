@@ -1,6 +1,60 @@
 ## **CLASES DE LA CLINICA**
 
+### **Clase:** *Tratamiento*
+
+Esta clase contiene los metódos de los tratamientos de los pacientes.
+
+
+* **Datos:**
+
+*-Tratamiento_paciente*
+
+Esta variable contendrá todos una lista con todos los tratamientos del paciente, siendo el ultim el actual.
+
+
+* **Métodos:**
+
+*+Consultar_tratamiento*
+
+Este método permitirá consutar el tratamiento en curso del paciente seleccionado.
+
+*+Añadir_tratamiento*
+
+Este método actualizará y añadira el tratamiento de un paciente.
+
+*+Borrar_tratamiento*
+
+Este método borrará el tratamiento actual y no dejara ningun tratamiento.
+
+
+
+
+### **Clase:** *Historial*
+
+Esta clase contiene los métodos del historial de los pacientes.
+
+
+* **Datos:**
+
+*-Historial_paciente*
+
+Esta variable contendá el historial del paciente al que pertenece.
+
+
+* **Métodos:**
+
+*+Consultar_historial*
+
+Este método permitirá consultar el historial médico del paciente que se desee.
+
+*+Añadir_historial*
+
+Este método añadirá nueva información al historial de un paciente.
+
+
+
 ### **Clase:** *Paciente*
+
 Esta clase contiene todas las operaciones posibles que se podrán hacer sobre el paciente.
 
 * **Datos:**
@@ -9,22 +63,9 @@ Esta clase contiene todas las operaciones posibles que se podrán hacer sobre el
 
 Esta variable contiene todos los pacientes registrados en la base de datos.
 
-*-Lista_citas_paciente*
-
-Esta variable contiene todas las citas que tiene reservadas el paciente al que pertenece la lista.
-
 *-Datos_paciente*
 
 Esta variable contendrá los datos personales del paciente al que pertenece.
-
-*-Historial_paciente*
-
-Esta variable contendá el historial del paciente al que pertenece.
-
-*-Tratamiento_paciente*
-
-Esta variable contendrá todos una lista con todos los tratamientos del paciente, siendo el ultim el actual.
-
 
 
 * **Métodos:**
@@ -41,25 +82,37 @@ Este método borrará un paciente ya existente, junto con sus datos historial y 
 
 Este método permitirá consultar los datos generales del paciente que se desee(tales como el DNI, localidad...).
 
-*+Consultar_historial*
+*+Modificar_datos_paciente*
 
-Este método permitirá consultar el historial médico del paciente que se desee.
+Este método permitirá modificar los datos personales de un paciente.
 
-*+Añadir_historial*
+*-Mostrar_lista_pacientes*
 
-Este método añadirá nueva información al historial de un paciente.
+Esta función mostrará un listado de todos los pacientes registrados en la base de datos.
 
-*+Consultar_tratamiento*
 
-Este método permitirá consutar el tratamiento en curso del paciente seleccionado.
 
-*+Añadir_tratamiento*
 
-Este método actualizará y añadira el tratamiento de un paciente.
+### **Clase:** *Citas*
 
-*+Borrar_tratamiento*
+Esta clase contiene el metodo para consultar las citas que hay disponibles el día que se desee.
 
-Este método borrará el tratamiento actual y no dejara ningun tratamiento.
+
+* **Datos:**
+*-Lista_citas*
+
+La variable contiene la lista de todas las citas (reservadas o no) del día que se desee consultar.
+
+*-Lista_citas_paciente*
+
+Esta variable contiene todas las citas que tiene reservadas el paciente al que pertenece la lista.
+
+
+* **Métodos:**
+
+*+Consulta_dia*
+
+Este metodo mostrará por pantalla un listado de las citas que hay disponbles a un lado y al otro un listado de las citas ya reservadas.
 
 *+Borrar_cita*
 
@@ -71,39 +124,28 @@ Este método reservará una cita para un paciente.
 
 *+Modificar_cita*
 
-Este método eliminará una cita riservada y la pondra dispnible y reservará una nueva cita distinta a la anterior.
-
-*+Modificar_datos_paciente*
-
-Este método permitirá modificar los datos personales de un paciente.
+Este método eliminará una cita reservada y la pondra dispnible, después reservará una nueva cita distinta a la anterior.
 
 *-Mostrar_lista_citas_disponibles*
 
-Esta función mostrará un listado de las citas dispnibles para el día seleccionado.
-
-*-Mostrar_lista_pacientes*
-
-Esta función mostrará un listado de todos los pacientes registrados en la base de datos.
-
-*-Mostrar_citas_diarias*
-
-Esta funcion mostrará un listado de las citas previstas para el dia en curso sobre el menu principal.
+Esta función mostrará un listado de las citas disponibles para el día seleccionado.
 
 
-### **Clase:** *Cita*
 
-Esta clase contiene el metodo para consultar las citas que hay disponibles el día que se desee.
+### **Clase:** *Menú*
+
+Esta clase contiene el método de mostrar las citas diárias.
 
 
 * **Datos:**
 
-*-Lista_dia*
+*-Lista_citas_diaria*
 
-La variable contiene la lista de todas las citas (reservadas o no) del día que se desee consultar.
+Esta variable contendá todas las citas reservadas del día en curso.
 
 
 * **Métodos:**
 
-*+Consulta_dia*
+*-Mostrar_citas_diarias*
 
-Este metodo mostrará por pantalla un listado de las citas que hay disponbles a un lado y al otro un listado de las citas ya reservadas.
+Esta funcion mostrará un listado de las citas previstas para el dia en curso sobre el menu principal.
