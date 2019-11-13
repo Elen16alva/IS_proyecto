@@ -1,4 +1,4 @@
-### **DAR DE ALTA**
+### **AÑADIR PACIENTE**
 *ID:* C01	
 
 *Descripción:* El secretario añadirá a la base de datos un nuevo paciente.
