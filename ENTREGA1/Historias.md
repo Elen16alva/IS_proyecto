@@ -34,7 +34,7 @@ __*Descripción*__: Como administrador quiero poder encontrar a cualquier pacien
 *ID*: H04
 
 __*Descripción*__: Como administrador quiero poder consultar la cita de un paciente para poder saber a qué hora hay que atenderle.
-__*Validación*__:
+ __*Validación*__:
 * Se puede ver las citas que hay disponibles para el dia deseado.
  
 
@@ -43,7 +43,7 @@ __*Validación*__:
 *ID*: H05 
 
 __*Descripción*__: Como administrador quiero que cualquier paciente pueda escoger cita para que pueda ser atendido por el médico.
-__*Validación*__:
+ __*Validación*__:
 * Se mostrarán solo las citas que están disponibles.
 * Las citas ya reservadas no aparecerán.
 * Para que el paciente puede reservar cita deberá introducir su nombre completo.
@@ -54,7 +54,7 @@ __*Validación*__:
 *ID*: H06 
 
 __*Descripción*__: Como administrador quiero que cualquier paciente pueda borrar su cita para que ésta vuelva a estar disponible para otro paciente.
-__*Validación*__:
+ __*Validación*__:
 * Cualquier paciente podrá borrar su cita. 
 * La cita para que sea borrada debe haber sido reservada previamente.
 * En cuanto la cita sea borrada, ésta, inmediatamente, será habilitada de nuevo.
@@ -65,7 +65,7 @@ __*Validación*__:
 *ID*: H07
 
 __*Descripción*__: Como administrador quiero añadir cualquier tratamiento a cualquier paciente. 
-__*Validación*__:
+ __*Validación*__:
 * Se introducirá el nombre completo del paciente al quiere añadir el tratamiento.
 
 
@@ -74,7 +74,7 @@ __*Validación*__:
 *ID*: H08
 
 __*Descripción*__: Como administrador quiero borrar el tratamiento actual del paciente.
-__*Validación*__:
+ __*Validación*__:
 * Para que el tratamiento sea borrado debe encontrarse en curso.
 * Una vez terminado el tratameinto este no podrá ser borrado.
 
@@ -84,7 +84,7 @@ __*Validación*__:
 *ID*: H09
 
 __*Descripción*__: Como administrador quiero consultar el historial médico del paciente.
-__*Validación*__: 
+ __*Validación*__: 
 * Se introducirá el nombre completo del paciente del cual se queiere consultar su historial.
 
 
@@ -93,7 +93,7 @@ __*Validación*__:
 *ID*: H10
 
 __*Descripción*__: Como administrador quiero poder consultar cualquier tratamiento ya sea en curso o finalizado.
-__*Validación*__:
+ __*Validación*__:
 * Se introducirá el nombre completo del paciente del cual se quiere consultar sus tratamientos.
 
 
@@ -102,7 +102,7 @@ __*Validación*__:
 *ID*: H11
 
 __*Descripción*__: Como administrador quiero poder modificar cualquier cita, pudiendo escoger otra cualquiera.
-__*Validación*__:
+ __*Validación*__:
 * Solo podrá escoger citas disponibles.
 
 
@@ -111,5 +111,5 @@ __*Validación*__:
 *ID*: H12
 
 __*Descripción*__: Como administrador quiero poder modificar los datos de cualquier paciente en cualquier momento.
-__*Validación*__:
+ __*Validación*__:
 * Se introducirá el nombre completo del paciente del cual se quiere modificar sus datos personales. 
