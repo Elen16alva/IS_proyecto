@@ -73,9 +73,33 @@
 * Una vez terminado el tratameinto este no podrá ser borrado.
 
 
-*ID*: h09
+*ID*: H09
 *Nombre*: **CONSULTAR HISTORIAL MÉDICO**
 
 *Descripción*: Como administrador quiero consultar el historial médico del paciente.
 ## *Validación*: 
-* Se introducirá el nombre completo del paciente para consultar su historial.
+* Se introducirá el nombre completo del paciente del cual se queiere consultar su historial.
+
+
+*ID*: H10
+*Nombre*: **CONSULTAR TRATAMIENTOS**
+
+*Descripción*: Como administrador quiero poder consultar cualquier tratamiento ya sea en curso o finalizado.
+## *Validación*:
+* Se introducirá el nombre completo del paciente del cual se quiere consultar sus tratamientos.
+
+
+*ID*: H11
+*Nombre*: **MODIFICAR CITA**
+
+*Descripción*: Como administrador quiero poder modificar cualquier cita, pudiendo escoger otra cualquiera.
+## *Validación*:
+* Solo podrá escoger citas disponibles.
+
+
+*ID*: H12
+*Nombre*: **MODIFICAR DATOS PERSONA**
+
+*Descripción*: Como administrador quiero poder modificar los datos de cualquier paciente en cualquier momento.
+## *Validación*:
+* Se introducirá el nombre completo del paciente del cual se quiere modificar sus datos personales. 
