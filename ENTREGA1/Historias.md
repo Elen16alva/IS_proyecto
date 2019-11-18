@@ -1,4 +1,4 @@
-### **HISTORIAS DE USUARIO**
+# **HISTORIAS DE USUARIO**
 
 *ID*: H01       
  ## *Nombre*: **DAR DE ALTA**
