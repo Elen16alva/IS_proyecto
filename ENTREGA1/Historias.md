@@ -3,7 +3,7 @@
 ## *Nombre*: **DAR DE ALTA** 
 *ID*: H01 
 
-*Descripción*: Como administrador quiero poder registrar un nuevo paciente, junto con sus datos personales y médicos.
+*~Descripción~*: Como administrador quiero poder registrar un nuevo paciente, junto con sus datos personales y médicos.
  *Validación*:
 * Se debe poder introducir cualquier nombre con sus correspondientes apellidos.
 * Se debe introducir el nombre y apellidos obligatoriamente.
