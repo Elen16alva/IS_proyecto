@@ -24,7 +24,7 @@ __*Descripción*__: Como administrador quiero borrar a cualquier paciente para q
 ## *Nombre*: **CONSULTAR DATOS PERSONA**
 *ID*: H03 
 
-__*Descripción*__: Como administrador quiero poder encontrar a cualquier paciente para poder consultar sus datos personales.
+__*Descripción*__: Como administrador quiero poder encontrar a cualquier paciente para poder consultar sus datos personales. 
  __*Validación*__:
 * Se puede buscar a cualquier paciente.
 * Se puede consultar los datos personales del paciente.
@@ -33,7 +33,7 @@ __*Descripción*__: Como administrador quiero poder encontrar a cualquier pacien
 ## *Nombre*: **CONSULTAR CITA**
 *ID*: H04
 
-__*Descripción*__: Como administrador quiero poder consultar la cita de un paciente para poder saber a qué hora hay que atenderle.
+__*Descripción*__: Como administrador quiero poder consultar la cita de un paciente para poder saber a qué hora hay que atenderle. 
  __*Validación*__:
 * Se puede ver las citas que hay disponibles para el dia deseado.
  
@@ -42,7 +42,7 @@ __*Descripción*__: Como administrador quiero poder consultar la cita de un paci
 ## *Nombre*: **AÑADIR CITA**
 *ID*: H05 
 
-__*Descripción*__: Como administrador quiero que cualquier paciente pueda escoger cita para que pueda ser atendido por el médico.
+__*Descripción*__: Como administrador quiero que cualquier paciente pueda escoger cita para que pueda ser atendido por el médico. 
  __*Validación*__:
 * Se mostrarán solo las citas que están disponibles.
 * Las citas ya reservadas no aparecerán.
@@ -53,7 +53,7 @@ __*Descripción*__: Como administrador quiero que cualquier paciente pueda escog
 ## *Nombre*: **BORRAR CITA**
 *ID*: H06 
 
-__*Descripción*__: Como administrador quiero que cualquier paciente pueda borrar su cita para que ésta vuelva a estar disponible para otro paciente.
+__*Descripción*__: Como administrador quiero que cualquier paciente pueda borrar su cita para que ésta vuelva a estar disponible para otro paciente. 
  __*Validación*__:
 * Cualquier paciente podrá borrar su cita. 
 * La cita para que sea borrada debe haber sido reservada previamente.
@@ -64,7 +64,7 @@ __*Descripción*__: Como administrador quiero que cualquier paciente pueda borra
 ## *Nombre*: **AÑADIR TRATAMIENTO**
 *ID*: H07
 
-__*Descripción*__: Como administrador quiero añadir cualquier tratamiento a cualquier paciente. 
+__*Descripción*__: Como administrador quiero añadir cualquier tratamiento a cualquier paciente.  
  __*Validación*__:
 * Se introducirá el nombre completo del paciente al quiere añadir el tratamiento.
 
@@ -73,7 +73,7 @@ __*Descripción*__: Como administrador quiero añadir cualquier tratamiento a cu
 ## *Nombre*: **BORRAR TRATAMIENTO**
 *ID*: H08
 
-__*Descripción*__: Como administrador quiero borrar el tratamiento actual del paciente.
+__*Descripción*__: Como administrador quiero borrar el tratamiento actual del paciente. 
  __*Validación*__:
 * Para que el tratamiento sea borrado debe encontrarse en curso.
 * Una vez terminado el tratameinto este no podrá ser borrado.
@@ -83,7 +83,7 @@ __*Descripción*__: Como administrador quiero borrar el tratamiento actual del p
 ## *Nombre*: **CONSULTAR HISTORIAL MÉDICO**
 *ID*: H09
 
-__*Descripción*__: Como administrador quiero consultar el historial médico del paciente.
+__*Descripción*__: Como administrador quiero consultar el historial médico del paciente. 
  __*Validación*__: 
 * Se introducirá el nombre completo del paciente del cual se queiere consultar su historial.
 
@@ -92,7 +92,7 @@ __*Descripción*__: Como administrador quiero consultar el historial médico del
 ## *Nombre*: **CONSULTAR TRATAMIENTOS**
 *ID*: H10
 
-__*Descripción*__: Como administrador quiero poder consultar cualquier tratamiento ya sea en curso o finalizado.
+__*Descripción*__: Como administrador quiero poder consultar cualquier tratamiento ya sea en curso o finalizado. 
  __*Validación*__:
 * Se introducirá el nombre completo del paciente del cual se quiere consultar sus tratamientos.
 
@@ -101,7 +101,7 @@ __*Descripción*__: Como administrador quiero poder consultar cualquier tratamie
 
 *ID*: H11
 
-__*Descripción*__: Como administrador quiero poder modificar cualquier cita, pudiendo escoger otra cualquiera.
+__*Descripción*__: Como administrador quiero poder modificar cualquier cita, pudiendo escoger otra cualquiera. 
  __*Validación*__:
 * Solo podrá escoger citas disponibles.
 
@@ -110,6 +110,6 @@ __*Descripción*__: Como administrador quiero poder modificar cualquier cita, pu
 ## *Nombre*: **MODIFICAR DATOS PERSONA**
 *ID*: H12
 
-__*Descripción*__: Como administrador quiero poder modificar los datos de cualquier paciente en cualquier momento.
+__*Descripción*__: Como administrador quiero poder modificar los datos de cualquier paciente en cualquier momento. 
  __*Validación*__:
 * Se introducirá el nombre completo del paciente del cual se quiere modificar sus datos personales. 
