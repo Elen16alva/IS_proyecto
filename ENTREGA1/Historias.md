@@ -1,7 +1,7 @@
 **HISTORIAS DE USUARIO**
 
 *ID*: H01       
-*Nombre*: **DAR DE ALTA**
+ ##*Nombre*: **DAR DE ALTA**
 
 *Descripción*: Como administrador quiero poder registrar un nuevo paciente, junto con sus datos personales y médicos.
 ## *Validación*:
