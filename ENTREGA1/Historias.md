@@ -125,3 +125,12 @@ __*Descripción*__: Como administrador quiero poder modificar los datos de cualq
 
  __*Validación*__:
 * Se introducirá el nombre completo del paciente del cual se quiere modificar sus datos personales. 
+
+
+## *Nombre*: **MENÚ PRINCIPAL**
+*ID*: H13
+
+__*Descripción*__: Como administrador quiero tener un menú para poder hacer caulquier tarea requerida.
+
+__*Validación*__:
+* Este aparecerá al nada más iniciar la aplicación. 
