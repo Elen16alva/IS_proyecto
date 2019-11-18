@@ -10,8 +10,9 @@
 * Se podrán añadir los datos del paciente, su historial médico y los tratamientos de éste aunque habrá datos que no se podrán modificar una vez registrados, tales como el historial médico y tratamientos.
  
 
-*ID*: H02       
+      
 ## *Nombre*: **BORRAR PACIENTE**
+*ID*: H02 
 
 *Descripción*: Como administrador quiero borrar a cualquier paciente para que este no aparezca en la base de datos.
  *Validación*:
@@ -19,25 +20,27 @@
 * Se borrará todo lo referente y relacionado con el paciente.
 
 
-*ID*: H03       
+      
 ## *Nombre*: **CONSULTAR DATOS PERSONA**
+*ID*: H03 
 
 *Descripción*: Como administrador quiero poder encontrar a cualquier paciente para poder consultar sus datos personales.
  *Validación*:
 * Se puede buscar a cualquier paciente.
 * Se puede consultar los datos personales del paciente.
 
-
-*ID*: H04       
+       
 ## *Nombre*: **CONSULTAR CITA**
+*ID*: H04
 
 *Descripción*: Como administrador quiero poder consultar la cita de un paciente para poder saber a qué hora hay que atenderle.
  *Validación*:
 * Se puede ver las citas que hay disponibles para el dia deseado.
  
 
-*ID*: H05       
+      
 ## *Nombre*: **AÑADIR CITA**
+*ID*: H05 
 
 *Descripción*: Como administrador quiero que cualquier paciente pueda escoger cita para que pueda ser atendido por el médico.
  *Validación*:
@@ -46,8 +49,9 @@
 * Para que el paciente puede reservar cita deberá introducir su nombre completo.
 
  
-*ID*: H06       
+      
 ## *Nombre*: **BORRAR CITA**
+*ID*: H06 
 
 *Descripción*: Como administrador quiero que cualquier paciente pueda borrar su cita para que ésta vuelva a estar disponible para otro paciente.
  *Validación*:
@@ -56,16 +60,18 @@
 * En cuanto la cita sea borrada, ésta, inmediatamente, será habilitada de nuevo.
 
 
-*ID*: H07
+
 ## *Nombre*: **AÑADIR TRATAMIENTO**
+*ID*: H07
 
 *Descripción*: Como administrador quiero añadir cualquier tratamiento a cualquier paciente. 
  *Validación*:
 * Se introducirá el nombre completo del paciente al quiere añadir el tratamiento.
 
 
-*ID*: H08
+
 ## *Nombre*: **BORRAR TRATAMIENTO**
+*ID*: H08
 
 *Descripción*: Como administrador quiero borrar el tratamiento actual del paciente.
  *Validación*:
@@ -73,32 +79,36 @@
 * Una vez terminado el tratameinto este no podrá ser borrado.
 
 
-*ID*: H09
+
 ## *Nombre*: **CONSULTAR HISTORIAL MÉDICO**
+*ID*: H09
 
 *Descripción*: Como administrador quiero consultar el historial médico del paciente.
  *Validación*: 
 * Se introducirá el nombre completo del paciente del cual se queiere consultar su historial.
 
 
-*ID*: H10
+
 ## *Nombre*: **CONSULTAR TRATAMIENTOS**
+*ID*: H10
 
 *Descripción*: Como administrador quiero poder consultar cualquier tratamiento ya sea en curso o finalizado.
  *Validación*:
 * Se introducirá el nombre completo del paciente del cual se quiere consultar sus tratamientos.
 
 
-*ID*: H11
 ## *Nombre*: **MODIFICAR CITA**
+
+*ID*: H11
 
 *Descripción*: Como administrador quiero poder modificar cualquier cita, pudiendo escoger otra cualquiera.
  *Validación*:
 * Solo podrá escoger citas disponibles.
 
 
-*ID*: H12
+
 ## *Nombre*: **MODIFICAR DATOS PERSONA**
+*ID*: H12
 
 *Descripción*: Como administrador quiero poder modificar los datos de cualquier paciente en cualquier momento.
 *Validación*:
