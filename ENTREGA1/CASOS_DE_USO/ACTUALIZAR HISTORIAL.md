@@ -1,11 +1,11 @@
 ### **ACTUALIZAR HISTORIAL**
 *ID:* C07	
 
-Descripción: El secretario añadirá nueva información al historial de un paciente.
+__Descripción__: El secretario añadirá nueva información al historial de un paciente.
 
-*Actores principales:* Secretario
+__*Actores principales:*__ Secretario
 
-*Flujo principal:*
+__*Flujo principal:*__
 1. El secretario desea añadir nueva información al historial de un paciente.
 2. El secretario selecciona el menú de pacientes.
 3. El secretario selecciona  la opción de añadir al historial.
@@ -13,6 +13,6 @@ Descripción: El secretario añadirá nueva información al historial de un paci
 5. El secretario seleccionará el paciente al que quiere añadir información al historial.
 6. El secretario introducirá la información nueva al historial.
 
-*Postcondiciones:*
+__*Postcondiciones:*__
 La información se añadirá y esta no podrá ser modificada posteriormente.
 

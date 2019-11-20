@@ -1,25 +1,25 @@
 ### **AÑADIR PACIENTE**
 *ID:* C01	
 
-*Descripción:* El secretario añadirá a la base de datos un nuevo paciente.
+__*Descripción:*__ El secretario añadirá a la base de datos un nuevo paciente.
 
-*Actores principales:* Secretario	
+__*Actores principales:*__ Secretario	
 
-*Actores secundarios:* Paciente
+__*Actores secundarios:*__ Paciente
 
-*Precondiciones:*
+__*Precondiciones:*__
 El paciente no puede estar ya registrado.
 
-*Flujo principal:*
+__*Flujo principal:*__
 1. El secretario desea añadir un nuevo paciente.
 2. El secretario selecciona el menú de pacientes.
 3. El secretario selecciona la opción de añadir un paciente.
 4. El secretario rellenará los campos con la información que se le pide sobre el cliente.
 
-*Postcondiciones:*
+__*Postcondiciones:*__
 El cliente quedará guardado en la base de datos.
 
-*Flujos alternativos:*
+__*Flujos alternativos:*__
 
 4.a Si no se ha rellenado algún campo obligatorio, no se guardará el paciente.
 
