@@ -1,17 +1,17 @@
 ### **MODIFICAR CITA**
 *ID:* C14	
 
-*Descripción:* El secretario modificara la cita de un paciente.
+__*Descripción:*__ El secretario modificara la cita de un paciente.
 
-*Actores principales:* Secretario       
+__*Actores principales:*__ Secretario       
 
-*Actores secundarios:* Paciente
+__*Actores secundarios:*__ Paciente
 
-*Precondiciones:*
+__*Precondiciones:*__
 1. El paciente debe estar ya registrado en la base de datos.
 2. El paciente debe tener al menos una cita reservada.
 
-*Flujo principal:*
+__*Flujo principal:*__
 1. El secretario desea modificar una cita de un paciente.
 2. El secretario selecciona el menú de citas.
 3. El secretario selecciona la opción de modificar citas.
@@ -23,4 +23,3 @@
 9. El usuario introducirá la fecha en la que quiere la nueva cita.
 10. El sistema mostrara las citas disponibles ese día.
 11. El secretario elegirá la nueva cita para el paciente.
-
