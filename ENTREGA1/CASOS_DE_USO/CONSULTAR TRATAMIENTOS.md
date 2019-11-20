@@ -1,16 +1,16 @@
 ### **CONSULTAR TRATAMIENTO**
 *ID:* C09	
 
-*Descripción:* El secretario verá en el monitor el tratamiento de un paciente.
+__*Descripción:*__ El secretario verá en el monitor el tratamiento de un paciente.
 
-*Actores principales:* Secretario       
+__*Actores principales:*__ Secretario       
 
-*Actores secundarios:* Paciente
+__*Actores secundarios:*__ Paciente
 
-*Precondiciones:*
+__*Precondiciones:*__
 El paciente debe estar ya registrado en la base de datos.
 
-*Flujo principal:*
+__*Flujo principal:*__
 1. El secretario desea consultar los datos de un paciente.
 2. El secretario selecciona el menú de pacientes.
 3. El secretario selecciona la opción de consultas.
