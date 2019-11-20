@@ -1,14 +1,14 @@
 ### **BORRAR CITA**
 *ID:* C06	
 
-*Descripción:* El secretario borrará una cita reservada para un paciente.
+__*Descripción:*__ El secretario borrará una cita reservada para un paciente.
 
-*Actores principales:* Secretario
+__*Actores principales:*__ Secretario
 
-*Precondiciones:*
+__*Precondiciones:*__
 La cita debe estar ya reservada.
 
-*Flujo principal:*
+__*Flujo principal:*__
 1. El secretario desea eliminar una cita para un paciente.
 2. El secretario selecciona el menú de citas.
 3. El secretario selecciona el menú de borrado.
@@ -17,10 +17,9 @@ La cita debe estar ya reservada.
 6. El sistema mostrará todas las citas reservadas ese día.
 7. El secretario elegirá la cita que quiere borrar.
 
-*Postcondiciones:*
+__*Postcondiciones:*__
 La cita pasará a estar disponible de nuevo.
 
-*Flujos alternativos:*
+__*Flujos alternativos:*__
 
-4.a No se pondrá el año ya que el software supondrá el año en curso y en caso de que la fecha ya haya pasado supondrá el año siguiente
-
+4.a No se pondrá el año ya que el software supondrá el año en curso y en caso de que la fecha ya haya pasado supondrá el año siguiente.

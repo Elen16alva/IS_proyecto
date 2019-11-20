@@ -1,16 +1,16 @@
 ### **AÑADIR TRATAMIENTO**
 *ID:* C10	
 
-*Descripción:* El secretario añadirá un nuevo tratamiento a un paciente.
+__*Descripción:*__ El secretario añadirá un nuevo tratamiento a un paciente.
 
-*Actores principales:* Secretario       
+__*Actores principales:*__ Secretario       
 
-*Actores secundarios:* Paciente
+__*Actores secundarios:*__ Paciente
 
-*Precondiciones:*
+__*Precondiciones:*__
 El paciente debe estar ya registrado en la base de datos.
 
-*Flujo principal:*
+__*Flujo principal:*__
 1. El secretario desea añadir un tratamiento a un paciente.
 2. El secretario selecciona el menú de pacientes.
 3. El secretario selecciona la opción de tratamiento.
@@ -18,5 +18,3 @@ El paciente debe estar ya registrado en la base de datos.
 5. El secretario buscará y seleccionará el paciente al que desea añadir un tratamiento.
 6. El secretario elegirá la opción de añadir.
 7. El secretario escribirá la información nueva al tratamiento.
-
-
