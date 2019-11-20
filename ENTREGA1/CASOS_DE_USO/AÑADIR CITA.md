@@ -1,14 +1,14 @@
 ### **AÑADIR CITA** 
 *ID:* C05	
 
-_*Descripción:*_ El secretario reservará una cita para un paciente.
+__*Descripción:*__ El secretario reservará una cita para un paciente.
 
-_*Actores principales:*_ Secretario       _*Actores secundarios:*_ Paciente
+__*Actores principales:*__ Secretario       _*Actores secundarios:*_ Paciente
 
-_*Precondiciones:*_
+__*Precondiciones:*__
 El paciente debe estar registrado en la base de datos y la cita debe estar disponible.
 
-_*Flujo principal:*_ 
+__*Flujo principal:*__ 
 1. El secretario desea reservar una cita para un paciente.
 2. El secretario selecciona el menú de citas.
 3. El secretario selecciona el menú de reserva.
@@ -18,10 +18,10 @@ _*Flujo principal:*_
 7. El secretario seleccionará la cita que quiere reservar.
 8. El secretario introducirá el nombre completo de la persona a la que se le reserva la cita.
 
-_*Postcondiciones:*_
+__*Postcondiciones:*__
 La cita ya no estará disponible.
 
-_*Flujos alternativos:*_
+__*Flujos alternativos:*__
 
 5.a. No se pondrá el año ya que el softwarare supondra el año en curso y en caso de que la fecha ya haya pasado supondrá el año siguiente
 
