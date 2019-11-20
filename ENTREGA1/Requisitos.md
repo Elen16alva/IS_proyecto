@@ -30,20 +30,20 @@
 * Mostrar citas reservadas.
 * Modificar datos del paciente.
 * Modificar tratamientos del paciente.
-* Añadir nuevos pacientes
+* Añadir nuevos pacientes.
 * Añadir nuevos tratamientos.
 * Añadir al historial médico nuevas consultas.
-* Consultar disponibilidad de citas en un dia seleccionado.
-* Permitir reservar citas cuando esten disponibles.
+* Consultar disponibilidad de citas en un día seleccionado.
+* Permitir reservar citas cuando estén disponibles.
 * Permitir modificar citas reservadas.
 * Permitir eliminar citas reservadas.
-* Permitir eliminar paciente
-* Permitir eliminar tratamientos
-* Mostrar menu al abrir aplicación junto a citas reservadas
+* Permitir eliminar paciente.
+* Permitir eliminar tratamientos.
+* Mostrar menú al abrir aplicación junto a citas reservadas.
 
 
 ## *REQUISITOS NO FUNCIONALES*
-* La apliación utilizará el sistema operativo Linux.
+* La aplicación utilizará el sistema operativo Linux.
 * Lenguaje utilizado: C++.
 * Evitar que se solapen las citas.
 * Evitar que el historial médico sea borrado.
