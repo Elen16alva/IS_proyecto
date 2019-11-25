@@ -1,14 +1,6 @@
 //paciente.cc
-void Paciente::mostrar_lista_pacientes()
-{
-	/**la funcion busca un fichero de texto llamado pacientes.txt
-		si no existe lo crea y muestra un mensaje de que aun no hay pacientes y que debe dar de alta alguno
-		si extiste lee del txt con separados el \n y los guarda en la posicion i+1 (ya que no va a haber un cliente con el id=0) de la lista
-		muestra la lista 
-	*/
-}
 
-void alta_paciente()
+void Paciente::add_paciente()
 {
 	/**la funcion pide el nombre y apellidos del paciente(comprueba si existe el txt)
 		si no existe lo crea y pide la direccion (calle y numero), codigo postal, cuidad, provincia, DNI etc...  lo rellena con los datos
@@ -18,7 +10,7 @@ void alta_paciente()
 	*/
 }
 
-void borrar_paciente()
+void Paciente::borrar_paciente()
 {
 	/*la fucion accede al pacientes.txt lo guarda en la lista y la muestra (funcion mostrar_lista_pacientes)
 		pide el paciente a borrar y se borrara el txt con su nombre, el txt con su tratamiento y el txt de su historial
@@ -27,7 +19,7 @@ void borrar_paciente()
 	**/
 }
 
-void consultar_datos_personales()
+void Paciente::consultar_datos_personales()
 {
 	/**la fucion accede al pacientes.txt lo guarda en la lista y la muestra (funcion mostrar_lista_pacientes)
 		se coje el nombre de quien haya querido se busca su txt se accede a el y se lee
