@@ -2,7 +2,7 @@
 
 #include <> //faltan los inlcudes
 
-void Historial::consultar_historial
+void Historial::consultar_historial()
 {
 	/**la fucion accede al pacientes.txt lo guarda en la lista y la muestra (funcion mostrar_lista_pacientes)
 		se selecciona que paciente y se guarda su nombre en una variable
@@ -12,7 +12,7 @@ void Historial::consultar_historial
 	*/
 }
 
-void Historial::add_historial
+void Historial::add_historial()
 {
 	/**la fucion accede al pacientes.txt lo guarda en la lista y la muestra (funcion mostrar_lista_pacientes)
 		se selecciona que paciente y se guarda su nombre en una variable

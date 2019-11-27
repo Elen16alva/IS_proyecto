@@ -2,6 +2,14 @@
 #include <>
 using namespace std;
 
+struct historial
+{
+	//fecha
+	string dolencias;
+	string pruebas;
+	string tratamiento;
+};
+
 struct paciente
 {
 	string nombre;
@@ -18,11 +26,11 @@ struct paciente
 
 struct tratamiento //comprobar que no se pueda meter fecha incorrecta
 {
-	int dia_inicio;
-	int mes_inicio;
-	int año_inicio;
+	//fecha
 	int duracion;
 	string tratamiento;
+	string dosis;
+	int cantidad;
 };
 
 /**
@@ -52,6 +60,8 @@ public:
 	void consultar_tatamiento();
 	void add_tratamiento();
 
+};
+
 
 class Historial
 {
@@ -61,7 +71,7 @@ protected:
 
 public:
 
-	inline Historial(){}
+	Historial(){}
 
 };
 
@@ -71,13 +81,15 @@ private:
 
 	void menu_citas();
 	void menu_pacientes();
+protected:
 
 public:
 
-	inline Menu(){}
+	Menu(){}
 	void menu_principal();
 	void mostrar_citas_diarias();	
 };
+
 
 class Paciente
 {
@@ -89,7 +101,7 @@ protected:
 
 public:
 
-	inline Paciente(){}
+	Paciente(){}
 	void mostrar_lista_pacientes();
 	void consultar_datos_personales();
 	void add_paciente(); //por no usar la ñ

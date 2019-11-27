@@ -20,32 +20,82 @@ void mostrar_citas_diarias()
 void menu_principal()
 {
 	mostrar_citas_diarias(); 
-	cout<<"Pulse 0 para salir\n";
-	cout<<"Pulse 1 para operaciones de pacientes\n";
-	cout<<"Pulse 2 para operaciones de citas\n";
+	cout<<"Pulse 0 para salir"<<endl;
+	cout<<"Pulse 1 para operaciones de pacientes"<<endl;
+	cout<<"Pulse 2 para operaciones de citas"<<endl;
 	int opcion; 
 	cin>>opcion;
 	if((opcion<0)||(opcion<2))
 	{
-		cout<<"Opción no valida, por favor seleccione otra\n";
+		cout<<"Opción no valida, por favor seleccione otra"<<endl;
 		menu_principal(); //recursivo...
 	}
-	swich(opcion)
+	while (opcion!=0)
 	{
-		case 0: exit(-1);
+		swich(opcion)
+		{
 
-		case 1: menu_pacientes() //funcion para mostrar las opciones de pacientes
+			case 1: menu_pacientes() //funcion para mostrar las opciones de pacientes
 
-		case 2: menu_citas() //funcion para mostrar las opciones de citas
+			case 2: menu_citas() //funcion para mostrar las opciones de citas
+		}
+		extit (-1);
 	}
 }
+
+
 void menu_citas()
 {
-	
+	cout<<"Pulse 1 para reservar una cita"<<endl;
+	cout<<"Pulse 2 para borrar una cita"<<endl;
+	cout<<"Pulse 3 para consultar las ditas de un dia"<<endl;
+	cout<<"Pulse 4 para modificaruna cita"<<endl;
+	int opcion; 
+	cin>>opcion;
+	if((opcion<0)||(opcion<2))
+	{
+		cout<<"Opción no valida, por favor seleccione otra"<<endl;
+		menu_citas(); //recursivo...
+	}
+	while (opcion!=0)
+	{
+		swich(opcion)
+		{
+
+			case 1: menu_pacientes() //funcion para mostrar las opciones de pacientes
+
+			case 2: menu_citas() //funcion para mostrar las opciones de citas
+		}
+		extit (-1);
+	}
+
 }
 
 void menu_pacientes()
 {
-	
+	cout<<"Pulse 0 para salir"<<endl;
+	cout<<"Pulse 1 para añadir un paciente"<<endl;
+	cout<<"Pulse 2 para borrar un paciente"<<endl;
+	cout<<"Pulse 3 para acceder a los datos de un paciente"<<endl;
+	cout<<"Pulse 4 para acceder al historial un paciente"<<endl;
+	cout<<"Pulse 5 para accder al tratamiento un paciente"<<endl;
+	int opcion; 
+	cin>>opcion;
+	if((opcion<1)||(opcion<5))
+	{
+		cout<<"Opción no valida, por favor seleccione otra"<<endl;
+		menu_pacientes(); //recursivo...
+	}
+	while (opcion!=0)
+	{
+		swich(opcion)
+		{
+
+			case 1: menu_pacientes() //funcion para mostrar las opciones de pacientes
+
+			case 2: menu_citas() //funcion para mostrar las opciones de citas
+		}
+		extit (-1);
+	}
 }
 
