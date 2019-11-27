@@ -27,7 +27,7 @@ void Paciente::consultar_datos_personales()
 	*/
 }
 
-void modificar_datos_paciente()
+void Paciente::modificar_datos_paciente()
 {
 	/**la funcion busca pacientes.txt y lo leer guaradando cada paciente en la lista de pacientes
 		la muestra y pregunta a que paciente quiere modificar
