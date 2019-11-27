@@ -20,13 +20,16 @@ void mostrar_citas_diarias()
 void menu_principal()
 {
 	mostrar_citas_diarias(); 
+
 	cout<<"Pulse 0 para salir"<<endl;
 	cout<<"Pulse 1 para operaciones de pacientes"<<endl;
 	cout<<"Pulse 2 para operaciones de citas"<<endl;
+
 	int opcion; 
 	cin>>opcion;
 	if((opcion<0)||(opcion<2))
 	{
+<<<<<<< HEAD
 		cout<<"Opción no valida, por favor seleccione otra"<<endl;
 		menu_principal(); //recursivo...
 	}
@@ -73,6 +76,7 @@ void menu_citas()
 
 void menu_pacientes()
 {
+
 	cout<<"Pulse 0 para salir"<<endl;
 	cout<<"Pulse 1 para añadir un paciente"<<endl;
 	cout<<"Pulse 2 para borrar un paciente"<<endl;

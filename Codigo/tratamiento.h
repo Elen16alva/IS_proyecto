@@ -1,6 +1,8 @@
 #include <> //faltan los includes
 
+
 void Tratamiento::add_tratamiento()
+
 {
 	/**la fucion accede al pacientes.txt lo guarda en la lista y la muestra (funcion mostrar_lista_pacientes)
 		se selecciona que paciente y se guarda su nombre en una variable
@@ -10,7 +12,9 @@ void Tratamiento::add_tratamiento()
 	*/
 }
 
+
 void Tratamiento::borrar_tratamiento()
+
 {
 	/**la fucion accede al pacientes.txt lo guarda en la lista y la muestra (funcion mostrar_lista_pacientes)
 		se selecciona que paciente y se guarda su nombre en una variable
@@ -20,7 +24,9 @@ void Tratamiento::borrar_tratamiento()
 	*/
 }
 
+
 void Tratamiento::consultar_tratamiento()
+
 {
 	/**la fucion accede al pacientes.txt lo guarda en la lista y la muestra (funcion mostrar_lista_pacientes)
 		se selecciona que paciente y se guarda su nombre en una variable

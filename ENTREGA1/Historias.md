@@ -39,7 +39,7 @@ __*Descripción*__: Como administrador quiero poder encontrar a cualquier pacien
 __*Descripción*__: Como administrador quiero poder consultar la cita de un paciente para poder saber a qué hora hay que atenderle. 
 
  __*Validación*__:
-* Se puede ver las citas que hay disponibles para el dia deseado.
+* Se puede ver las citas que hay disponibles para el día deseado.
  
 
       
@@ -84,7 +84,7 @@ __*Descripción*__: Como administrador quiero borrar el tratamiento actual del p
 
  __*Validación*__:
 * Para que el tratamiento sea borrado debe encontrarse en curso.
-* Una vez terminado el tratameinto este no podrá ser borrado.
+* Una vez terminado el tratamiento este no podrá ser borrado.
 
 
 
@@ -94,7 +94,7 @@ __*Descripción*__: Como administrador quiero borrar el tratamiento actual del p
 __*Descripción*__: Como administrador quiero consultar el historial médico del paciente. 
 
  __*Validación*__: 
-* Se introducirá el nombre completo del paciente del cual se queiere consultar su historial.
+* Se introducirá el nombre completo del paciente del cual se quiere consultar su historial.
 
 
 
@@ -130,7 +130,7 @@ __*Descripción*__: Como administrador quiero poder modificar los datos de cualq
 ## *Nombre*: **MENÚ PRINCIPAL**
 *ID*: H13
 
-__*Descripción*__: Como administrador quiero tener un menú para poder hacer caulquier tarea requerida.
+__*Descripción*__: Como administrador quiero tener un menú para poder hacer cualquier tarea requerida.
 
 __*Validación*__:
 * Este aparecerá al nada más iniciar la aplicación. 

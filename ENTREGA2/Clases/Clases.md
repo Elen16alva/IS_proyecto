@@ -1,32 +1,32 @@
-## **CLASES DE LA CLINICA**
+## **CLASES DE LA CLÍNICA**
 
 ### **Clase:** *Tratamiento*
 
-Esta clase contiene los metódos de los tratamientos de los pacientes.
+Esta clase contiene los métodos de los tratamientos de los pacientes.
 
 
 * **Datos:**
 
 *-Tratamiento_paciente*
 
-Tipo: Vectot string
+Tipo: Vector string
 
-Esta variable contendrá todos una lista con todos los tratamientos del paciente, siendo el ultim el actual.
+Esta variable contendrá todos una lista con todos los tratamientos del paciente, siendo el último el actual.
 
 
 * **Métodos:**
 
 *+Consultar_tratamiento*
 
-Este método permitirá consutar el tratamiento en curso del paciente seleccionado.
+Este método permitirá consultar el tratamiento en curso del paciente seleccionado.
 
 *+Añadir_tratamiento*
 
-Este método actualizará y añadira el tratamiento de un paciente.
+Este método actualizará y añadirá el tratamiento de un paciente.
 
 *+Borrar_tratamiento*
 
-Este método borrará el tratamiento actual y no dejara ningun tratamiento.
+Este método borrará el tratamiento actual y no dejará ningún tratamiento.
 
 
 
@@ -42,7 +42,7 @@ Esta clase contiene los métodos del historial de los pacientes.
 
 Tipo: Vector string
 
-Esta variable contendá el historial del paciente al que pertenece.
+Esta variable contendrá el historial del paciente al que pertenece.
 
 
 * **Métodos:**
@@ -88,7 +88,7 @@ Este método borrará un paciente ya existente, junto con sus datos historial y 
 
 *+Consultar_datos_paciente*
 
-Este método permitirá consultar los datos generales del paciente que se desee(tales como el DNI, localidad...).
+Este método permitirá consultar los datos generales del paciente que se desee (tales como el DNI, localidad...).
 
 *+Modificar_datos_paciente*
 
@@ -122,9 +122,9 @@ Esta variable contiene todas las citas que tiene reservadas el paciente al que p
 
 * **Métodos:**
 
-*+Consulta_dia*
+*+Consulta_día*
 
-Este metodo mostrará por pantalla un listado de las citas que hay disponbles a un lado y al otro un listado de las citas ya reservadas.
+Este método mostrará por pantalla un listado de las citas que hay disponibles a un lado y al otro un listado de las citas ya reservadas.
 
 *+Borrar_cita*
 
@@ -136,7 +136,7 @@ Este método reservará una cita para un paciente.
 
 *+Modificar_cita*
 
-Este método eliminará una cita reservada y la pondra dispnible, después reservará una nueva cita distinta a la anterior.
+Este método eliminará una cita reservada y la pondrá disponible, después reservará una nueva cita distinta a la anterior.
 
 *-Mostrar_lista_citas_disponibles*
 
@@ -146,7 +146,7 @@ Esta función mostrará un listado de las citas disponibles para el día selecci
 
 ### **Clase:** *Menú*
 
-Esta clase contiene el método de mostrar las citas diárias.
+Esta clase contiene el método de mostrar las citas diarias.
 
 
 * **Datos:**
@@ -155,11 +155,11 @@ Esta clase contiene el método de mostrar las citas diárias.
 
 Tipo: Vector string
 
-Esta variable contendá todas las citas reservadas del día en curso.
+Esta variable contendrá todas las citas reservadas del día en curso.
 
 
 * **Métodos:**
 
 *-Mostrar_citas_diarias*
 
-Esta funcion mostrará un listado de las citas previstas para el dia en curso sobre el menu principal.
+Esta función mostrará un listado de las citas previstas para el dia en curso sobre el menu principal.
