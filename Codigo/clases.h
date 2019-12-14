@@ -3,7 +3,6 @@
 using namespace std;
 
 
-
 /**
 se van a tener los siguientes tipos de ficheros
 pacientes.txt
@@ -42,9 +41,7 @@ struct paciente
 
 struct tratamiento //comprobar que no se pueda meter fecha incorrecta
 {
-
 	//fecha con sysdate(?)
-
 	int duracion;
 	string tratamiento;
 	string dosis;
@@ -80,7 +77,6 @@ public:
 //a partir de aqui todas las clases heredan menu ya que necesitan las funciones de mostrar_lista_pacientes y mostrar_lista_citas
 //ademas tambien necesitaran las variables de lista_pacientes (se obtiene en mostrar_lista_pacientes)
 
-
 class Tratamiento: public Menu
 {
 private:
@@ -95,6 +91,7 @@ public:
 	void consultar_tatamiento();
 	void add_tratamiento();
 
+
 };
 
 
@@ -105,10 +102,7 @@ private:
 									//la mayuscula es del nombre de la clase
 protected:
 
-protected:
-
 public:
-
 
 	Historial(){}
 	void consultar_historial();
@@ -116,7 +110,6 @@ public:
 };
 
 class Paciente: public Menu
-
 {
 private:
 	list <string> lista_pacientesP; //en ella se guaradara la lista que se retorna desde la funcion mostrar_lista_pacientes
@@ -126,7 +119,6 @@ protected:
 public:
 
 	Paciente(){}
-
 	void consultar_datos_personales();
 	void add_paciente(); //por no usar la ñ
 	void borrar_paciente();

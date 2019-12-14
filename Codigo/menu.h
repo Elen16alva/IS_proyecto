@@ -48,7 +48,6 @@ void menu_principal()
 
 void menu_citas()
 {
-
 	cout<<"Pulse 0 para salir"<<endl;
 	cout<<"Pulse 1 para reservar una cita"<<endl;
 	cout<<"Pulse 2 para borrar una cita"<<endl;
@@ -57,7 +56,6 @@ void menu_citas()
 	int opcion; 
 	cin>>opcion;
 	if((opcion<0)||(opcion<4))
-
 	{
 		cout<<"Opción no valida, por favor seleccione otra"<<endl;
 		menu_citas(); //recursivo...
@@ -66,6 +64,7 @@ void menu_citas()
 	{
 		swich(opcion)
 		{
+
 			case 1:  
 
 			case 2:  
@@ -76,7 +75,6 @@ void menu_citas()
 		}
 	}
 	exit (-1);
-
 }
 
 void menu_pacientes()
@@ -91,7 +89,6 @@ void menu_pacientes()
 	int opcion; 
 	cin>>opcion;
 	if((opcion<0)||(opcion<5))
-
 	{
 		cout<<"Opción no valida, por favor seleccione otra"<<endl;
 		menu_pacientes(); //recursivo...
@@ -100,6 +97,7 @@ void menu_pacientes()
 	{
 		swich(opcion)
 		{
+
 			case 1: add_paciente();
 
 			case 2: borrar_paciente();
