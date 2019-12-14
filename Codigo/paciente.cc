@@ -102,19 +102,14 @@ void Paciente::add_paciente()
 		fichero.close();
 
 		string fichero_historial=nombre_+"_"+apellido1_+"_"+apellido2_+"_Historial"+".txt";
-		string fichero_tratamiento=nombre_+"_"+apellido1_+"_"+apellido2_+"_Tratamiento"+".txt";
 		ofstream fich_historial(fichero_historial);
 		fich_historial.close();
-		ofstream fich_tratamiento(fichero_tratamiento);
-		cout << "me cago en to";
-		fich_tratamiento.close();
 	}
 	else
 	{
 		cout << "No puede agregar este paciente ya que se encuentra en el sistema.\n";
 	}
 	if (comprobar_fichero("Pacientes.txt") == false) {
-		cout << "tonto";
 		ofstream fichero ("Pacientes.txt");
 		fichero << nombre_concatenar << endl;
 		fichero.close();
@@ -123,7 +118,6 @@ void Paciente::add_paciente()
 	else
 	{
 		fstream fichero;
-		cout << "HILIWI";
 		fichero.open("Pacientes.txt", ios::app);
 		fichero << nombre_concatenar << endl;
 		fichero.close();
@@ -391,8 +385,8 @@ void Paciente::modificar_datos_paciente()
 int main(){
 	Paciente prueba;
 	prueba.add_paciente();
-	prueba.delete_paciente();
+	//prueba.delete_paciente();
 	prueba.consultar_datos_personales();
-	prueba.modificar_datos_paciente();
+	//prueba.modificar_datos_paciente();
 	return 0;
 }

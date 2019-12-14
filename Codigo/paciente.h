@@ -30,5 +30,4 @@ public:
 	void consultar_datos_personales();
 	void modificar_datos_paciente();
 };
-
 #endif

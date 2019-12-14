@@ -1,36 +1,33 @@
-#include <> //faltan los includes
-
-
-void Tratamiento::add_tratamiento()
-
+//TRATAMIENTO DEL PACIENTE.
+#ifndef TRATAMIENTO_H
+#define TRATAMIENTO_H
+//tratamiento.cc
+//TRATAMIENTO DEL APCIENTE.
+#include <iostream>
+#include <string>
+#include <list>
+#include <fstream>
+using namespace std;
+class Tratamiento
 {
-	/**la fucion accede al pacientes.txt lo guarda en la lista y la muestra (funcion mostrar_lista_pacientes)
-		se selecciona que paciente y se guarda su nombre en una variable
-		se busca el tratamiento_nombrepaciente.txt (se saca el nombre de la variable)
-		se pregunta por la fecha inicio y duracion y por lo que quiere añadir de tratamiento
-		escribe al final del fichero fecha+duracion+tratamiento
-	*/
-}
+private:
+	//fecha con sysdate(?)
+	string comienzo_tratamiento; //duracion semasnas, meses, dias
+	string duracion_tratamiento;
+	string dosis;
+	string nombre_medicamento;
+public:
 
+	//SI HEREDA DE ALGUNA OTRA CLASE HAY QUE REVISARLO.
+	//VER SI PONGO CONSTRUCTOR, Y MIRAR SI LO PONGO EN LOS DEMAS ARCHIVOS.
+	string choose_paciente();
+	bool comprobar_fichero(string fichero_paciente);
+	void add_Tratamiento();
+	void delete_Tratamiento();
+	void see_Tratamiento();
+	
 
-void Tratamiento::borrar_tratamiento()
+	
+};
 
-{
-	/**la fucion accede al pacientes.txt lo guarda en la lista y la muestra (funcion mostrar_lista_pacientes)
-		se selecciona que paciente y se guarda su nombre en una variable
-		se busca el tratamiento_nombrepaciente.txt 
-		se pide la fecha 
-		se escribe al final del ficherola fecha+"Ninguno"
-	*/
-}
-
-
-void Tratamiento::consultar_tratamiento()
-
-{
-	/**la fucion accede al pacientes.txt lo guarda en la lista y la muestra (funcion mostrar_lista_pacientes)
-		se selecciona que paciente y se guarda su nombre en una variable
-		se busca el tratamiento_nombrepaciente.txt 
-		se lee y se va imprimiendo
-	*/
-}
+#endif
