@@ -145,4 +145,5 @@ int main()
 	h.add_historial();
 	cout<<endl<<endl<<endl;
 	h.consultar_historial();
+
 }
