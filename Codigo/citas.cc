@@ -284,8 +284,7 @@ bool Citas :: imprimirCitas(string dr, string mr, string anio)
 	list<struct datos_lista_citas>::iterator i;	
 	for(i=lista_.begin(); i!=lista_.end(); i++)
 	{
-		cout<<(*i).hora<<":"<<(*i).minuto<<"\n";
-			
+		cout<<(*i).hora<<":"<<(*i).minuto<<"\n";			
 	}
 	leer1.close();
 	cout<<"Pulse una tecla para mostrar las citas reservadas"<<endl;
@@ -317,7 +316,10 @@ bool Citas :: imprimirCitas(string dr, string mr, string anio)
 			
 	}
 	leer2.close();
+	cout<<"Pulse una tecla para continuar"<<endl;
+	cin>>n;
 	return true;
+	
 	
 		
 }
@@ -354,12 +356,21 @@ bool Citas :: imprimirCitas()
     	da.minuto=atoi(minus);
   		lista_.push_back(da);
 	}
+	int contador=1;
 	list<struct datos_lista_citas>::iterator i;	
 	for(i=lista_.begin(); i!=lista_.end(); i++)
 	{
-		cout<<(*i).hora<<":"<<(*i).minuto<<"\n";
-			
+		cout<<"* "<<(*i).hora<<":"<<(*i).minuto<<" *"<<" ";
+		if(contador==3)
+		{
+			cout<<endl;
+			contador=0;
+
+		}
+		contador++;
+		
 	}
+	cout<<endl;
 	leer1.close();
 	cout<<"Pulse una tecla para mostrar las citas reservadas"<<endl;
 	cin>>n;
@@ -382,13 +393,15 @@ bool Citas :: imprimirCitas()
     	da.nombre=nombre;
   		lista_.push_back(da);
 	}
-
+	cout<<"Citas reservadas \n"<<endl;
 	for(i=lista_.begin(); i!=lista_.end(); i++)
 	{
-		cout<<(*i).hora<<":"<<(*i).minuto<<"<-Reservada por: "<<(*i).nombre<<"\n";
+		cout<<"* "<<(*i).hora<<":"<<(*i).minuto<<"<-Reservada por: "<<(*i).nombre<<"\n";
 			
 	}
 	leer2.close();
+	cout<<"Pulse una tecla para continuar"<<endl;
+	cin>>n;
 	return true;
 	
 		
@@ -451,8 +464,7 @@ void Citas:: consultarCitas()
 	imprimirCitas(dia, mes, anio);
 }
 
-
-
+/*
 
 int main()
 {
@@ -460,4 +472,4 @@ int main()
 	Citas c;
 	c.imprimirCitas();
 	c.menu_citas();	
-}
+}*/

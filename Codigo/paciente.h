@@ -21,7 +21,7 @@ private:
 	string nombre_concatenar;
 	
 public:
-	bool comprobar_fichero(string fichero);
+	bool comprobar_fichero(string fichero_paciente);
 	void add_paciente();
 	void delete_paciente();
 	string choose_paciente();
@@ -29,5 +29,6 @@ public:
 	void choose_datos_paciente(string fichero_paciente, int opcion, string linea_paciente);
 	void consultar_datos_personales();
 	void modificar_datos_paciente();
+	void set_codigoPostal();
 };
 #endif

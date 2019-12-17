@@ -4,18 +4,26 @@
 #include <list>
 #include <fstream>
 #include "paciente.h"
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 using namespace std;
+
+
 
 string Paciente::choose_paciente()
 {
 	ifstream fichero ("Pacientes.txt");
+
 	string linea;
 	string copia_linea;
 	int contador = 0;
 	int max;
 	if (fichero.is_open())
 	{
-		cout << "Introduce numero que corresponde al paciente\n";
+		cout << "*************************************************"<<endl;
+		cout << "* Introduzca numero correspondiente al paciente *"<<endl;
+		cout << "*************************************************"<<endl;
 		cin >> max;
 		cout << "\n";
 			while(getline(fichero, linea)) 
@@ -23,7 +31,9 @@ string Paciente::choose_paciente()
 				if(max == contador) 
 				{	
 					copia_linea=linea;
-					cout << "Este es el paciente que ha seleccionado\n";
+					cout << "************************************"<<endl;
+					cout << "* Este es el paciente seleccionado:*\n";
+					cout << "************************************"<<endl;
 					cout << linea << endl;
 					cout << "\n";
 				}//if
@@ -34,28 +44,67 @@ string Paciente::choose_paciente()
 return copia_linea;
 }
 
-list <string> mostrar_lista_pacientes(string fich)
+list <string> mostrar_lista_pacientes1(string fich)
 {
-	cout << "LISTA DE LOS PACIENTES: \n";
+	Paciente p;
+	cout << "***************************"<<endl;
+	cout << "* LISTA DE LOS PACIENTES: *\n";
+	cout << "***************************"<<endl;
 	list <string> aux;
 	ifstream fichero(fich);
 	char nombre[100];
 	string nombreS;
+
 	while (fichero.getline(nombre, 100, '\n'))
 	{
 		nombreS=nombre;
 		aux.push_back(nombreS);
 	}
-	//muestro los pacientes del txt ya en la lista junto con la posicion que ocupan
+	//Se muestran los pacientes del txt ya en la lista junto con la posición que ocupan.
 	list <string>::iterator i;
 	int j=0;
+
 	for(i=aux.begin(); i!=aux.end(); i++)
 	{
 		cout<<j<<" "<<(*i)<<endl;
 		j++;
 	}
+	
 
 	return aux;
+}
+
+void Paciente::set_codigoPostal()
+{
+	char code[50];	
+	int salir=0, valida;
+	while(salir!=5)
+	{
+		cin.getline(code, 50);
+		if(strlen(code)!=5)
+		{
+			cout<<"Error, introduzca un codigo postal válido 2"<<endl;
+		}
+		valida=0;
+		for(int i=0; i<strlen(code); i++)
+		{
+			if(code[i]=='1' || code[i]=='2'||code[i]=='3'||code[i]=='4'||code[i]=='5'||code[i]=='6'||code[i]=='7'||code[i]=='8'||code[i]=='9'||code[i]=='0')
+			{
+				valida++;
+			}			
+		}
+		if(valida!=5)
+		{
+			cout<<"Introduzca un código postal válido 1"<<endl;
+		}
+		else
+		{
+			salir=5;
+		}
+		
+	}
+	codigo_Postal=stoi(code);
+	
 }
 
 bool Paciente::comprobar_fichero(string fichero_paciente) {
@@ -67,35 +116,71 @@ bool Paciente::comprobar_fichero(string fichero_paciente) {
 		fichero.close();
 		return true;
 }
-/**la funcion pide el nombre y apellidos del paciente(comprueba si existe el txt)
-si no existe lo crea y pide la direccion (calle y numero), codigo postal, cuidad, provincia, DNI etc...  
-lo rellena con los datos todo esto son campos del struct paciente que se usara para leer, escribir y 
-modificar los datos del paciente, y los guardara aqui ademas añadira du nombre y apellidos a pacientes.txt
-si el fichero ya existe da fallo y dice que ya existe y no lo modifica
+/**la función pide el nombre y apellidos del paciente(comprueba si existe el txt).
+Si no existe lo crea y pide la direccion (calle y numero), codigo postal, cuidad, provincia, DNI etc...  
+Lo rellena con los datos todo esto son campos del struct paciente que se usara para leer, escribir y 
+modificar los datos del paciente, y los guardará aquí además añadirá su nombre y apellidos a pacientes.txt
+Si el fichero ya existe da fallo y dice que ya existe y no lo modifica.
 */
 void Paciente::add_paciente()
 {
-	cout << "Introduce el nombre del paciente que quiere añadir(si es un nombre compuesto, ejemplo: Maria.Antonia)\n";
-	cin >> nombre_;
-	cout << "Introduce el primer apellido(lo mismo ocurre con el apellido, ejemplo: de.las.Heras)\n";
-	cin >> apellido1_;
-	cout << "Introduce el segundo apellido\n";
-	cin >>  apellido2_;
+	char nombre[40], ape1[40], ape2[40];
+	system("clear");
+		cin.ignore();
+	cout << "*******************************************************"<<endl;
+	cout << "* Introduzca el nombre del paciente que quiere añadir *"<<endl;
+	cout << "*******************************************************"<<endl;
+	cin.getline(nombre, 40);
+	for(int i=0; i<strlen(nombre); i++)
+	{
+		if(nombre[i]==' ')
+		{
+			nombre[i]='.';
+		}
+	}
+	nombre_=nombre;
+	cout << "********************************"<<endl;
+	cout << "* Introduzca el primer apellido *"<<endl;
+	cout << "********************************"<<endl;
+	cin.getline(ape1, 40);
+	for(int i=0; i<strlen(ape1); i++)
+	{
+		if(ape1[i] == ' ')
+		{
+			ape1[i]='.';
+		}
+	}
+	apellido1_=ape1;
+	cout << "*********************************"<<endl;
+	cout << "* Introduzca el segundo apellido *\n";
+	cout << "*********************************"<<endl;
+	cin.getline(ape2, 40);
+
+	for(int i=0; i<strlen(ape2); i++)
+	{
+		if(ape2[i]==' ')
+		{
+			ape2[i]='.';
+		}
+	}
+	apellido2_=ape2;
+	string code;
 	string fichero_paciente=nombre_+"_"+apellido1_+"_"+apellido2_+".txt";
 	if (comprobar_fichero(fichero_paciente) == false) {
 		ofstream fichero (fichero_paciente);
 		nombre_concatenar=nombre_+"_"+apellido1_+"_"+apellido2_;
-		cout << "INTRODUCE DATOS SOBRE EL PACIENTE.\n";
-		cout << "Direccion del paciente:\n";
+		system("clear");
+		cout << "* INTRODUZCA DATOS SOBRE EL PACIENTE *\n";
+		cout << "* Direccion del paciente:\n";
 		cin.ignore();
 		getline(cin, direccion);
-		cout << "Codigo postal:\n";
-		cin >> codigo_Postal;
-		cout << "Ciudad:\n";
+		cout << "* Codigo postal:\n";
+		set_codigoPostal();
+		cout << "* Ciudad:\n";
 		cin >> ciudad;
-		cout << "Provincia:\n";
+		cout << "* Provincia:\n";
 		cin >> provincia;
-		cout << "DNI:\n";
+		cout << "* DNI:\n";
 		cin >> DNI;
 		cin.ignore();
 		fichero <<nombre_concatenar << "\n" << direccion << "\n" << codigo_Postal << "\n" << ciudad << "\n" << provincia << "\n" << DNI << "\n";
@@ -107,7 +192,9 @@ void Paciente::add_paciente()
 	}
 	else
 	{
-		cout << "No puede agregar este paciente ya que se encuentra en el sistema.\n";
+		cout << "********************************************************************"<<endl;
+		cout << "* No puede agregar este paciente ya que se encuentra en el sistema *\n";
+		cout << "********************************************************************"<<endl;
 	}
 	if (comprobar_fichero("Pacientes.txt") == false) {
 		ofstream fichero ("Pacientes.txt");
@@ -133,54 +220,74 @@ la lista de pacientes con el paciente ya borrado)*/
 	
 void Paciente::delete_paciente()
 {
-	cout << "SELECCIONA EL PACIENTE QUE QUIERE QUE SEA BORRADO\n";
-	mostrar_lista_pacientes("Pacientes.txt");
-	cout << "\n";
-	string copia_linea;
-	copia_linea=choose_paciente();
-	string fichero_paciente=copia_linea+".txt";
-	string fichero_historial= copia_linea+"_Historial"+".txt";
-	string fichero_tratamiento=copia_linea+"_Tratamiento"+".txt";
-	//tengo que eliminar los pacientes txt y fichero demás y además en apcientes.txt debo de borrarlo.
-	cout << "NOMBRE FICHERO: "<<fichero_paciente << endl;
-	cout << "\n";
-	cout << "ESTE PACIENTE " << copia_linea << " ES EL QUE DESEA BORRAR: \n";
-	cout << "DESEA BORRAR COMPLETAMENTE ESTE PACIENTE?\n";
-	cout << "1.- Si\n";
-	cout << "2.- No\n";
-	int opcion;
-	cin >> opcion;
-	string line;
-	switch(opcion)
+	FILE *f=fopen ("Pacientes.txt", "r");
+	if(f!=NULL)
 	{
-		case 1:
+		system("clear");
+		cout << "SELECCIONA EL PACIENTE QUE QUIERE QUE SEA BORRADO\n";
+		mostrar_lista_pacientes1("Pacientes.txt");
+		cout << "\n";
+		string copia_linea;
+		copia_linea=choose_paciente();
+		string fichero_paciente=copia_linea+".txt";
+		string fichero_historial= copia_linea+"_Historial"+".txt";
+		string fichero_tratamiento=copia_linea+"_Tratamiento"+".txt";
+		//tengo que eliminar los pacientes txt y fichero demás y además en apcientes.txt debo de borrarlo.
+		cout << "NOMBRE FICHERO: "<<fichero_paciente << endl;
+		cout << "\n";
+		cout << "ESTE PACIENTE " << copia_linea << " ES EL QUE DESEA BORRAR: \n";
+		cout << "DESEA BORRAR COMPLETAMENTE ESTE PACIENTE?\n";
+		cout << "1.- Si\n";
+		cout << "2.- No\n";
+		int opcion;
+		cin >> opcion;
+		string line;
+		switch(opcion)
 		{
-			ifstream fichero("Pacientes.txt");
-			ofstream fich("PacientesBorrar.txt");
-			while((fichero.is_open()) && (getline(fichero, line)))
+			case 1:
 			{
-				if(line!=copia_linea){
-					fich << line << endl;
+				ifstream fichero("Pacientes.txt");
+				ofstream fich("PacientesBorrar.txt");
+				while((fichero.is_open()) && (getline(fichero, line)))
+				{
+					if(line!=copia_linea){
+						fich << line << endl;
+					}
 				}
+				remove("Pacientes.txt");
+				rename("PacientesBorrar.txt", "Pacientes.txt");
+				fich.close();
+				fichero.close();
+				remove(fichero_paciente.c_str());
+				remove(fichero_historial.c_str());
+				remove(fichero_tratamiento.c_str());
+				cout << "Los archivos y datos del paciente han sido borrados satisfactoriamente"<<endl;
+				FILE *f=fopen ("Pacientes.txt", "r");			
+				
+				if(fgetc(f)==EOF)
+				{
+					system("rm Pacientes.txt");
+				}
+				fclose(f);
+			
+
+			}break;
+			case 2:
+			{
+				//iría al mení prinipal de nuevo para hacer otra cosa
+			}break;
+			default:
+			{
+				cout << "Ha introducido una opcion incorrecta, de nuevo se mostrará la lista de los pacientes a querer eliminar\n";
+				delete_paciente();
 			}
-			remove("Pacientes.txt");
-			rename("PacientesBorrar.txt", "Pacientes.txt");
-			fich.close();
-			fichero.close();
-			remove(fichero_paciente.c_str());
-			remove(fichero_historial.c_str());
-			remove(fichero_tratamiento.c_str());
-			cout << "Los archivos y datos del paciente han sido borrados satisfactoriamente";
-		}break;
-		case 2:
-		{
-			//iría al mení prinipal de nuevo para hacer otra cosa
-		}break;
-		default:
-		{
-			cout << "Ha introducido una opcion incorrecta, de nuevo se mostrará la lista de los pacientes a querer eliminar\n";
-			delete_paciente();
 		}
+	}
+	else
+	{
+		cout<<"No hay pacientes registrados. Pulse para continuar"<<endl;
+		char n;
+		cin>>n;
 	}
 }
 
@@ -190,61 +297,87 @@ void Paciente::delete_paciente()
 
 void Paciente::consultar_datos_personales()
 {
-	cout << "SELECCIONA PACIENTE AL QUE QUIERE VER SUS DATOS PERSONALES\n";
-	mostrar_lista_pacientes("Pacientes.txt");
-	cout << "\n";
-	string copia_linea;
-	copia_linea=choose_paciente();
-	string line;
-	string fichero_paciente=copia_linea+".txt";
-	cout << "NOMBRE FICHERO: "<<fichero_paciente << endl;
-	cout << "\n";
-	cout << "LOS DATOS DEL PACIENTE " << copia_linea << " SON: \n";
-	ifstream fich (fichero_paciente);
-	if(fich.is_open())
+
+	FILE *f=fopen ("Pacientes.txt", "r");
+	if(f!=NULL)
 	{
-		int i = 0;
-		while(!fich.eof() && (!(i==6)))
+		if(fgetc(f)==EOF)
 		{
+			cout<<"entra"<<endl;
+			system("rm Pacientes.txt");
+		}
+		fclose(f);
+	}
+	
+	cout<<"**********************************************************"<<endl;
+	cout<<"* SELECCIONE PACIENTE PARA CONSULTA DE DATOS PERSONALES  *\n";
+	cout<<"**********************************************************"<<endl;
+	mostrar_lista_pacientes1("Pacientes.txt");
+		cout << "\n";
+		string copia_linea;
+		copia_linea=choose_paciente();
+		string line;
+		string fichero_paciente=copia_linea+".txt";
+		system("clear");
+		cout<<"*NOMBRE FICHERO:*"<<fichero_paciente << endl;
+		cout << "\n";
+		cout << "*LOS DATOS DEL PACIENTE*" << copia_linea << " SON: \n";
+		ifstream fich (fichero_paciente);
+		if(fich.is_open())
+		{
+			int i = 0;
+			while(!fich.eof() && (!(i==6)))
+			{
 				if(i==0){
 					getline(fich,line);
-					cout << "Nombre completo: " << line << endl;
+					cout << "*Nombre completo: " << line << endl;
 				}
 				if(i==1)
 				{
 					getline(fich,line);
-					cout << "Direccion de la calle: " << line << endl;					
+					cout << "*Direccion de la calle: " << line << endl;					
 				}
 				if(i==2)
 				{
 					getline(fich,line);
-					cout << "Codigo postal: " << line << endl;	
+					cout << "*Codigo postal: " << line << endl;	
 				}
 				if(i==3)
 				{
 					getline(fich,line);
-					cout << "Ciudad: " << line << endl;
+					cout << "*Ciudad: " << line << endl;
 				}
 				if(i==4)
 				{
 					getline(fich,line);
-					cout << "Provincia: " << line << endl;
+					cout << "*Provincia: " << line << endl;
 
 				}
 				if(i==5)
 				{
 					getline(fich,line);
-					cout << "DNI: " << line << endl;
+					cout << "*DNI: " << line << endl;
 				}
-			i++;			
+				i++;			
+			}
+			cout<<"Pulse una tecla para continuar"<<endl;
+			char n;
+			cin>>n;
 		}
+		else
+		{
+			system("clear");
+			cout << "***********************************************"<<endl;
+			cout << "* No se ha encontrado datos sobre el paciente *"<<endl;
+			cout << "***********************************************"<<endl;
+			cout<<"Pulse una tecla para continuar"<<endl;
+			char n;
+			cin>>n;
+		}
+		fich.close();
 	}
-	else
-	{
-		cout << "No se ha encontrado datos sobre el paciente";
-	}
-	fich.close();
-}
+
+
 void Paciente::modifica_pacientes(string concatenar, string antiguo)
 {
 ifstream fichero("Pacientes.txt");
@@ -361,7 +494,7 @@ void Paciente::choose_datos_paciente(string fichero_paciente, int opcion, string
 void Paciente::modificar_datos_paciente()
 {
 	cout << "SELECCIONA EL PACIENTE AL QUE QUIERE MODIFICAR ALGUN DATO\n";
-	mostrar_lista_pacientes("Pacientes.txt");
+	mostrar_lista_pacientes1("Pacientes.txt");
 	cout << "\n";
 	string copia_linea;
 	copia_linea=choose_paciente();
@@ -382,6 +515,7 @@ void Paciente::modificar_datos_paciente()
 }
 
 //PARA LAS PRUEBAS
+/*
 int main(){
 	Paciente prueba;
 	prueba.add_paciente();
@@ -389,4 +523,4 @@ int main(){
 	prueba.consultar_datos_personales();
 	//prueba.modificar_datos_paciente();
 	return 0;
-}
+}*/

@@ -14,6 +14,7 @@ string Tratamiento::choose_paciente()
 	string copia_linea;
 	int contador = 0;
 	int max;
+
 	if (fichero.is_open())
 	{
 		cout << "Introduce numero que corresponde al paciente\n";
@@ -55,7 +56,6 @@ list <string> mostrar_lista_pacientes(string fich)
 		cout<<j<<" "<<(*i)<<endl;
 		j++;
 	}
-
 	return aux;
 }
 bool Tratamiento::comprobar_fichero(string fichero_paciente) {
@@ -76,10 +76,10 @@ escribe al final del fichero fecha+duracion+tratamiento.
 void Tratamiento::add_Tratamiento()
 {
 	cout << "SELECCIONA PACIENTE AL QUE QUIERE AÑADIR TRATAMIENTO\n";
+
 	if(comprobar_fichero("Pacientes.txt")==true)
 	{
 		mostrar_lista_pacientes("Pacientes.txt");
-		cout << "\n";
 		string copia_linea=choose_paciente();
 		string fichero_tratamiento=copia_linea+"_Tratamiento"+".txt";
 		if(comprobar_fichero(fichero_tratamiento)==true){
@@ -97,6 +97,9 @@ void Tratamiento::add_Tratamiento()
 			fichero << nombre_medicamento << "\n" << comienzo_tratamiento << "\n" << dosis << "\n" << duracion_tratamiento << endl;
 			cout << "Ha rellenado el tratamiento satisfactoriamente\n";
 			fichero.close();
+			char n;
+			cout<<"Pulse para continuar"<<endl;
+			cin>>n;
 		}
 		else{
 			ofstream fichero(fichero_tratamiento);
@@ -112,11 +115,16 @@ void Tratamiento::add_Tratamiento()
 			fichero << nombre_medicamento << "\n" << comienzo_tratamiento << "\n" << dosis << "\n" << duracion_tratamiento << endl;
 			cout << "Ha rellenado el tratamiento satisfactoriamente\n";
 			fichero.close();
+			char n;
+			cout<<"Pulse para continuar"<<endl;
+			cin>>n;
 		}
 	}
 	else
 	{
-		cout << "No se ha encontrado el fichero 'Pacientes.txt'\n";
+		char n;
+		cout<<"Pulse para continuar"<<endl;
+		cin>>n;
 	}
 }
 /**la fucion accede al pacientes.txt lo guarda en la lista y la muestra 
@@ -149,11 +157,18 @@ void Tratamiento::delete_Tratamiento()
 				file << "ESTE TRATAMIENTO HA FINALIZADO" << endl;	
 				fich.close();
 				rename((copia_linea+"_Tratamiento"+".txt").c_str(), (copia_linea+"_"+fecha+"_Tratamiento_finalizado"+".txt").c_str());
-				cout << "SE HA ELIMINADO EL TRATAMEINTO CORRECTAMENTE\n";
+				cout << "SE HA ELIMINADO EL TRATAMIENTO CORRECTAMENTE\n";
+				char n;
+				cout<<"Pulse para continuar"<<endl;
+				cin>>n;
 			}
 			else{
 				cout << "El fichero tratamiento correspondiente al paciente no existe\n";
 				cout << "Cree un nuevo tratamiento para este paciente\n";
+				char n;
+			cout << "No se han encontrado pacientes registrados, añada un paciente\n";
+			cout<<"Pulse para continuar"<<endl;
+			cin>>n;
 			}
 			string nombre=copia_linea+"_"+fecha;
 			if(comprobar_fichero("Tratamientos.txt")==true){
@@ -170,7 +185,10 @@ void Tratamiento::delete_Tratamiento()
 	}
 	else
 	{
-		cout << "No se ha encontrado el fichero 'Pacientes.txt'\n";
+		char n;
+		cout << "No se han encontrado pacientes registrados, añada un paciente\n";
+		cout<<"Pulse para continuar"<<endl;
+		cin>>n;
 	}
 }
 /**la fucion accede al pacientes.txt lo guarda en la lista y la muestra
@@ -220,6 +238,9 @@ void Tratamiento::see_Tratamiento()
 					}
 				}
 				fichero.close();
+				char n;
+				cout<<"Pulse para continuar"<<endl;
+				cin>>n;
 			}
 			else{
 				cout << "EL FICHERO QUE DESEA MOSTRAR HA SIDO BORRADO ANTERIOMENTE O AUN NO SE HA CREADO.\n";
@@ -227,7 +248,7 @@ void Tratamiento::see_Tratamiento()
 				cout << "\n";
 				int opcion;
 				cout << "1.- Se insertará tratamiento nuevo al paciente que no tiene tratamiento alguno en estos momentos\n";
-				cout << "2.- Mostrará una lista con los diferentes tratamientos y sus fechas de creacion del apciente elegido\n";
+				cout << "2.- Mostrará una lista con los diferentes tratamientos y sus fechas de creacion del paciente elegido\n";
 				cout << "3.- Volver al menu principal a escoger otra opcion\n";
 				cout << "Su opcion esocgida es: ";
 				cin >> opcion;
@@ -263,10 +284,13 @@ void Tratamiento::see_Tratamiento()
 	}
 	else
 	{
-		cout << "No se ha encontrado el fichero 'Pacientes.txt'\n";
+		char n;
+		cout << "No se han encontrado pacientes registrados, añada un paciente\n";
+		cout<<"Pulse para continuar"<<endl;
+		cin>>n;
 	}
 }
-
+/*
 int main()
 {
 	Tratamiento prueba;
@@ -297,3 +321,4 @@ int main()
 		}
 	}while (!(opcion==4));
 }
+*/
