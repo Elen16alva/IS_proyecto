@@ -137,10 +137,12 @@ __*Descripción*__: Como administrador quiero consultar el historial médico del
  
 
 
-## *Nombre*: **MENÚ PRINCIPAL**  (retocar)
+## *Nombre*: **MENÚ PRINCIPAL**
 *ID*: H13
 
 __*Descripción*__: Como administrador quiero tener un menú para poder hacer cualquier tarea requerida.
 
 __*Validación*__:
 * Este aparecerá al iniciar la aplicación.
+* Habrá diferentes menu para pacientes y citas.
+* Se mostrarán las citas diarias, tanto las citas reservadas como no.
