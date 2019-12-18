@@ -133,6 +133,7 @@ __*Descripción*__: Como administrador quiero añadir a cualquier paciente un hi
 
 __*Validación*__:
 * Se seleccionará el paciente al que se quiere añadir un historial.
+* Se introduciran los datos necesarios en el historial para que se cree correctamente.
 
 
 
@@ -143,6 +144,7 @@ __*Descripción*__: Como administrador quiero consultar el historial médico del
 
  __*Validación*__: 
 * Se seleccionará el paciente del que se quiere consultar su historial.
+* Se mostrará todos los datos contenidos en el historial.
 
 
 
