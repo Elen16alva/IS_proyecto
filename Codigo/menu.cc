@@ -46,8 +46,9 @@ void menu_pacientes()
 	cout<<"* Pulse 1 para añadir un paciente                   *"<<endl;
 	cout<<"* Pulse 2 para borrar un paciente                   *"<<endl;
 	cout<<"* Pulse 3 para acceder a los datos de un paciente   *"<<endl;
-	cout<<"* Pulse 4 para acceder al historial un paciente     *"<<endl;
-	cout<<"* Pulse 5 para accder al tratamiento un paciente    *"<<endl;
+	cout<<"* Pulse 4 para modificar los datos de un paciente   *"<<endl;
+	cout<<"* Pulse 5 para acceder al historial un paciente     *"<<endl;
+	cout<<"* Pulse 6 para acceder al tratamiento un paciente   *"<<endl;
 	cout<<"*****************************************************"<<endl;
 	int opcion; 
 	cin>>opcion;
@@ -71,10 +72,13 @@ void menu_pacientes()
 			case 3: p.consultar_datos_personales();
 			break;
 
-			case 4: menu_historial();
+			case 4: p.modificar_datos_paciente();
 			break;
 
-			case 5: menu_tratamiento();
+			case 5: menu_historial();
+			break;
+
+			case 6: menu_tratamiento();
 			break;
 
 		}
