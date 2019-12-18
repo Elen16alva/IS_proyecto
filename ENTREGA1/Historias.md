@@ -8,7 +8,7 @@ __*Descripción*__: Como administrador quiero poder registrar un nuevo paciente,
  __*Validación*__:
 * Se debe introducir nombre y apellidos obligatoriamente.
 * Se debe introducir los datos personales del mismo para que el paciente sea creado de forma correcta.
-* Se añadirá el paciente recien inscrito a la base de datos de pacientes.
+* Se añadirá el paciente recien inscrito a la base de datos de Pacientes.
  
 
       
@@ -40,7 +40,9 @@ __*Descripción*__: Como administrador quiero poder encontrar a cualquier pacien
 __*Descripción*__: Como administrador quiero poder modificar los datos de cualquier paciente en cualquier momento. 
 
  __*Validación*__:
-* Se introducirá el nombre completo del paciente del cual se quiere modificar sus datos personales.
+* Se seleccionará el paciente del que se quiere modificar sus datos personales.
+* Se seleccionará que dato se quiere modificar del paciente.
+
 
 
        
@@ -84,7 +86,9 @@ __*Descripción*__: Como administrador quiero que cualquier paciente pueda borra
 __*Descripción*__: Como administrador quiero añadir cualquier tratamiento a cualquier paciente.
 
  __*Validación*__:
-* Se introducirá el nombre completo del paciente al quiere añadir el tratamiento.
+* Se seleccionará el paciente al quiere añadir el tratamiento de la bse de datos.
+* Se introducirán los datos requeridos para que el tratamiento sea creado de forma correcta.
+
 
 
 
