@@ -21,5 +21,5 @@ El cliente quedará guardado en la base de datos.
 
 __*Flujos alternativos:*__
 
-4.a Si no se ha rellenado algún campo obligatorio, no se guardará el paciente.
+4.a Si se introduce algun campo erróneo, como un codigo postal con 7 cifras, se pedira de nuevo hasta que sea correcto
 
