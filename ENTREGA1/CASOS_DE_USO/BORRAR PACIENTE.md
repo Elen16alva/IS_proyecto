@@ -16,7 +16,7 @@ __*Flujo principal:*__
 5. El secretario buscará y seleccionará el paciente que desea eliminar.
 
 __*Postcondiciones:*__
-El cliente dejará de existir en la base de datos.
+El cliente dejará de existir en la base de datos y se perderán sus datos personales, historial y tratamientos.
 
 __*Flujos alternativos:*__
 
