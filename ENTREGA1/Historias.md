@@ -35,7 +35,7 @@ __*Descripción*__: Como administrador quiero poder encontrar a cualquier pacien
 
 
 ## *Nombre*: **MODIFICAR DATOS PERSONALES**
-*ID*: H12
+*ID*: H04
 
 __*Descripción*__: Como administrador quiero poder modificar los datos de cualquier paciente en cualquier momento. 
 
@@ -47,7 +47,7 @@ __*Descripción*__: Como administrador quiero poder modificar los datos de cualq
 
        
 ## *Nombre*: **CONSULTAR CITA**  (retocar)
-*ID*: H04
+*ID*: H05
 
 __*Descripción*__: Como administrador quiero poder consultar la cita de un paciente para poder saber a qué hora hay que atenderle. 
 
@@ -57,7 +57,7 @@ __*Descripción*__: Como administrador quiero poder consultar la cita de un paci
 
       
 ## *Nombre*: **AÑADIR CITA**  (retocar)
-*ID*: H05 
+*ID*: H06 
 
 __*Descripción*__: Como administrador quiero que cualquier paciente pueda escoger cita para que pueda ser atendido por el médico. 
 
@@ -69,7 +69,7 @@ __*Descripción*__: Como administrador quiero que cualquier paciente pueda escog
  
       
 ## *Nombre*: **BORRAR CITA**   (retocar)
-*ID*: H06 
+*ID*: H07 
 
 __*Descripción*__: Como administrador quiero que cualquier paciente pueda borrar su cita para que ésta vuelva a estar disponible para otro paciente. 
 
@@ -82,7 +82,7 @@ __*Descripción*__: Como administrador quiero que cualquier paciente pueda borra
 
 ## *Nombre*: **MODIFICAR CITA** (retocar)
 
-*ID*: H11
+*ID*: H08
 
 __*Descripción*__: Como administrador quiero poder modificar cualquier cita, pudiendo escoger otra cualquiera. 
 
@@ -92,7 +92,7 @@ __*Descripción*__: Como administrador quiero poder modificar cualquier cita, pu
 
 
 ## *Nombre*: **AÑADIR TRATAMIENTO**
-*ID*: H07
+*ID*: H09
 
 __*Descripción*__: Como administrador quiero añadir cualquier tratamiento a cualquier paciente.
 
@@ -104,7 +104,7 @@ __*Descripción*__: Como administrador quiero añadir cualquier tratamiento a cu
 
 
 ## *Nombre*: **BORRAR TRATAMIENTO**
-*ID*: H08
+*ID*: H10
 
 __*Descripción*__: Como administrador quiero borrar el tratamiento actual del paciente. 
 
@@ -116,7 +116,7 @@ __*Descripción*__: Como administrador quiero borrar el tratamiento actual del p
 
 
 ## *Nombre*: **CONSULTAR TRATAMIENTOS**
-*ID*: H10
+*ID*: H11
 
 __*Descripción*__: Como administrador quiero poder consultar cualquier tratamiento ya sea en curso o finalizado. 
 
@@ -126,19 +126,28 @@ __*Descripción*__: Como administrador quiero poder consultar cualquier tratamie
 
 
 
+## *Nombre*: **AÑADIR HISTORIAL MÉDICO**
+*id*: H12
+
+__*Descripción*__: Como administrador quiero añadir a cualquier paciente un historial.
+
+__*Validación*__:
+* Se seleccionará el paciente al que se quiere añadir un historial.
+
+
+
 ## *Nombre*: **CONSULTAR HISTORIAL MÉDICO** (retocar)
-*ID*: H09
+*ID*: H13
 
 __*Descripción*__: Como administrador quiero consultar el historial médico del paciente. 
 
  __*Validación*__: 
-* Se introducirá el nombre completo del paciente del cual se quiere consultar su historial.
+* Se seleccionará el paciente del que se quiere consultar su historial.
 
- 
 
 
 ## *Nombre*: **MENÚ PRINCIPAL**
-*ID*: H13
+*ID*: H14
 
 __*Descripción*__: Como administrador quiero tener un menú para poder hacer cualquier tarea requerida.
 
