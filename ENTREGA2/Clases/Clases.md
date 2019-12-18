@@ -119,7 +119,7 @@ Esta variable contendrá la dirección del paciente.
 
 Tipo: entero
 
-Esta variable contendrá el codigo postal del paciente. 
+Esta variable contendrá el código postal del paciente. 
 
 *-ciudad*
 
@@ -179,6 +179,11 @@ Esta función mostrará los datos personales de un paciente.
 *+modificar_datos_paciente*
 
 Esta función modificará los datos personales de un paciente.
+
+
+*+set_odigoPostal*
+
+Este método auxiliar ayudará a comprobar que el código postal es correcto.
 
 
 
