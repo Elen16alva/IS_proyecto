@@ -7,26 +7,52 @@ Esta clase contiene los métodos de los tratamientos de los pacientes.
 
 * **Datos:**
 
-*-Tratamiento_paciente*
+*-comienzo_tratamiento*
 
-Tipo: Vector string
+Tipo: string
 
-Esta variable contendrá todos una lista con todos los tratamientos del paciente, siendo el último el actual.
+Esta variable contendrá la fecha de inicio del tratamiento.
+
+*-duracion_tratamiento*
+
+Tipo: string
+
+Esta variable contendá la duracion del tratamiento.
+
+*-dosis*
+
+Tipo: string
+
+Esta variable contendrá la dosis del medicamento.
+
+*-nombre_medicamento*
+
+Tipo: string
+
+Esta variable contendrá el nombre del medicamento recetado.
 
 
 * **Métodos:**
 
-*+Consultar_tratamiento*
+*+see_tratamiento*
 
 Este método permitirá consultar el tratamiento en curso del paciente seleccionado.
 
-*+Añadir_tratamiento*
+*+add_tratamiento*
 
 Este método actualizará y añadirá el tratamiento de un paciente.
 
-*+Borrar_tratamiento*
+*+delete_tratamiento*
 
 Este método borrará el tratamiento actual y no dejará ningún tratamiento.
+
+*+comprobar_fichero*
+
+Esta función
+
+*+choose_paciente*
+
+Esta función
 
 
 
@@ -38,24 +64,26 @@ Esta clase contiene los métodos del historial de los pacientes.
 
 * **Datos:**
 
-*-Historial_paciente*
+*-lista_pacientesH_*
 
-Tipo: Vector string
+Tipo: Lista de string
 
-Esta variable contendrá el historial del paciente al que pertenece.
+Esta variable contendrá la lista de pacientes que hay registrados.
 
 
 * **Métodos:**
 
-*+Consultar_historial*
+*+consultar_historial*
 
 Este método permitirá consultar el historial médico del paciente que se desee.
 
-*+Añadir_historial*
+*+add_historial*
 
 Este método añadirá nueva información al historial de un paciente.
 
+*+cargar_lista_pacientes*
 
+Este método devolverá una lista con todos los pacientes existentes en la base de datos.
 
 ### **Clase:** *Paciente*
 
@@ -63,40 +91,94 @@ Esta clase contiene todas las operaciones posibles que se podrán hacer sobre el
 
 * **Datos:**
 
-*-Lista_pacientes*
+*-nombre_*
 
-Tipo: Vector string
+Tipo: string
 
-Esta variable contiene todos los pacientes registrados en la base de datos.
+Esta variable contendrá el nombre del paciente.
 
-*-Datos_paciente*
+*-apellido1_*
 
-Tipo: Struct 
+Tipo: string
 
-Esta variable contendrá los datos personales del paciente al que pertenece.
+Esta variable contendrá el primer apellido del paciente.
+
+*-apellido2_*
+
+Tipo: string 
+
+Esta variable contendrá el segundo apellido del paciente.
+
+*-direccion*
+
+Tipo: string
+
+Esta variable contendrá la dirección del paciente.
+
+*-codigo_Postal*
+
+Tipo: entero
+
+Esta variable contendrá el codigo postal del paciente. 
+
+*-ciudad*
+
+Tipo: string  
+
+Esta variable contendrá la ciudad del paciente.
+
+*-provincia*
+
+Tipo: string
+
+Esta variable contendrá la provincia del paciente. 
+
+*-DNI*
+
+Tipo: string
+
+Esta variable contendrá el DNI del paciente.
+
+*-nombre_concatenar*
+
+Tipo: string
+
+Esta variable 
 
 
 * **Métodos:**
 
-*+Añadir_paciente*
+*+comprobar_fichero*
 
-Este método añadirá un nuevo paciente, junto con sus datos, a la base de datos.
+Este método 
 
-*+Borrar_paciente*
+*+add_paciente*
 
-Este método borrará un paciente ya existente, junto con sus datos historial y tratamientos, a la base de datos.
+Este método añadirá un nuevo paciente a la base de datos.
 
-*+Consultar_datos_paciente*
+*+delete_paciente*
 
-Este método permitirá consultar los datos generales del paciente que se desee (tales como el DNI, localidad...).
+Este método borrará un paciente y toda su información de la base de datos.
 
-*+Modificar_datos_paciente*
+*+choose_paciente*
 
-Este método permitirá modificar los datos personales de un paciente.
+Este método 
 
-*-Mostrar_lista_pacientes*
+*-modifica_pacientes*
 
-Esta función mostrará un listado de todos los pacientes registrados en la base de datos.
+Esta función 
+
+*-choose_datos_paciente*
+
+Esta función 
+
+*-consultar_datos_personales*
+
+Esta función mostrará los datos personales de un paciente.
+
+*-modificar_datos_paciente*
+
+Esta función modificará los datos personales de un paciente.
 
 
 
@@ -107,59 +189,37 @@ Esta clase contiene el metodo para consultar las citas que hay disponibles el d�
 
 
 * **Datos:**
-*-Lista_citas*
+*-*
 
-Tipo: Vector string
+Tipo: 
 
-La variable contiene la lista de todas las citas (reservadas o no) del día que se desee consultar.
+La variable 
 
-*-Lista_citas_paciente*
+*-*
 
-Tipo: Vector string
+Tipo: 
 
-Esta variable contiene todas las citas que tiene reservadas el paciente al que pertenece la lista.
-
-
-* **Métodos:**
-
-*+Consulta_día*
-
-Este método mostrará por pantalla un listado de las citas que hay disponibles a un lado y al otro un listado de las citas ya reservadas.
-
-*+Borrar_cita*
-
-Este método cancelará una cita reservada y dejará la cita disponible para poder reservarse de nuevo.
-
-*+Reservar_cita*
-
-Este método reservará una cita para un paciente.
-
-*+Modificar_cita*
-
-Este método eliminará una cita reservada y la pondrá disponible, después reservará una nueva cita distinta a la anterior.
-
-*-Mostrar_lista_citas_disponibles*
-
-Esta función mostrará un listado de las citas disponibles para el día seleccionado.
-
-
-
-### **Clase:** *Menú*
-
-Esta clase contiene el método de mostrar las citas diarias.
-
-
-* **Datos:**
-
-*-Lista_citas_diaria*
-
-Tipo: Vector string
-
-Esta variable contendrá todas las citas reservadas del día en curso.
+Esta variable 
 
 
 * **Métodos:**
 
-*-Mostrar_citas_diarias*
+*+*
 
-Esta función mostrará un listado de las citas previstas para el dia en curso sobre el menu principal.
+Este método 
+
+*+*
+
+Este método 
+
+*+*
+
+Este método 
+
+*+*
+
+Este método 
+
+*-*
+
+Esta función 
