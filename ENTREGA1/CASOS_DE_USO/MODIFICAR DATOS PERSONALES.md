@@ -17,4 +17,6 @@ __*Flujo principal:*__
 4. El sistema mostrará una lista con todos los pacientes existentes.
 5. El secretario buscará y seleccionará el paciente del que desea modificar los datos.
 6. El sistema preguntara que campo quiere modificar.
-7. El secretario introducirá la nueva información.
+7. El secretario elegirá que dato quiere mdificar.
+8. El sistema pedirá el nuevo dato.
+9. El secretario introducirá la nueva información.
