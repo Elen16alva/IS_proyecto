@@ -1,14 +1,14 @@
 # **HISTORIAS DE USUARIO**
 
-## *Nombre*: **DAR DE ALTA** 
+## *Nombre*: **AÑADIR UN PACIENTE** 
 *ID*: H01 
 
-__*Descripción*__: Como administrador quiero poder registrar un nuevo paciente, junto con sus datos personales y médicos.
+__*Descripción*__: Como administrador quiero poder registrar un nuevo paciente, junto con sus datos personaleS.
 
  __*Validación*__:
-* Se debe poder introducir cualquier nombre con sus correspondientes apellidos.
-* Se debe introducir el nombre y apellidos obligatoriamente.
-* Se podrán añadir los datos del paciente, su historial médico y los tratamientos de éste aunque habrá datos que no se podrán modificar una vez registrados, tales como el historial médico y tratamientos.
+* Se debe introducir nombre y apellidos obligatoriamente.
+* Se debe introducir los datos personales del mismo para que el paciente sea creado de forma correcta.
+* Se añadirá el paciente recien inscrito a la base de datos de pacientes.
  
 
       
@@ -18,22 +18,33 @@ __*Descripción*__: Como administrador quiero poder registrar un nuevo paciente,
 __*Descripción*__: Como administrador quiero borrar a cualquier paciente para que este no aparezca en la base de datos.
 
  __*Validación*__:
-* Se puede borrar a cualquier paciente.
-* Se borrará todo lo referente y relacionado con el paciente.
+* Se seleccionará el paciente a borrar de la base de datos de pacientes.
+* Se borrará los datos del paciente, el historial y los tratamientos del mismo.
 
 
       
-## *Nombre*: **CONSULTAR DATOS PERSONA**
+## *Nombre*: **CONSULTAR DATOS PERSONALES**
 *ID*: H03 
 
 __*Descripción*__: Como administrador quiero poder encontrar a cualquier paciente para poder consultar sus datos personales.
 
  __*Validación*__:
-* Se puede buscar a cualquier paciente.
-* Se puede consultar los datos personales del paciente.
+* Se seleccionará el paciente a borrar de la base de datos de pacientes.
+* Se puede consultar sólo los datos personales del paciente.
+
+
+
+## *Nombre*: **MODIFICAR DATOS PERSONALES**
+*ID*: H12
+
+__*Descripción*__: Como administrador quiero poder modificar los datos de cualquier paciente en cualquier momento. 
+
+ __*Validación*__:
+* Se introducirá el nombre completo del paciente del cual se quiere modificar sus datos personales.
+
 
        
-## *Nombre*: **CONSULTAR CITA**
+## *Nombre*: **CONSULTAR CITA**  (retocar)
 *ID*: H04
 
 __*Descripción*__: Como administrador quiero poder consultar la cita de un paciente para poder saber a qué hora hay que atenderle. 
@@ -43,7 +54,7 @@ __*Descripción*__: Como administrador quiero poder consultar la cita de un paci
  
 
       
-## *Nombre*: **AÑADIR CITA**
+## *Nombre*: **AÑADIR CITA**  (retocar)
 *ID*: H05 
 
 __*Descripción*__: Como administrador quiero que cualquier paciente pueda escoger cita para que pueda ser atendido por el médico. 
@@ -55,7 +66,7 @@ __*Descripción*__: Como administrador quiero que cualquier paciente pueda escog
 
  
       
-## *Nombre*: **BORRAR CITA**
+## *Nombre*: **BORRAR CITA**   (retocar)
 *ID*: H06 
 
 __*Descripción*__: Como administrador quiero que cualquier paciente pueda borrar su cita para que ésta vuelva a estar disponible para otro paciente. 
@@ -115,16 +126,7 @@ __*Descripción*__: Como administrador quiero poder modificar cualquier cita, pu
 
  __*Validación*__:
 * Solo podrá escoger citas disponibles.
-
-
-
-## *Nombre*: **MODIFICAR DATOS PERSONA**
-*ID*: H12
-
-__*Descripción*__: Como administrador quiero poder modificar los datos de cualquier paciente en cualquier momento. 
-
- __*Validación*__:
-* Se introducirá el nombre completo del paciente del cual se quiere modificar sus datos personales. 
+ 
 
 
 ## *Nombre*: **MENÚ PRINCIPAL**
