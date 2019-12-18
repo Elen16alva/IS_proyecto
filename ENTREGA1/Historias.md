@@ -143,4 +143,4 @@ __*Descripción*__: Como administrador quiero consultar el historial médico del
 __*Descripción*__: Como administrador quiero tener un menú para poder hacer cualquier tarea requerida.
 
 __*Validación*__:
-* Este aparecerá al nada más iniciar la aplicación. 
+* Este aparecerá al iniciar la aplicación.
