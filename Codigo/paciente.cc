@@ -10,7 +10,6 @@
 using namespace std;
 
 
-
 string Paciente::choose_paciente()
 {
 	ifstream fichero ("Pacientes.txt");
@@ -36,10 +35,10 @@ string Paciente::choose_paciente()
 					cout << "************************************"<<endl;
 					cout << linea << endl;
 					cout << "\n";
-				}//if
+				}
 				contador++;
-       		}//while
-	}//if
+       		}
+	}
 	fichero.close();
 return copia_linea;
 }
@@ -116,12 +115,7 @@ bool Paciente::comprobar_fichero(string fichero_paciente) {
 		fichero.close();
 		return true;
 }
-/**la función pide el nombre y apellidos del paciente(comprueba si existe el txt).
-Si no existe lo crea y pide la direccion (calle y numero), codigo postal, cuidad, provincia, DNI etc...  
-Lo rellena con los datos todo esto son campos del struct paciente que se usara para leer, escribir y 
-modificar los datos del paciente, y los guardará aquí además añadirá su nombre y apellidos a pacientes.txt
-Si el fichero ya existe da fallo y dice que ya existe y no lo modifica.
-*/
+
 void Paciente::add_paciente()
 {
 	char nombre[40], ape1[40], ape2[40];
@@ -211,15 +205,10 @@ void Paciente::add_paciente()
 	}
 
 }
-/*la fucion accede al pacientes.txt lo guarda en la lista y la muestra (funcion mostrar_lista_pacientes)
-pide el paciente a borrar y se borrara el txt con su nombre, el txt con su tratamiento y el txt de su historial
-ademas se borrara el nombre del pacientes.txt 
-(se puede borrar de la lista, hacer un resize o algo asi y luego borrar el pacientes.txt y crear uno nuevo escribiendo 
-la lista de pacientes con el paciente ya borrado)*/
-
 	
 void Paciente::delete_paciente()
 {
+	char n;
 	FILE *f=fopen ("Pacientes.txt", "r");
 	if(f!=NULL)
 	{
@@ -283,12 +272,14 @@ void Paciente::delete_paciente()
 			}
 		}
 	}
+
 	else
 	{
-		cout<<"No hay pacientes registrados. Pulse para continuar"<<endl;
-		char n;
+		cout<<"No hay pacientes registrados. Pulse cualquier número para continuar"<<endl;
 		cin>>n;
 	}
+
+
 }
 
 /*	la fucion accede al pacientes.txt lo guarda en la lista y la muestra (funcion mostrar_lista_pacientes)
@@ -360,7 +351,7 @@ void Paciente::consultar_datos_personales()
 				}
 				i++;			
 			}
-			cout<<"Pulse una tecla para continuar"<<endl;
+			cout<<"Pulse cualquier número para continuar"<<endl;
 			char n;
 			cin>>n;
 		}
@@ -370,7 +361,7 @@ void Paciente::consultar_datos_personales()
 			cout << "***********************************************"<<endl;
 			cout << "* No se ha encontrado datos sobre el paciente *"<<endl;
 			cout << "***********************************************"<<endl;
-			cout<<"Pulse una tecla para continuar"<<endl;
+			cout<<"Pulse cualquier número para continuar"<<endl;
 			char n;
 			cin>>n;
 		}
@@ -405,15 +396,13 @@ rename("Pacientemodificar.txt", "Pacientes.txt");
 
 void Paciente::choose_datos_paciente(string fichero_paciente, int opcion, string linea_paciente)
 {
-	//tengo que pasar a la funcion el nombre del fichero
 	ifstream fichero (fichero_paciente);
 	string nuevo_fichero=fichero_paciente;
 	ofstream fich ("Pacientesmodificar.txt");
 	string buscar;
-	string aux; //la utilizaremos para poder hacer cambios en el fichero.
-	int auxiliar; //para hacer cambios en el fichero.
+	string aux; 
+	int auxiliar; 
 	int contador = 1; //LO PONGO A UNO PORQUE CONSIFERO QUE LAS OPCIONES COMIENZAN EN 1.
-	//RESTRINGIR EL 3, YA QUE SERÁ CUANDO UTILICEMOS EL INT AUX
 	string concatenar;
 	if (fichero.is_open())
 	{
@@ -461,15 +450,15 @@ void Paciente::choose_datos_paciente(string fichero_paciente, int opcion, string
 						}
 					}
 
-				}//if
+				}
 				else{
 					fich << buscar << endl;
 				}
 
 				contador++;
 
-       		}//while
-	}//if
+       		}
+	}
 	else
 	{
 		cout << "No se ha podidio abrir el archivo\n";
@@ -484,13 +473,7 @@ void Paciente::choose_datos_paciente(string fichero_paciente, int opcion, string
 	cout << "Archivo modificado correctamente\n";
 }
 
-/*	la funcion busca pacientes.txt y lo leer guaradando cada paciente en la lista de pacientes
-		la muestra y pregunta a que paciente quiere modificar
-		se pregunta que parte del struct quiere modificar y lo demas s e deja igual (un swich con una opcion para cada caso(1 para dni, 2 para direccion etc...))
-		en cada caso se accede al struct leyendo cada campo (menos el que se quiere modificar) y preguntando cuales son los nuevos datos que quiere
-		se iguala lo que se quiere modificar a lo que se ha intoducido y se escribe el struct entero en el fichero sobreescribiendolo entero
-		(posible opcion de borrarlo y crearlo de nuevo con los datos nuevos para asi no sobreescribir)*/
-	
+
 void Paciente::modificar_datos_paciente()
 {
 	cout << "SELECCIONA EL PACIENTE AL QUE QUIERE MODIFICAR ALGUN DATO\n";
@@ -511,16 +494,6 @@ void Paciente::modificar_datos_paciente()
 	int opcion;
 	cin >> opcion;
 	choose_datos_paciente(fichero_paciente, opcion, copia_linea);
-	//Ver si se puede hacer hasta aqui, es decir terminar y no escribir mas.
+
 }
 
-//PARA LAS PRUEBAS
-/*
-int main(){
-	Paciente prueba;
-	prueba.add_paciente();
-	//prueba.delete_paciente();
-	prueba.consultar_datos_personales();
-	//prueba.modificar_datos_paciente();
-	return 0;
-}*/

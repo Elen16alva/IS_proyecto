@@ -5,8 +5,7 @@
 #include <fstream>
 #include "tratamiento.h"
 using namespace std;
-//este será el constructor.
-//TENER EN CUENTA SI SE HEREDA DE ALGUNA CLASE, YA QUE EL COSNTRUCTOR SEŔIA DISTINTO.
+
 string Tratamiento::choose_paciente()
 {
 	ifstream fichero ("Pacientes.txt");
@@ -28,10 +27,10 @@ string Tratamiento::choose_paciente()
 					cout << "Este es el paciente que ha seleccionado\n";
 					cout << linea << endl;
 					cout << "\n";
-				}//if
+				}
 				contador++;
-       		}//while
-	}//if
+       		}
+	}
 	fichero.close();
 return copia_linea;
 }
@@ -67,12 +66,7 @@ bool Tratamiento::comprobar_fichero(string fichero_paciente) {
 		fichero.close();
 		return true;
 }
-/**la fucion accede al pacientes.txt lo guarda en la lista y la muestra 
-(funcion mostrar_lista_pacientes) se selecciona que paciente y se guarda su nombre en una variable
-se busca el tratamiento_nombrepaciente.txt (se saca el nombre de la variable)
-se pregunta por la fecha inicio y duracion y por lo que quiere añadir de tratamiento
-escribe al final del fichero fecha+duracion+tratamiento.
-*/
+
 void Tratamiento::add_Tratamiento()
 {
 	cout << "SELECCIONA PACIENTE AL QUE QUIERE AÑADIR TRATAMIENTO\n";
@@ -98,12 +92,12 @@ void Tratamiento::add_Tratamiento()
 			cout << "Ha rellenado el tratamiento satisfactoriamente\n";
 			fichero.close();
 			char n;
-			cout<<"Pulse para continuar"<<endl;
+			cout<<"Pulse cualquier número para continuar"<<endl;
 			cin>>n;
 		}
 		else{
 			ofstream fichero(fichero_tratamiento);
-			cout << "Introduce nuevo medicamento para el paciente\n"; //se podría poner que el nombre del paciente también apareciera
+			cout << "Introduce nuevo medicamento para el paciente\n";
 			cin.ignore();
 			getline(cin, nombre_medicamento);
 			cout << "Introduce fecha de comienzo del tratamiento (ej: 2 semanas, tres meses,...)\n";
@@ -116,21 +110,18 @@ void Tratamiento::add_Tratamiento()
 			cout << "Ha rellenado el tratamiento satisfactoriamente\n";
 			fichero.close();
 			char n;
-			cout<<"Pulse para continuar"<<endl;
+			cout<<"Pulse cualquier número para continuar"<<endl;
 			cin>>n;
 		}
 	}
 	else
 	{
 		char n;
-		cout<<"Pulse para continuar"<<endl;
+		cout<<"Pulse cualquier número para continuar"<<endl;
 		cin>>n;
 	}
 }
-/**la fucion accede al pacientes.txt lo guarda en la lista y la muestra 
-(funcion mostrar_lista_pacientes)se selecciona que paciente y se guarda 
-su nombre en una variable se busca el tratamiento_nombrepaciente.txt 
-se pide la fecha se escribe al final del ficherola fecha+"Ninguno"*/
+
 void Tratamiento::delete_Tratamiento()
 {
 	cout << "SELECCIONA PACIENTE AL QUE QUIERE ELIMINAR EL TRATAMIENTO\n";
@@ -159,7 +150,7 @@ void Tratamiento::delete_Tratamiento()
 				rename((copia_linea+"_Tratamiento"+".txt").c_str(), (copia_linea+"_"+fecha+"_Tratamiento_finalizado"+".txt").c_str());
 				cout << "SE HA ELIMINADO EL TRATAMIENTO CORRECTAMENTE\n";
 				char n;
-				cout<<"Pulse para continuar"<<endl;
+				cout<<"Pulse cualquier número para continuar"<<endl;
 				cin>>n;
 			}
 			else{
@@ -167,7 +158,7 @@ void Tratamiento::delete_Tratamiento()
 				cout << "Cree un nuevo tratamiento para este paciente\n";
 				char n;
 			cout << "No se han encontrado pacientes registrados, añada un paciente\n";
-			cout<<"Pulse para continuar"<<endl;
+			cout<<"Pulse cualquier número para continuar"<<endl;
 			cin>>n;
 			}
 			string nombre=copia_linea+"_"+fecha;
@@ -187,14 +178,11 @@ void Tratamiento::delete_Tratamiento()
 	{
 		char n;
 		cout << "No se han encontrado pacientes registrados, añada un paciente\n";
-		cout<<"Pulse para continuar"<<endl;
+		cout<<"Pulse cualquier número para continuar"<<endl;
 		cin>>n;
 	}
 }
-/**la fucion accede al pacientes.txt lo guarda en la lista y la muestra
-(funcion mostrar_lista_pacientes) se selecciona que paciente y se 
-guarda su nombre en una variable se busca el tratamiento_nombrepaciente.txt 
-se lee y se va imprimiendo*/
+
 void Tratamiento::see_Tratamiento()
 {
 	cout << "SELECCIONA PACIENTE AL QUE QUIERE VER SU TRATAMIENTO\n";
@@ -204,11 +192,7 @@ void Tratamiento::see_Tratamiento()
 			cout << "\n";
 			string copia_linea=choose_paciente();
 			string fichero_tratamiento=copia_linea+"_Tratamiento"+".txt";
-			/*if(comprobar_fichero("Tratamientos.txt")==true){
-				ifstream fichero("Tratamientos.txt");
-				fichero << //para introducir el nombre con la fecha delante del nombre o detras una de dos
-				fichero.close();
-			}*/
+
 			if(comprobar_fichero(fichero_tratamiento)==true){
 				ifstream fichero(fichero_tratamiento);
 				string line;
@@ -276,7 +260,7 @@ void Tratamiento::see_Tratamiento()
 						}
 					}break;
 					case 3: {
-						//VOLVER AL MENU PARA UNA OPCION DIFERENTE.
+						
 					}
 				}
 			}
@@ -290,35 +274,3 @@ void Tratamiento::see_Tratamiento()
 		cin>>n;
 	}
 }
-/*
-int main()
-{
-	Tratamiento prueba;
-	int opcion;
-	do{
-	cout << "\n"; 
-	cout << "1.- add\n";
-	cout << "2.- see\n";
-	cout << "3.- delete\n";
-	cout << "4.- salir\n";
-		cout << "Introduce su opcion: ";
-		cin >> opcion;
-		cout << "\n";
-		switch(opcion){
-			case 1:{
-				prueba.add_Tratamiento();
-			}break;
-			case 2:{
-				prueba.see_Tratamiento();
-			}break;
-			case 3:{
-				prueba.delete_Tratamiento();
-			} break;
-			case 4: {
-				cout << "Ha salido del programa\n";
-				return 0;
-			}break;
-		}
-	}while (!(opcion==4));
-}
-*/
