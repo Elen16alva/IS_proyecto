@@ -19,7 +19,7 @@ __*Descripción*__: Como administrador quiero borrar a cualquier paciente para q
 
  __*Validación*__:
 * Se seleccionará el paciente a borrar de la base de datos de pacientes.
-* Se borrará los datos del paciente, el historial y los tratamientos del mismo.
+* Se borrará los datos del paciente, el historial y el tratamiento en curso (si el tratamieno aun no ha finalizado) del mismo.
 
 
       
@@ -80,6 +80,17 @@ __*Descripción*__: Como administrador quiero que cualquier paciente pueda borra
 
 
 
+## *Nombre*: **MODIFICAR CITA** (retocar)
+
+*ID*: H11
+
+__*Descripción*__: Como administrador quiero poder modificar cualquier cita, pudiendo escoger otra cualquiera. 
+
+ __*Validación*__:
+* Solo podrá escoger citas disponibles.
+
+
+
 ## *Nombre*: **AÑADIR TRATAMIENTO**
 *ID*: H07
 
@@ -98,18 +109,9 @@ __*Descripción*__: Como administrador quiero añadir cualquier tratamiento a cu
 __*Descripción*__: Como administrador quiero borrar el tratamiento actual del paciente. 
 
  __*Validación*__:
-* Para que el tratamiento sea borrado debe encontrarse en curso.
-* Una vez terminado el tratamiento este no podrá ser borrado.
-
-
-
-## *Nombre*: **CONSULTAR HISTORIAL MÉDICO**
-*ID*: H09
-
-__*Descripción*__: Como administrador quiero consultar el historial médico del paciente. 
-
- __*Validación*__: 
-* Se introducirá el nombre completo del paciente del cual se quiere consultar su historial.
+* Se selecciona el paciente con su tratamiento en curso para que sea borrado.
+* Una vez terminado el tratamiento este no será borrado.
+* El tratamiento ya borrado se añadira a la base de datos de Tratamientos.
 
 
 
@@ -119,21 +121,23 @@ __*Descripción*__: Como administrador quiero consultar el historial médico del
 __*Descripción*__: Como administrador quiero poder consultar cualquier tratamiento ya sea en curso o finalizado. 
 
  __*Validación*__:
-* Se introducirá el nombre completo del paciente del cual se quiere consultar sus tratamientos.
+* Se selecciona el paciente del que se quiere consultar su tratamiento en curso.
+* Se podrán consultar tramientos ya finalizados, si el tratamiento en curso del paciente ha sido borrado anteriormente.
 
 
-## *Nombre*: **MODIFICAR CITA**
 
-*ID*: H11
+## *Nombre*: **CONSULTAR HISTORIAL MÉDICO** (retocar)
+*ID*: H09
 
-__*Descripción*__: Como administrador quiero poder modificar cualquier cita, pudiendo escoger otra cualquiera. 
+__*Descripción*__: Como administrador quiero consultar el historial médico del paciente. 
 
- __*Validación*__:
-* Solo podrá escoger citas disponibles.
+ __*Validación*__: 
+* Se introducirá el nombre completo del paciente del cual se quiere consultar su historial.
+
  
 
 
-## *Nombre*: **MENÚ PRINCIPAL**
+## *Nombre*: **MENÚ PRINCIPAL**  (retocar)
 *ID*: H13
 
 __*Descripción*__: Como administrador quiero tener un menú para poder hacer cualquier tarea requerida.
