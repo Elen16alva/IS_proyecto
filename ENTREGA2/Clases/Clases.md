@@ -48,11 +48,11 @@ Este método borrará el tratamiento actual y no dejará ningún tratamiento.
 
 *+comprobar_fichero*
 
-Esta función
+Esta función comprobará la existencia de la base de datos sonde están los pacientes registrados.
 
 *+choose_paciente*
 
-Esta función
+Esta función seleccionará el paciente sobre el que se quiere operar.
 
 
 
@@ -150,7 +150,7 @@ Esta variable
 
 *+comprobar_fichero*
 
-Este método 
+Este método comprobará la existencia de la base de datos sonde están los pacientes registrados.
 
 *+add_paciente*
 
@@ -162,15 +162,15 @@ Este método borrará un paciente y toda su información de la base de datos.
 
 *+choose_paciente*
 
-Este método 
+Este método comprobará la existencia de la base de datos sonde están los pacientes registrados.
 
 *+modifica_pacientes*
 
-Esta función 
+Esta función auxiliar actualizará la base de datos tras algunas operaciones como añadir un paciente.
 
 *+choose_datos_paciente*
 
-Esta función 
+Esta función seleccionará que parte se quiere modificar de los datos de un paciente.
 
 *+consultar_datos_personales*
 
