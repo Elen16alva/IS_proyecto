@@ -164,19 +164,19 @@ Este método borrará un paciente y toda su información de la base de datos.
 
 Este método 
 
-*-modifica_pacientes*
+*+modifica_pacientes*
 
 Esta función 
 
-*-choose_datos_paciente*
+*+choose_datos_paciente*
 
 Esta función 
 
-*-consultar_datos_personales*
+*+consultar_datos_personales*
 
 Esta función mostrará los datos personales de un paciente.
 
-*-modificar_datos_paciente*
+*+modificar_datos_paciente*
 
 Esta función modificará los datos personales de un paciente.
 
