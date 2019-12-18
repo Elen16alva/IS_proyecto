@@ -14,7 +14,7 @@ __*Flujo principal:*__
 1. El secretario desea añadir un tratamiento a un paciente.
 2. El secretario selecciona el menú de pacientes.
 3. El secretario selecciona la opción de tratamiento.
-4. El sistema mostrará una lista con todos los pacientes existentes.
-5. El secretario buscará y seleccionará el paciente al que desea añadir un tratamiento.
-6. El secretario elegirá la opción de añadir.
+4. El secretario selecciona la opción de añadir tratamiento.
+5. El sistema mostrará una lista con todos los pacientes existentes.
+6. El secretario buscará y seleccionará el paciente al que desea añadir un tratamiento.
 7. El secretario escribirá la información nueva al tratamiento.
