@@ -265,31 +265,31 @@ La variable
 
 *+getDia_reserva*
 
-Este método 
+Este método sirve para usar una variable privada.
 
 *+setDia_reserva*
 
-Este método 
+Este método sirve para dar valor a una variable privada.
 
 *+getMes_reserva*
 
-Este método 
+Este método sirve para usar una variable privada.
 
 *+Set_reserva*
 
-Este método 
+Este método sirve para dar valor a una variable privada.
 
 *-getAnio_reserva*
 
-Esta función 
+Esta función sirve para usar una variable privada.
 
 *-setAnio_reserva*
 
-Esta función 
+Esta función sirve para dar valor a una variable privada.
 
 *-menuCitas*
 
-Esta función 
+Esta función hará de menú entre las distintas operaciones de sobre las citas de un paciente.
 
 *-confirmafecha*
 
@@ -297,7 +297,7 @@ Esta función
 
 *-aniadir_citas*
 
-Esta función
+Esta función 
 
 *-imprimiCitasLibres*
 
@@ -309,7 +309,7 @@ Esta función
 
 *-reservaCitas*
 
-Esta función
+Esta función permitirá reservar una cita que este libre.
 
 *-crear_fichero_cl*
 
@@ -317,13 +317,13 @@ Esta función
 
 *-consultarCitas*
 
-Esta función
+Esta función permitirá consultar las citas reservadas de un día concreto.
 
 *-modificar_Cita*
 
-Esta función
+Esta función permitirá cancelar una cita para sustituirla por otra.
 
 *-eliminarCita*
 
-Esta función
+Esta función permitirá borrar una cita ya reservada.
 
