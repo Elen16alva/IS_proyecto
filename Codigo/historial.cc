@@ -25,7 +25,6 @@ list <string> Historial::cargar_lista_pacientes()
 		}
 		//muestro los pacientes del txt ya en la lista junto con la posicion que ocupan
 		list <string>::iterator i;
-		return aux;
 	}
 	else
 	{
@@ -36,8 +35,8 @@ list <string> Historial::cargar_lista_pacientes()
 		cout<<"\nPulse cualquier número para continuar"<<endl;
 		char n;
 		cin>>n;
-
 	}
+	return aux;
 }
 
 void Historial::consultar_historial()
@@ -141,6 +140,7 @@ void Historial::add_historial()
 		char tratamiento[200];
 		cout<<endl;
 		cout<<"Fecha de hoy"<<endl;
+		cout<<"La fecha debe tener este formato 00/00/0000"<<endl;
 		cin.ignore();
 		cin.getline(fecha, 10);
 		cout<<"Sintomas que presenta el paciente"<<endl;
