@@ -31,6 +31,25 @@ Tipo: string
 
 Esta variable contendrá el nombre del medicamento recetado.
 
+*-year_sistema*
+
+Tipo: entero
+
+Esta variable 
+
+*-month_sistema*
+
+Tipo: entero
+
+Esta variable 
+
+*-day_sistema*
+
+Tipo: entero
+
+Esta variable 
+
+
 
 * **Métodos:**
 
@@ -53,6 +72,11 @@ Esta función comprobará la existencia de la base de datos sonde están los pac
 *+choose_paciente*
 
 Esta función seleccionará el paciente sobre el que se quiere operar.
+
+*+confirmafecha*
+
+Esta función 
+
 
 
 
