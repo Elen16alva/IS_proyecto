@@ -75,7 +75,7 @@ Esta función seleccionará el paciente sobre el que se quiere operar.
 
 *+confirmafecha*
 
-Esta función 
+Esta función validará que una fecha sea válida.
 
 
 
@@ -317,7 +317,7 @@ Esta función hará de menú entre las distintas operaciones de sobre las citas 
 
 *-confirmafecha*
 
-Esta función 
+Esta función validará que una fecha sea válida.
 
 *-aniadir_citas*
 
@@ -325,11 +325,11 @@ Esta función
 
 *-imprimiCitasLibres*
 
-Esta función
+Esta función mostrará por pantalla las citas libres de un día concreto.
 
 *-imprimirCitas*
 
-Esta función
+Esta función mostrará por pantalla citas disponibles y reservadas de un dia concreto.
 
 *-reservaCitas*
 
@@ -337,7 +337,7 @@ Esta función permitirá reservar una cita que este libre.
 
 *-crear_fichero_cl*
 
-Esta función
+Esta función crea el fichero de citas libres.
 
 *-consultarCitas*
 
