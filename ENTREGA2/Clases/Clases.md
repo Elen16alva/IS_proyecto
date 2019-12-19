@@ -2,7 +2,7 @@
 
 ### **Clase:** *Tratamiento*
 
-Esta clase contiene los métodos de los tratamientos de los pacientes.
+Esta clase contiene los métodos de las operaciones sobre los tratamientos de los pacientes.
 
 
 * **Datos:**
@@ -59,7 +59,7 @@ Esta función seleccionará el paciente sobre el que se quiere operar.
 
 ### **Clase:** *Historial*
 
-Esta clase contiene los métodos del historial de los pacientes.
+Esta clase contiene los métodos de las operaciones sobre el historial de los pacientes.
 
 
 * **Datos:**
@@ -87,7 +87,7 @@ Este método devolverá una lista con todos los pacientes existentes en la base 
 
 ### **Clase:** *Paciente*
 
-Esta clase contiene todas las operaciones posibles que se podrán hacer sobre el paciente.
+Esta clase contiene todas los métodos de las operaciones sobre pacientes.
 
 * **Datos:**
 
@@ -190,41 +190,140 @@ Este método auxiliar ayudará a comprobar que el código postal es correcto.
 
 ### **Clase:** *Citas*
 
-Esta clase contiene el metodo para consultar las citas que hay disponibles el día que se desee.
+Esta clase contiene los métodos de las operaciones de citas.
 
 
 * **Datos:**
-*-*
+*-dia_sistema*
 
-Tipo: 
+Tipo: entero
 
 La variable 
 
-*-*
+*-mes_sistema*
 
-Tipo: 
+Tipo: entero
 
 Esta variable 
+
+*-anio_sistema*
+
+Tipo: entero
+
+La variable 
+
+*-hora_reserva*
+
+Tipo: entero
+
+La variable 
+
+*-minuto_reserva*
+
+Tipo: entero
+
+La variable 
+
+*-dia_reserva_*
+
+Tipo: string
+
+La variable 
+
+*-mes_reserva_*
+
+Tipo: string
+
+La variable 
+
+*-anio_reserva_*
+
+Tipo: string
+
+La variable 
+
+*-nombre*
+
+Tipo: string
+
+La variable 
+
+*-apellidos*
+
+Tipo: string
+
+La variable
+
+*-lista_*
+
+Tipo: lista de struct
+
+La variable
 
 
 * **Métodos:**
 
-*+*
+*+getDia_reserva*
 
 Este método 
 
-*+*
+*+setDia_reserva*
 
 Este método 
 
-*+*
+*+getMes_reserva*
 
 Este método 
 
-*+*
+*+Set_reserva*
 
 Este método 
 
-*-*
+*-getAnio_reserva*
 
 Esta función 
+
+*-setAnio_reserva*
+
+Esta función 
+
+*-menuCitas*
+
+Esta función 
+
+*-confirmafecha*
+
+Esta función 
+
+*-aniadir_citas*
+
+Esta función
+
+*-imprimiCitasLibres*
+
+Esta función
+
+*-imprimirCitas*
+
+Esta función
+
+*-reservaCitas*
+
+Esta función
+
+*-crear_fichero_cl*
+
+Esta función
+
+*-consultarCitas*
+
+Esta función
+
+*-modificar_Cita*
+
+Esta función
+
+*-eliminarCita*
+
+Esta función
+
