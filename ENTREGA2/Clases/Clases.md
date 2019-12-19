@@ -181,7 +181,7 @@ Esta función mostrará los datos personales de un paciente.
 Esta función modificará los datos personales de un paciente.
 
 
-*+set_odigoPostal*
+*+set_codigoPostal*
 
 Este método auxiliar ayudará a comprobar que el código postal es correcto.
 
@@ -246,13 +246,13 @@ La variable
 
 Tipo: string
 
-La variable 
+La variable guardará el nombre del paciente.
 
 *-apellidos*
 
 Tipo: string
 
-La variable
+La variable guardará los apellidos del paciente.
 
 *-lista_*
 
