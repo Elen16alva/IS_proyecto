@@ -35,19 +35,19 @@ Esta variable contendrá el nombre del medicamento recetado.
 
 Tipo: entero
 
-Esta variable 
+Esta variable guardará el año del sistema.
 
 *-month_sistema*
 
 Tipo: entero
 
-Esta variable 
+Esta variable guardará el mes del sistema.
 
 *-day_sistema*
 
 Tipo: entero
 
-Esta variable 
+Esta variable guardará el día del sistema.
 
 
 
