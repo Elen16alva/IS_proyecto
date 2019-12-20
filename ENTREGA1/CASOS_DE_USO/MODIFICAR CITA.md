@@ -23,3 +23,4 @@ __*Flujo principal:*__
 9. El usuario introducirá la fecha en la que quiere la nueva cita.
 10. El sistema mostrara las citas disponibles ese día.
 11. El secretario elegirá la nueva cita para el paciente.
+
