@@ -637,14 +637,3 @@ void Citas:: consultarCitas()
 	cout<<"Fecha seleccionada"<<endl;
 	imprimirCitas(dia, mes, anio);
 }
-
-
-
-
-int main()
-{
-	system("clear");
-	Citas c;
-	c.imprimirCitas();
-	c.menu_citas();	
-}
