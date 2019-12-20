@@ -161,13 +161,4 @@ void Historial::add_historial()
 	}
 }
 
-/*
-int main()
-{
-	Historial h;
 
-	h.add_historial();
-	cout<<endl<<endl<<endl;
-	h.consultar_historial();
-
-}*/
