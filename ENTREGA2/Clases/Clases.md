@@ -167,7 +167,7 @@ Esta variable contendrá el DNI del paciente.
 
 Tipo: string
 
-Esta variable 
+Esta variable ayudara a concatenar el nombre de un paciente.
 
 
 * **Métodos:**
@@ -222,49 +222,49 @@ Esta clase contiene los métodos de las operaciones de citas.
 
 Tipo: entero
 
-La variable 
+La variable guardará el dia del sistema.
 
 *-mes_sistema*
 
 Tipo: entero
 
-Esta variable 
+Esta variable guardará el mes del sistema.
 
 *-anio_sistema*
 
 Tipo: entero
 
-La variable 
+La variable guardará el año del sistema.
 
 *-hora_reserva*
 
 Tipo: entero
 
-La variable 
+La variable guardará la hora de la cita reservada.
 
 *-minuto_reserva*
 
 Tipo: entero
 
-La variable 
+La variable guardará los minutos de la cita reservada.
 
 *-dia_reserva_*
 
 Tipo: string
 
-La variable 
+La variable guardará el dia que se ha reservado la cita.
 
 *-mes_reserva_*
 
 Tipo: string
 
-La variable 
+La variable guardará el mes que se ha reservado la cita.
 
 *-anio_reserva_*
 
 Tipo: string
 
-La variable 
+La variable guardará el año que se ha reservado la cita.
 
 *-nombre*
 
@@ -282,7 +282,7 @@ La variable guardará los apellidos del paciente.
 
 Tipo: lista de struct
 
-La variable
+La variable guardará lo que se saque de la base de datos en cuanto a las citas (libres o reservadas).
 
 
 * **Métodos:**
@@ -321,7 +321,7 @@ Esta función validará que una fecha sea válida.
 
 *-aniadir_citas*
 
-Esta función 
+Esta función ayudará a reservar cita, haciendo comprobaciones y guardando los valores en las variables de reserva.
 
 *-imprimiCitasLibres*
 
