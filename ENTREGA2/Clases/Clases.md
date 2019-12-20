@@ -299,7 +299,7 @@ Este método sirve para dar valor a una variable privada.
 
 Este método sirve para usar una variable privada.
 
-*+Set_reserva*
+*+SetMes_reserva*
 
 Este método sirve para dar valor a una variable privada.
 
@@ -350,4 +350,16 @@ Esta función permitirá cancelar una cita para sustituirla por otra.
 *-eliminarCita*
 
 Esta función permitirá borrar una cita ya reservada.
+
+*-eliminar*
+
+Esta función ayudará en el proceso de eliminar citas:
+
+*-existe*
+
+Esta función comprobará si existe algún paciente en la base de datos.
+
+*-imprimirCitasReservadas*
+
+Esta función mostrará las citas reservadas de un día en concreto.
 
