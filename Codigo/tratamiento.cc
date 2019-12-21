@@ -363,10 +363,7 @@ void Tratamiento::see_Tratamiento()
 								copia_linea=choose_paciente("Tratamientos.txt");
 								string fichero_paciente=copia_linea+"_Tratamiento_finalizado"+".txt";
 								string linea;
-
-								char n;
-								cout<<"Pulse cualquier número para continuar"<<endl;
-								cin>>n;
+								
 								cout << "ESTOS SON LOS DATOS QUE CONTIENE EL FICHERO: * " << fichero_paciente <<" *"<< endl;
 								ifstream fichero(fichero_paciente);
 								if(fichero.is_open()){
@@ -375,6 +372,9 @@ void Tratamiento::see_Tratamiento()
 										cout << linea << endl;
 									}
 								}
+								char n;
+								cout<<"Pulse cualquier número para continuar"<<endl;
+								cin>>n;
 								fichero.close();
 							}
 							else{
