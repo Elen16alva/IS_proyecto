@@ -2,18 +2,20 @@
 ## **DATOS QUE ENCONTRAREMOS EN LA APLICACIÓN**
 ### *DATOS DEL PACIENTE*
 * Nombre y apellidos.
-* Fecha de nacimiento.
-* Teléfono.
-* Dirección postal.
-* Compañía.
+* Dirección de la calle.
+* Código postal.
+* Provincia.
+* Ciudad.
+* DNI.
 
 ### *TRATAMIENTO*
-* Medicamento.
+* Nombre del medicamento.
 * Duración del tratamiento.
 * Dosis diaria.
+* Fecha de comienzo del tratamiento.
 
 
-### *HISTORIAL MÉDICO*
+### *HISTORIAL MÉDICO*   (RETOCAR)
 * Dolencias.
 * Pruebas realizadas al paciente.
 * Tratamiento que se le impuso al paciente y en qué fecha se produjo este hecho.
@@ -46,5 +48,5 @@
 * La aplicación utilizará el sistema operativo Linux.
 * Lenguaje utilizado: C++.
 * Evitar que se solapen las citas.
-* Evitar que el historial médico sea borrado.
+* Evitar que el historial médico y los tratamientos finalizados de los pacientes sea borrado.
 * Mostrar mensaje de confirmación al eliminar cualquier dato de algún paciente.
