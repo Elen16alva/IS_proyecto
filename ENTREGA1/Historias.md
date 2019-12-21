@@ -46,13 +46,13 @@ __*Descripción*__: Como administrador quiero poder modificar los datos de cualq
 
 
        
-## *Nombre*: **CONSULTAR CITA**  (retocar)
+## *Nombre*: **CONSULTAR CITA** 
 *ID*: H05
 
 __*Descripción*__: Como administrador quiero poder consultar la cita de un paciente para poder saber a qué hora hay que atenderle. 
 
  __*Validación*__:
-* Se puede ver las citas que hay disponibles para el día deseado.
+* Se puede ver las citas que hay disponibles, y reservadas para el día deseado.
  
 
       
@@ -62,32 +62,33 @@ __*Descripción*__: Como administrador quiero poder consultar la cita de un paci
 __*Descripción*__: Como administrador quiero que cualquier paciente pueda escoger cita para que pueda ser atendido por el médico. 
 
  __*Validación*__:
-* Se mostrarán solo las citas que están disponibles.
-* Las citas ya reservadas no aparecerán.
-* Para que el paciente puede reservar cita deberá introducir su nombre completo.
+* Se mostrarán las citas que están disponibles.
+* Se mostrará una lista con las citas reservadas al final a modo de comprobación.
+* Para que el paciente puede reservar cita deberá introducir su nombre completo, y que dicho paciente haya sido previamente registrado.
 
  
       
-## *Nombre*: **BORRAR CITA**   (retocar)
+## *Nombre*: **BORRAR CITA**
 *ID*: H07 
 
-__*Descripción*__: Como administrador quiero que cualquier paciente pueda borrar su cita para que ésta vuelva a estar disponible para otro paciente. 
+__*Descripción*__: Como administrador quiero que cualquier paciente pueda borrar su cita para que ésta vuelva a estar disponible para otro paciente.
 
  __*Validación*__:
-* Cualquier paciente podrá borrar su cita. 
+* Cualquier paciente registrado podrá borrar su cita. 
 * La cita para que sea borrada debe haber sido reservada previamente.
 * En cuanto la cita sea borrada, ésta, inmediatamente, será habilitada de nuevo.
 
 
 
-## *Nombre*: **MODIFICAR CITA** (retocar)
+## *Nombre*: **MODIFICAR CITA**
 
 *ID*: H08
 
-__*Descripción*__: Como administrador quiero poder modificar cualquier cita, pudiendo escoger otra cualquiera. 
+__*Descripción*__: Como administrador quiero poder modificar cualquier cita, pudiendo escoger otra cualquiera disponible. 
 
  __*Validación*__:
 * Solo podrá escoger citas disponibles.
+* En cuanto la cita sea modificada la anterior, será habilitada de nuevo.
 
 
 
