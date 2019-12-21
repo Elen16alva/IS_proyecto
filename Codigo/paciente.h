@@ -22,7 +22,7 @@ private:
 	
 public:
 	bool comprobar_fichero(string fichero_paciente);
-	void add_paciente();
+	int add_paciente();
 	void delete_paciente();
 	string choose_paciente();
 	void modifica_pacientes(string concatenar, string antiguo);

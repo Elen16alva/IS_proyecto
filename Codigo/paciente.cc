@@ -86,7 +86,7 @@ void Paciente::set_codigoPostal()
 			cout<<"Error, introduzca un codigo postal válido 2"<<endl;
 		}
 		valida=0;
-		for(int i=0; i<strlen(code); i++)
+		for(unsigned int i=0; i<strlen(code); i++)
 		{
 			if(code[i]=='1' || code[i]=='2'||code[i]=='3'||code[i]=='4'||code[i]=='5'||code[i]=='6'||code[i]=='7'||code[i]=='8'||code[i]=='9'||code[i]=='0')
 			{
@@ -131,7 +131,7 @@ int Paciente::add_paciente()
 	cout << "* Introduzca el nombre del paciente que quiere añadir *"<<endl;
 	cout << "*******************************************************"<<endl;
 	cin.getline(nombre, 40);
-	for(int i=0; i<strlen(nombre); i++)
+	for(unsigned int i=0; i<strlen(nombre); i++)
 	{
 		if(nombre[i]==' ')
 		{
@@ -143,7 +143,7 @@ int Paciente::add_paciente()
 	cout << "* Introduzca el primer apellido *"<<endl;
 	cout << "********************************"<<endl;
 	cin.getline(ape1, 40);
-	for(int i=0; i<strlen(ape1); i++)
+	for(unsigned int i=0; i<strlen(ape1); i++)
 	{
 		if(ape1[i] == ' ')
 		{
@@ -156,7 +156,7 @@ int Paciente::add_paciente()
 	cout << "*********************************"<<endl;
 	cin.getline(ape2, 40);
 
-	for(int i=0; i<strlen(ape2); i++)
+	for(unsigned int i=0; i<strlen(ape2); i++)
 	{
 		if(ape2[i]==' ')
 		{
@@ -210,7 +210,7 @@ int Paciente::add_paciente()
 		fichero << nombre_concatenar << endl;
 		fichero.close();
 	}
-
+	return 0;
 }
 /*la fucion accede al pacientes.txt lo guarda en la lista y la muestra (funcion mostrar_lista_pacientes)
 pide el paciente a borrar y se borrara el txt con su nombre, el txt con su tratamiento y el txt de su historial

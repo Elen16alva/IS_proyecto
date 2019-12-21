@@ -18,9 +18,9 @@ Tratamiento::Tratamiento(){
 	 day_sistema=tiempo->tm_mday;	
 }
 
-string Tratamiento::choose_paciente()
+string Tratamiento::choose_paciente(string fich)
 {
-	ifstream fichero ("Pacientes.txt");
+	ifstream fichero (fich);
 	string linea;
 	string copia_linea;
 	int contador = 0;
@@ -142,13 +142,58 @@ void Tratamiento::add_Tratamiento()
 	if(comprobar_fichero("Pacientes.txt")==true)
 	{
 		mostrar_lista_pacientes("Pacientes.txt");
-		string copia_linea=choose_paciente();
+		string copia_linea=choose_paciente("Pacientes.txt");
 		string fichero_tratamiento=copia_linea+"_Tratamiento"+".txt";
 		if(comprobar_fichero(fichero_tratamiento)==true){
 			string dia, mes, anio;
 			int check;
-			fstream fichero;
-			fichero.open(fichero_tratamiento, ios::app);
+			remove (fichero_tratamiento.c_str());
+			ofstream fichero(fichero_tratamiento);
+			
+			cout << "Introduce nombre del nuevo medicamento para el paciente\n";
+			cin.ignore();
+			getline(cin, nombre_medicamento);
+			fichero<<nombre_medicamento<<endl;cout << "\n";
+			cout << "\n";
+			do{
+			cout << "Introduce fecha de comienzo del tratamento\n";
+			cout << "Introduce dia de comienzo\n";
+			cin >> dia;
+			cout << "Introduzca mes de comienzo\n";
+			cin >> mes;
+			cout << "Introduzca anio de comienzo\n";
+			cin >> anio;
+			cout<<"¿La fecha seleccionada es correcta? -> "<<dia<<"/"<<mes<<"/"<<anio<<endl;
+			cout<<"1 -> SI || 2-> NO"<<endl;
+			cin>>check;
+			comienzo_tratamiento=dia+"-"+mes+"-"+anio;
+			}while(confirmafecha(dia, mes, anio)!=true && check==1);
+			fichero << comienzo_tratamiento << endl;
+			cout << "\n";
+			cout << "Introduce dosis diaria (ej: 2 comprimidos, tres capsulas,...)\n";
+			cin.ignore();
+			getline(cin, dosis);
+			fichero << dosis << endl;
+			cout << "\n";
+			cout << "Introduce duracion del tratamiento (ej: 2 semanas, tres dias,...)\n";
+			getline(cin, duracion_tratamiento);
+			fichero << duracion_tratamiento << endl;
+			
+
+
+			cout << "Ha rellenado el tratamiento satisfactoriamente\n";
+			fichero.close();
+			char n;
+			cout<<"Pulse cualquier número para continuar"<<endl;
+			cin>>n;
+		}
+		else{
+			string dia, mes, anio;
+			int check;
+
+			ofstream fichero(fichero_tratamiento);
+			
+
 			cout << "Introduce nombre del nuevo medicamento para el paciente\n";
 			cin.ignore();
 			getline(cin, nombre_medicamento);
@@ -163,32 +208,20 @@ void Tratamiento::add_Tratamiento()
 			cout<<"¿La fecha seleccionada es correcta? -> "<<dia<<"/"<<mes<<"/"<<anio<<endl;
 			cout<<"1 -> SI || 2-> NO"<<endl;
 			cin>>check;
+			comienzo_tratamiento=dia+"-"+mes+"-"+anio;
+			cout << "fecha: \n"<<comienzo_tratamiento<<endl;
 			}while(confirmafecha(dia, mes, anio)!=true && check==1);
-			comienzo_tratamiento=dia+"/"+mes+"/"+anio;
+			cout << "fecha: \n"<<comienzo_tratamiento<<endl;
 			getline(cin, comienzo_tratamiento);
 			cout << "Introduce dosis diaria (ej: 2 comprimidos, tres capsulas,...)\n";
 			getline(cin, dosis);
 			cout << "Introduce duracion del tratamiento (ej: 2 semanas, tres dias,...)\n";
 			getline(cin, duracion_tratamiento);
-			fichero << nombre_medicamento << "\n" << comienzo_tratamiento << "\n" << dosis << "\n" << duracion_tratamiento << endl;
-			cout << "Ha rellenado el tratamiento satisfactoriamente\n";
-			fichero.close();
-			char n;
-			cout<<"Pulse cualquier número para continuar"<<endl;
-			cin>>n;
-		}
-		else{
-			ofstream fichero(fichero_tratamiento);
-			cout << "Introduce nuevo medicamento para el paciente\n";
-			cin.ignore();
-			getline(cin, nombre_medicamento);
-			cout << "Introduce fecha de comienzo del tratamiento (ej: 2 semanas, tres meses,...)\n";
-			getline(cin, comienzo_tratamiento);
-			cout << "Introduce dosis diaria (ej: 2 comprimidos, tres capsulas,...)\n";
-			getline(cin, dosis);
-			cout << "Introduce duracion del tratamiento (ej: 2 semanas, tres dias,...)\n";
-			getline(cin, duracion_tratamiento);
-			fichero << nombre_medicamento << "\n" << comienzo_tratamiento << "\n" << dosis << "\n" << duracion_tratamiento << endl;
+			fichero << nombre_medicamento << endl;
+			fichero << comienzo_tratamiento;
+			fichero << dosis << endl;
+			fichero << duracion_tratamiento << endl;
+
 			cout << "Ha rellenado el tratamiento satisfactoriamente\n";
 			fichero.close();
 			char n;
@@ -212,7 +245,7 @@ void Tratamiento::delete_Tratamiento()
 	{
 			mostrar_lista_pacientes("Pacientes.txt");
 			cout << "\n";
-			string copia_linea=choose_paciente();
+			string copia_linea=choose_paciente("Pacientes.txt");
 			string linea;
 			string fecha;
 			int i=0;
@@ -271,7 +304,7 @@ void Tratamiento::see_Tratamiento()
 	{
 			mostrar_lista_pacientes("Pacientes.txt");
 			cout << "\n";
-			string copia_linea=choose_paciente();
+			string copia_linea=choose_paciente("Pacientes.txt");
 			string fichero_tratamiento=copia_linea+"_Tratamiento"+".txt";
 
 			if(comprobar_fichero(fichero_tratamiento)==true){
@@ -327,9 +360,11 @@ void Tratamiento::see_Tratamiento()
 								mostrar_lista_pacientes("Tratamientos.txt");
 								cout << "\n";
 								string copia_linea;
-								copia_linea=choose_paciente();
-								string fichero_paciente=copia_linea+".txt";
+								copia_linea=choose_paciente("Tratamientos.txt");
+								string fichero_paciente=copia_linea+"_Tratamiento_finalizado"+".txt";
 								string linea;
+								
+								cout << "ESTOS SON LOS DATOS QUE CONTIENE EL FICHERO: * " << fichero_paciente <<" *"<< endl;
 								ifstream fichero(fichero_paciente);
 								if(fichero.is_open()){
 									while(!fichero.eof()){
@@ -338,6 +373,12 @@ void Tratamiento::see_Tratamiento()
 									}
 								}
 								fichero.close();
+							}
+							else{
+								cout << "El fichero 'Tratamientos.txt' no contiene ningun tratamiento finalizado\n";
+								char n;
+								cout<<"Pulse cualquier número para continuar"<<endl;
+								cin>>n;
 							}
 						}break;
 					}

@@ -19,7 +19,7 @@ private:
 	
 public:
 	Tratamiento();
-	string choose_paciente();
+	string choose_paciente(string fich);
 	bool comprobar_fichero(string fichero_paciente);
 	bool confirmafecha(string dia, string mes, string anio);
 	void add_Tratamiento();
