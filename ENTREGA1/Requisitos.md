@@ -50,3 +50,4 @@
 * Evitar que se solapen las citas.
 * Evitar que el historial médico y los tratamientos finalizados de los pacientes sea borrado.
 * Mostrar mensaje de confirmación al eliminar cualquier dato de algún paciente.
+* Evitar que se pueda trabajar con pacientes no registrados
