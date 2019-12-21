@@ -138,7 +138,7 @@ __*Validación*__:
 
 
 
-## *Nombre*: **CONSULTAR HISTORIAL MÉDICO** (retocar)
+## *Nombre*: **CONSULTAR HISTORIAL MÉDICO** 
 *ID*: H13
 
 __*Descripción*__: Como administrador quiero consultar el historial médico del paciente. 
