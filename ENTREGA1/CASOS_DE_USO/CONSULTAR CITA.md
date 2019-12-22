@@ -12,3 +12,7 @@ __*Flujo principal:*__
 4. El sistema preguntará por el día que quiere consultar las citas.
 5. El secretario introducirá el día y el mes que quiere conocer.
 6. El sistema mostrará una lista con todos las citas disponibles y otra lista con las que ya están reservadas, junto con en nombre de a quién le pertenece tal cita.
+
+__*Flujos alternativos:*__
+
+5.a Se validará la fecha.
