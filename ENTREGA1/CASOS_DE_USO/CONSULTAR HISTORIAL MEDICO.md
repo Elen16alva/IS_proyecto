@@ -18,3 +18,8 @@ __*Flujo principal:*__
 5. El sistema mostrará una lista con todos los pacientes existentes.
 6. El secretario buscará y seleccionará el paciente del que desea obtener información.
 7. El sistema mostrará por pantalla todo el historial del paciente.
+
+__*Flujos alternativos:*__
+
+5.a Si no hay pacientes registrados, no mostrará nada y la instrucción acabará
+7.a Si no tiene nada registrado en el historial, mostrará un espacio de pantalla en blanco
