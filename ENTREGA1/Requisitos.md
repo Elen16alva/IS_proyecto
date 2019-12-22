@@ -15,10 +15,11 @@
 * Fecha de comienzo del tratamiento.
 
 
-### *HISTORIAL MÉDICO*   (RETOCAR)
-* Dolencias.
+### *HISTORIAL MÉDICO*  
+* Fecha en la que se actualiza el historial.
+* Síntomas.
 * Pruebas realizadas al paciente.
-* Tratamiento que se le impuso al paciente y en qué fecha se produjo este hecho.
+* Tratamiento que se le impuso al paciente.
 
 ### *CITAS*
 * Nombre y apellidos de la persona que ha reservado la cita.
