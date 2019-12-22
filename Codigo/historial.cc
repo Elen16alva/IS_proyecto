@@ -23,9 +23,7 @@ list <string> Historial::cargar_lista_pacientes()
 			nombreS=nombre;
 			aux.push_back(nombreS);
 		}
-		//muestro los pacientes del txt ya en la lista junto con la posicion que ocupan
-		list <string>::iterator i;
-		return aux;	}
+	}
 	else
 	{
 		cout<<"*************************************"<<endl;
