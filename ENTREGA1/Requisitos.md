@@ -32,7 +32,6 @@
 * Mostrar historial médico del paciente.
 * Mostrar citas reservadas.
 * Modificar datos del paciente.
-* Modificar tratamientos del paciente.
 * Añadir nuevos pacientes.
 * Añadir nuevos tratamientos.
 * Añadir al historial médico nuevas consultas.
