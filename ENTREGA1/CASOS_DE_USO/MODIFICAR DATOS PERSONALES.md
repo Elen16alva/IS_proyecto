@@ -20,7 +20,3 @@ __*Flujo principal:*__
 7. El secretario elegirá que dato quiere mdificar.
 8. El sistema pedirá el nuevo dato.
 9. El secretario introducirá la nueva información.
-
-__*Flujos alternativos:*__
-
-6.a. Solo se puede modificar un campo a la vez.
