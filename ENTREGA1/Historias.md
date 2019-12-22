@@ -1,6 +1,6 @@
 # **HISTORIAS DE USUARIO**
 
-## *Nombre*: **AÑADIR UN PACIENTE** 
+## *Nombre*: **AÑADIR PACIENTE** 
 *ID*: H01 
 
 __*Descripción*__: Como administrador quiero poder registrar un nuevo paciente, junto con sus datos personaleS.
