@@ -1,5 +1,5 @@
 ### **MODIFICAR CITA**
-*ID:* C14	
+*ID:* C12
 
 __*Descripción:*__ El secretario modificara la cita de un paciente.
 
