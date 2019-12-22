@@ -56,7 +56,7 @@ __*Descripción*__: Como administrador quiero poder consultar la cita de un paci
  
 
       
-## *Nombre*: **AÑADIR CITA**  (retocar)
+## *Nombre*: **AÑADIR CITA**  
 *ID*: H06 
 
 __*Descripción*__: Como administrador quiero que cualquier paciente pueda escoger cita para que pueda ser atendido por el médico. 
@@ -128,7 +128,7 @@ __*Descripción*__: Como administrador quiero poder consultar cualquier tratamie
 
 
 ## *Nombre*: **AÑADIR HISTORIAL MÉDICO**
-*id*: H12
+*ID*: H12
 
 __*Descripción*__: Como administrador quiero añadir a cualquier paciente un historial.
 
