@@ -18,3 +18,8 @@ __*Flujo principal:*__
 5. El sistema mostrará una lista con todos los pacientes existentes.
 6. El secretario buscará y seleccionará el paciente al que desea añadir un tratamiento.
 7. El secretario escribirá la información nueva al tratamiento.
+
+
+__*Flujos alternativos:*__
+
+7.a Se validará que la fecha introducida es correcta.
