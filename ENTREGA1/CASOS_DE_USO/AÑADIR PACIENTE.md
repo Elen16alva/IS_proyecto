@@ -23,6 +23,6 @@ El cliente quedará guardado en la base de datos.
 
 __*Flujos alternativos:*__
 
-4.a Si al introducir el nombre del pacie te al final no se quiere añadir el paciente, se volverá  al menú principal.
-5.a Si se introduce algun campo erróneo, como un codigo postal con 7 cifras, se pedira de nuevo hasta que sea correcto.
+*4.a Si al introducir el nombre del pacie te al final no se quiere añadir el paciente, se volverá  al menú principal.
+*5.a Si se introduce algun campo erróneo, como un codigo postal con 7 cifras, se pedira de nuevo hasta que sea correcto.
 
