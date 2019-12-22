@@ -158,7 +158,7 @@ void Historial::add_historial()
 		cout<<endl;
 		char n[2];
 		cout<<"Pulse un carácter para continuar"<<endl;
-		cin<<n;
+		cin>>n;
 	}
 }
 
