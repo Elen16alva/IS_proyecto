@@ -70,23 +70,23 @@ void Historial::consultar_historial()
 		}
 		string nombrefichero=nombre+"_Historial.txt";
 		ifstream fichero(nombrefichero.c_str());
-		char fecha[100];
-		char sintomas[100];
-		char pruebas[100];
-		char tratamiento[100];
+		char fecha[12];
+		char sintomas[500];
+		char pruebas[300];
+		char tratamiento[200];
 		cout<<endl;
 		cout<<"Aqui se mostrara el historial del paciente"<<endl;
 		cout<<endl;
-		while(fichero.getline(fecha, 100, '\n'))
+		while(fichero.getline(fecha, 12, '\n'))
 		{
 			cout<<fecha<<endl;
-			fichero.getline(sintomas, 100, '\n');
+			fichero.getline(sintomas, 500, '\n');
 			cout<<"Sintomas"<<endl;
 			cout<<sintomas<<endl;
-			fichero.getline(pruebas, 100, '\n');
+			fichero.getline(pruebas, 300, '\n');
 			cout<<"Pruebas"<<endl;
 			cout<<pruebas<<endl;
-			fichero.getline(tratamiento, 100, '\n');
+			fichero.getline(tratamiento, 200, '\n');
 			cout<<"Tratamiento"<<endl;
 			cout<<tratamiento<<endl;
 			cout<<endl;
@@ -132,21 +132,21 @@ void Historial::add_historial()
 		string nombrefichero=nombre+"_Historial.txt";
 		fstream fichero;
 		fichero.open (nombrefichero.c_str(), fstream::app);
-		char fecha[100];
-		char sintomas[100];
-		char pruebas[100];
-		char tratamiento[100];
+		char fecha[12];
+		char sintomas[500];
+		char pruebas[300];
+		char tratamiento[200];
 		cout<<endl;
 		cout<<"Fecha de hoy"<<endl;
 		cout<<"Formato de fecha 00/00/0000"<<endl;
 		cin.ignore();
-		cin.getline(fecha, 100);
+		cin.getline(fecha, 12);
 		cout<<"Sintomas que presenta el paciente"<<endl;
-		cin.getline(sintomas, 100);
+		cin.getline(sintomas, 500);
 		cout<<"Pruebas realizadas al paciente"<<endl;
-		cin.getline(pruebas, 100);
+		cin.getline(pruebas, 300);
 		cout<<"Tratamiento que se le impone al paciente"<<endl;
-		cin.getline(tratamiento, 100);
+		cin.getline(tratamiento, 200);
 
 		fichero<<fecha<<endl;
 		fichero<<sintomas<<endl;
@@ -154,8 +154,11 @@ void Historial::add_historial()
 		fichero<<tratamiento<<endl;
 
 		cout<<"Se ha actualizado el historial"<<endl;
-
 		fichero.close();
+		cout<<endl;
+		char n[2];
+		cout<<"Pulse un carácter para continuar"<<endl;
+		cin<<n;
 	}
 }
 
