@@ -16,6 +16,7 @@ __*Flujo principal:*__
 5. El secretario introduce el día en la que está la cita.
 6. El sistema mostrará todas las citas reservadas ese día.
 7. El secretario elegirá la cita que quiere borrar.
+8. La cita eliminada estará disponible nuevamente
 
 __*Postcondiciones:*__
 La cita pasará a estar disponible de nuevo.
@@ -23,3 +24,5 @@ La cita pasará a estar disponible de nuevo.
 __*Flujos alternativos:*__
 
 5.a Se validará que la fecha sea válida.
+
+7.a Se validará que la hora y el minuto sean correctos
