@@ -23,5 +23,5 @@ La cita reservada ya no estará disponible.
 
 __*Flujos alternativos:*__
 
-4.a Se validará la fecha hasta que sea válida
+4.a Se validará la fecha hasta que sea válida.
 
