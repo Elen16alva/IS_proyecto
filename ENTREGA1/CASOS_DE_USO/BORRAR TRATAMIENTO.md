@@ -18,9 +18,13 @@ __*Flujo principal:*__
 4. El secretario selecciona la opción de borrar tratamiento.
 5. El sistema mostrará una lista con todos los pacientes existentes.
 6. El secretario buscará y seleccionará el paciente del que desea borrar el tratamiento.
-7. El sistema borrará todo el tratamiento de ese paciente.
+7. El sistema mostrará un mensaje de confirmación para borrar el tratamiento.
+8. El sistema borrará todo el tratamiento de ese paciente.
 
 __*Postcondiciones:*__
 
-7.a. A pesar de haber borrado todo el tratamiento, el sistema creara una base de datos de seguridad con lo que ha borrado en caso de querer consultarse de nuevo o recuperarlo.
+8.a. A pesar de haber borrado todo el tratamiento, el sistema creara una base de datos de seguridad con lo que ha borrado en caso de querer consultarse de nuevo o recuperarlo.
 
+__*Flujo alternativo*__
+
+7.a.El sistema mostrará un mensaje de confirmación a la hora de vorrar el tratamiento.
