@@ -20,3 +20,6 @@ __*Flujo principal:*__
 __*Postcondiciones:*__
 La cita pasará a estar disponible de nuevo.
 
+__*Flujos alternativos:*__
+
+5.a Se validará que la fecha sea válida.
