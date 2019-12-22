@@ -9,7 +9,7 @@ __*Actores secundarios:*__ Paciente
 
 __*Precondiciones:*__
 * El paciente no puede estar ya registrado.
-* No puede haber dos pacientes con el mismo nombre.
+* No puede haber dos pacientes con el mismo nombre, aunque los datos sean distintos.
 
 __*Flujo principal:*__
 1. El secretario desea añadir un nuevo paciente.
