@@ -17,6 +17,7 @@ __*Flujo principal:*__
 6. El sistema mostrará por pantalla las citas que están disponibles para ese dia.
 7. El secretario seleccionará la cita que quiere reservar.
 8. El secretario introducirá el nombre completo de la persona a la que se le reserva la cita.
+9. El sistema mostrará las citas disbonibles y reservadas actualizadas
 
 __*Postcondiciones:*__
 La cita reservada ya no estará disponible.
