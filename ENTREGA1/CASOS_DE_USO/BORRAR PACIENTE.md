@@ -1,7 +1,7 @@
 ### **BORRAR PACIENTE**
 *ID:* C02       
 
-__*Descripción:*__ El secretario borrará un paciente y todo lo referente a el de la base de datos.
+__*Descripción:*__ El secretario borrará un paciente y todo lo referente a él de la base de datos.
 
 __*Actores principales:*__ Secretario
 
@@ -16,8 +16,8 @@ __*Flujo principal:*__
 5. El secretario buscará y seleccionará el paciente que desea eliminar.
 
 __*Postcondiciones:*__
-El cliente dejará de existir en la base de datos y se perderán sus datos personales, historial y tratamientos.
+El cliente dejará de existir en la base de datos y se perderán sus datos personales, historial y tratamientos en curso.
 
 __*Flujos alternativos:*__
 
-5.a El sistema mostrara un mensaje de confirmación.
+5.a El sistema mostrará un mensaje de confirmación.
