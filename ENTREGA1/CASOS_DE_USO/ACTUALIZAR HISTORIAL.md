@@ -19,4 +19,4 @@ La información se añadirá y esta no podrá ser modificada posteriormente.
 
 __*Flujos alternativos:*__
 
-5.a Si no hay pacientes registrados, no muestra nada y acaba la instrucción
+5.a Si no hay pacientes registrados, no muestra nada y acaba la instrucción.
