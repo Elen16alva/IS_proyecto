@@ -8,7 +8,8 @@ __*Actores principales:*__ Secretario
 __*Actores secundarios:*__ Paciente
 
 __*Precondiciones:*__
-El paciente no puede estar ya registrado.
+* El paciente no puede estar ya registrado.
+* No puede haber dos pacientes con el mismo nombre.
 
 __*Flujo principal:*__
 1. El secretario desea añadir un nuevo paciente.
