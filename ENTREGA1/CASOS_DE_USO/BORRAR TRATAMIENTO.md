@@ -27,4 +27,4 @@ __*Postcondiciones:*__
 
 __*Flujo alternativo*__
 
-7.a.El sistema mostrará un mensaje de confirmación a la hora de vorrar el tratamiento.
+7.a. El sistema mostrará un mensaje de confirmación a la hora de borrar el tratamiento.
