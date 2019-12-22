@@ -30,6 +30,7 @@
 * Mostrar datos del paciente.
 * Mostrar tratamientos del paciente.
 * Mostrar historial médico del paciente.
+* Mostrar lista con pacientes existentes.
 * Mostrar citas reservadas.
 * Modificar datos del paciente.
 * Añadir nuevos pacientes.
