@@ -21,5 +21,7 @@ __*Flujo principal:*__
 
 __*Flujos alternativos:*__
 
-5.a Si no hay pacientes registrados, no mostrará nada y la instrucción acabará
-7.a Si no tiene nada registrado en el historial, mostrará un espacio de pantalla en blanco
+5.a Si no hay pacientes registrados, no mostrará nada y la instrucción acabará.
+
+7.a Si no tiene nada registrado en el historial, mostrará un espacio de pantalla en blanco.
+
