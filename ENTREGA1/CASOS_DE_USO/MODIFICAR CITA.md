@@ -24,3 +24,8 @@ __*Flujo principal:*__
 10. El sistema mostrara las citas disponibles ese día.
 11. El secretario elegirá la nueva cita para el paciente.
 
+__*Flujos alternativos:*__
+
+5.a Se validará que la fecha sea válida.
+
+9.a Se validará que la fecha sea válida.
