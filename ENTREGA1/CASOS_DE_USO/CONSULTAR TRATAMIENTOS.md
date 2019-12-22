@@ -21,6 +21,4 @@ __*Flujo principal:*__
 
 __*Flujos alternativos:*__
 
-5.a Si no hay pacientes registrados, dará diferentes opciones para realizar.
-
 7.a Si no hay tratamiento, dará diferentes opciones para realizar. 
