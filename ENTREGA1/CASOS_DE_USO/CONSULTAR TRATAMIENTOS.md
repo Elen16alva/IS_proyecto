@@ -18,3 +18,9 @@ __*Flujo principal:*__
 5. El sistema mostrará una lista con todos los pacientes existentes.
 6. El secretario buscará y seleccionará el paciente del que desea obtener información.
 7. El sistema mostrará por pantalla el tratamiento del paciente.
+
+__*Flujos alternativos:*__
+
+5.a Si no hay pacientes registrados, dará diferentes opciones para realizar.
+
+7.a Si no hay tratamiento, dará diferentes opciones para realizar. 
