@@ -167,7 +167,7 @@ void Tratamiento::add_Tratamiento()
 			cout<<"1 -> SI || 2-> NO"<<endl;
 			cin>>check;
 			comienzo_tratamiento=dia+"-"+mes+"-"+anio;
-			}while(confirmafecha(dia, mes, anio)!=true && check==1);
+			}while(confirmafecha(dia, mes, anio)!=true || check==2);
 			fichero << comienzo_tratamiento << endl;
 			cout << "\n";
 			cout << "Introduce dosis diaria (ej: 2 comprimidos, tres capsulas,...)\n";
@@ -210,7 +210,7 @@ void Tratamiento::add_Tratamiento()
 			cin>>check;
 			comienzo_tratamiento=dia+"-"+mes+"-"+anio;
 			cout << "fecha: \n"<<comienzo_tratamiento<<endl;
-			}while(confirmafecha(dia, mes, anio)!=true && check==1);
+			}while(confirmafecha(dia, mes, anio)!=true || check==2);
 			cout << "fecha: \n"<<comienzo_tratamiento<<endl;
 			getline(cin, comienzo_tratamiento);
 			cout << "Introduce dosis diaria (ej: 2 comprimidos, tres capsulas,...)\n";
@@ -291,7 +291,7 @@ void Tratamiento::delete_Tratamiento()
 	else
 	{
 		char n;
-		cout << "No se ha encontrado el fichero 'Pacientes.txt', añada un paciente.\n";
+		cout << "No se hay pacientes registrados, añada un paciente.\n";
 		cout<<"Pulse cualquier número para continuar"<<endl;
 		cin>>n;
 	}
