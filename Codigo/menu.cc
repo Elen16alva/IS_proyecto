@@ -47,7 +47,7 @@ void menu_pacientes()
 	cout<<"* Pulse 2 para borrar un paciente                   *"<<endl;
 	cout<<"* Pulse 3 para acceder a los datos de un paciente   *"<<endl;
 	cout<<"* Pulse 4 para acceder al historial un paciente     *"<<endl;
-	cout<<"* Pulse 5 para accder al tratamiento un paciente    *"<<endl;
+	cout<<"* Pulse 5 para acceder al tratamiento un paciente    *"<<endl;
 	cout<<"*****************************************************"<<endl;
 	int opcion; 
 	cin>>opcion;
