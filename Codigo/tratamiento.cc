@@ -152,7 +152,7 @@ void Tratamiento::add_Tratamiento()
 			cout << "Introduce nombre del nuevo medicamento para el paciente\n";
 			cin.ignore();
 			getline(cin, nombre_medicamento);
-			fichero<<nombre_medicamento<<endl;cout << "\n";
+			fichero<<nombre_medicamento<<endl;
 			cout << "\n";
 			do{
 			cout << "Introduce fecha de comienzo del tratamento\n";
