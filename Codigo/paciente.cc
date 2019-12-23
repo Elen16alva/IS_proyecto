@@ -36,10 +36,10 @@ string Paciente::choose_paciente()
 					cout << "************************************"<<endl;
 					cout << linea << endl;
 					cout << "\n";
-				}//if
+				}
 				contador++;
-       		}//while
-	}//if
+       		}
+	}
 	fichero.close();
 return copia_linea;
 }
@@ -60,7 +60,6 @@ list <string> mostrar_lista_pacientes1(string fich)
 		nombreS=nombre;
 		aux.push_back(nombreS);
 	}
-	//Se muestran los pacientes del txt ya en la lista junto con la posición que ocupan.
 	list <string>::iterator i;
 	int j=0;
 
@@ -223,7 +222,6 @@ void Paciente::delete_paciente()
 		string fichero_paciente=copia_linea+".txt";
 		string fichero_historial= copia_linea+"_Historial"+".txt";
 		string fichero_tratamiento=copia_linea+"_Tratamiento"+".txt";
-		//tengo que eliminar los pacientes txt y fichero demás y además en apcientes.txt debo de borrarlo.
 		cout << "NOMBRE FICHERO: "<<fichero_paciente << endl;
 		cout << "\n";
 		cout << "ESTE PACIENTE " << copia_linea << " ES EL QUE DESEA BORRAR: \n";
@@ -265,7 +263,9 @@ void Paciente::delete_paciente()
 			}break;
 			case 2:
 			{
-				//iría al mení prinipal de nuevo para hacer otra cosa
+				char n; 
+				Cout << "Pulse cualquier tecla para volver al menú principal \n";
+				cin >> n;
 			}break;
 			default:
 			{
@@ -285,7 +285,6 @@ void Paciente::delete_paciente()
 
 void Paciente::consultar_datos_personales()
 {
-
 	FILE *f=fopen ("Pacientes.txt", "r");
 	if(f!=NULL)
 	{
@@ -393,15 +392,13 @@ rename("Pacientemodificar.txt", "Pacientes.txt");
 
 void Paciente::choose_datos_paciente(string fichero_paciente, int opcion, string linea_paciente)
 {
-	//tengo que pasar a la funcion el nombre del fichero
 	ifstream fichero (fichero_paciente);
 	string nuevo_fichero=fichero_paciente;
 	ofstream fich ("Pacientesmodificar.txt");
 	string buscar;
-	string aux; //la utilizaremos para poder hacer cambios en el fichero.
-	int auxiliar; //para hacer cambios en el fichero.
-	int contador = 1; //LO PONGO A UNO PORQUE CONSIFERO QUE LAS OPCIONES COMIENZAN EN 1.
-	//RESTRINGIR EL 3, YA QUE SERÁ CUANDO UTILICEMOS EL INT AUX
+	string aux; 
+	int auxiliar;
+	int contador = 1; 
 	string concatenar;
 	if (fichero.is_open())
 	{
@@ -435,8 +432,8 @@ void Paciente::choose_datos_paciente(string fichero_paciente, int opcion, string
 									cout << "Introduce primer apellido\n";
 									cin >> surname2;
 									concatenar=name+"_"+surname1+"_"+surname2;
-									fich << concatenar << endl; //Para cambiar dentro del fichero
-									modifica_pacientes(concatenar, buscar); //Para cambiar el archivo pacientes.txt
+									fich << concatenar << endl; 
+									modifica_pacientes(concatenar, buscar); 
 				
 								}
 								else
@@ -449,15 +446,15 @@ void Paciente::choose_datos_paciente(string fichero_paciente, int opcion, string
 						}
 					}
 
-				}//if
+				}
 				else{
 					fich << buscar << endl;
 				}
 
 				contador++;
 
-       		}//while
-	}//if
+       		}
+	}
 	else
 	{
 		cout << "No se ha podidio abrir el archivo\n";
@@ -493,6 +490,5 @@ void Paciente::modificar_datos_paciente()
 	int opcion;
 	cin >> opcion;
 	choose_datos_paciente(fichero_paciente, opcion, copia_linea);
-	//Ver si se puede hacer hasta aqui, es decir terminar y no escribir mas.
 }
 
