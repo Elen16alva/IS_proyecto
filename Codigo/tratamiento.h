@@ -23,7 +23,7 @@ public:
 	bool comprobar_fichero(string fichero_paciente);
 	bool confirmafecha(string dia, string mes, string anio);
 	void add_Tratamiento();
-	void delete_Tratamiento();
+	int delete_Tratamiento();
 	void see_Tratamiento();
 };
 #endif
