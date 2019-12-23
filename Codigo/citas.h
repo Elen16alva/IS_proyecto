@@ -39,8 +39,8 @@ using namespace std;
 		void crear_fichero_cl();
 		void consultarCitas();
 		void modificar_Cita();
-		void eliminarCita(string dia, string mes, string anio);
-		void imprimirCitasReservadas(string dia, string mes, string anio);
+		bool eliminarCita(string dia, string mes, string anio);
+		bool imprimirCitasReservadas(string dia, string mes, string anio);
 		void eliminar();
 		bool existe();
 		
