@@ -264,7 +264,7 @@ void Paciente::delete_paciente()
 			case 2:
 			{
 				char n; 
-				Cout << "Pulse cualquier tecla para volver al menú principal \n";
+				cout << "Pulse cualquier tecla para volver al menú principal \n";
 				cin >> n;
 			}break;
 			default:
