@@ -161,7 +161,7 @@ void Tratamiento::add_Tratamiento()
 			cin >> dia;
 			cout << "Introduzca mes de comienzo\n";
 			cin >> mes;
-			cout << "Introduzca anio de comienzo\n";
+			cout << "Introduzca año de comienzo\n";
 			cin >> anio;
 			cout<<"¿La fecha seleccionada es correcta? -> "<<dia<<"/"<<mes<<"/"<<anio<<endl;
 			cout<<"1 -> SI || 2-> NO"<<endl;
@@ -203,7 +203,7 @@ void Tratamiento::add_Tratamiento()
 			cin >> dia;
 			cout << "Introduzca mes de comienzo\n";
 			cin >> mes;
-			cout << "Introduzca anio de comienzo\n";
+			cout << "Introduzca año de comienzo\n";
 			cin >> anio;
 			cout<<"¿La fecha seleccionada es correcta? -> "<<dia<<"/"<<mes<<"/"<<anio<<endl;
 			cout<<"1 -> SI || 2-> NO"<<endl;
@@ -392,7 +392,7 @@ void Tratamiento::see_Tratamiento()
 	else
 	{
 		char n;
-		cout << "No se ha encontrado el fichero 'Pacientes.txt', añada un paciente\n";
+		cout << "No hay pacientes registrados, añada un paciente\n";
 		cout<<"Pulse para continuar"<<endl;
 		cin>>n;
 	}
