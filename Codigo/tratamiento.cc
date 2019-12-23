@@ -198,7 +198,7 @@ void Tratamiento::add_Tratamiento()
 			getline(cin, nombre_medicamento);
 			do{
 			cout << "Introduce fecha de comienzo del tratamento\n";
-			cout << "Introduce dia de comienzo\n";
+			cout << "Introduce dia de comienha << endl;zo\n";
 			cin >> dia;
 			cout << "Introduzca mes de comienzo\n";
 			cin >> mes;
@@ -237,7 +237,7 @@ void Tratamiento::add_Tratamiento()
 	}
 }
 
-void Tratamiento::delete_Tratamiento()
+int Tratamiento::delete_Tratamiento()
 {
 	cout << "SELECCIONA PACIENTE AL QUE QUIERE ELIMINAR EL TRATAMIENTO\n";
 	if(comprobar_fichero("Pacientes.txt")==true)
@@ -252,7 +252,7 @@ void Tratamiento::delete_Tratamiento()
 			cout << "1.- SI || 2.- NO"<<endl;
 			int opcion;
 			cin >> opcion;
-			if(opción==2){
+			if(opcion==2){
 				return -1;
 			}
 			if(comprobar_fichero(copia_linea+"_Tratamiento"+".txt")==true){
