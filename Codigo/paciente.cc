@@ -1,4 +1,4 @@
-//TRATAMIENTO DEL PACIENTE.
+//METODOS DE PACIENTE
 #include <iostream>
 #include <string>
 #include <list>
