@@ -276,7 +276,7 @@ int Tratamiento::delete_Tratamiento()
 			}
 			else{
 				char n;
-			cout << "No se han encontrado pacientes registrados, añada un paciente\n";
+			cout << "No se han encontrado tratamientos registrados en este paciente, añada un nuevo tratamiento al paciente escogido\n";
 			cout<<"Pulse cualquier número para continuar"<<endl;
 			cin>>n;
 			}
