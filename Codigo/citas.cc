@@ -389,7 +389,7 @@ void Citas ::aniadir_cita()
 		cout<<"1 -> SI || 2-> NO"<<endl;
 		cin>>confirmacion;
 	}
-	while(confirmafecha(dr, mr)!=true && confirmacion==1);
+	while(confirmafecha(dr, mr)!=true || confirmacion==2);
 
 	char dia[dr.length()+1], mes[mr.length()+1];
 	strcpy(dia, dr.c_str());
