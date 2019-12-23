@@ -300,6 +300,7 @@ int Tratamiento::delete_Tratamiento()
 		cout<<"Pulse cualquier número para continuar"<<endl;
 		cin>>n;
 	}
+	return 0;
 }
 
 void Tratamiento::see_Tratamiento()
