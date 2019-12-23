@@ -59,7 +59,6 @@ list <string> mostrar_lista_pacientes(string fich)
 		nombreS=nombre;
 		aux.push_back(nombreS);
 	}
-	//muestro los pacientes del txt ya en la lista junto con la posicion que ocupan
 	list <string>::iterator i;
 	int j=0;
 	for(i=aux.begin(); i!=aux.end(); i++)
@@ -249,12 +248,18 @@ void Tratamiento::delete_Tratamiento()
 			string linea;
 			string fecha;
 			int i=0;
+			cout << "ESTA SEGURO DE QUE QUIERE BORRAR EL TRATAMIENTO EN CURSO DEL PACIENTE?"<< copia_linea <<endl;
+			cout << "1.- SI || 2.- NO"<<endl;
+			int opcion;
+			cin >> opcion;
+			if(opción==2){
+				return -1;
+			}
 			if(comprobar_fichero(copia_linea+"_Tratamiento"+".txt")==true){
 				ifstream fich(copia_linea+"_Tratamiento"+".txt");
 					while((fich.is_open()) && (getline(fich, linea))){
 						if(i==1){
 							fecha=linea;
-							cout << "ESTA ES LA FECHA:"<<fecha << endl;
 						}	
 					i++;
 					}						
