@@ -13,7 +13,9 @@ Una vez dentro:
 
 Aquí un ejemplo:
 Usuario:~$ cd Escritorio
+
 Usuario:~/Escritorio$ cd Codigo
+
 Usuario:~/Escritorio/Codigo$ make
 
 Con esto, ya se podría ejecutar el programa. A continuación se describe el proceso de ejecución del programa.
@@ -25,7 +27,9 @@ Con esto, ya se podría ejecutar el programa. A continuación se describe el pro
 Aqui un ejemplo:
 
 Usuario:~$ cd Escritorio
+
 Usuario:~/Escritorio$ cd Codigo
+
 Usuario:~/Escritorio/Codigo$ ./clinica.exe
 
 
